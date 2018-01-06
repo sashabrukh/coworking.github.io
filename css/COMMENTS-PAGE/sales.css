@@ -1,0 +1,25 @@
+.advert {
+    width: 100%;
+    min-height: 175px;
+    background-color: #27273e;
+    background-image: url(../../images/sales-image/sales-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.advert__wrapper {
+    max-width: 616px;
+    margin: 50px auto;
+}
+
+.advert__text {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.advert__text-link {
+    color: #ec1e79;
+    font-family: GothaBld, Arial, sans-serif;
+}
