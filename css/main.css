@@ -101,15 +101,18 @@ body {
   height: 100%;
   font-size: 62.5%; }
 
+li {
+  list-style: none; }
+
 .header__container {
   max-width: 1100px;
-  min-height: 650px;
+  min-height: 65rem;
   height: 100vh;
   margin: 0 auto;
   background-image: url("../img/background-images/bg-first.jpg");
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
 
@@ -172,7 +175,7 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase; }
 
 .main-nav__link {
@@ -184,13 +187,6 @@ body {
 .main-nav__item {
   padding-right: 2rem; }
 
-.main-nav__item:after {
-  position: absolute;
-  content: '•';
-  font-size: 1.3rem;
-  color: #ffffff;
-  right: 0.5rem; }
-
 .main-nav__link {
   padding: 1em;
   text-decoration: none;
@@ -198,8 +194,7 @@ body {
   list-style: none; }
 
 .promo {
-  position: absolute;
-  top: 20vh;
+  margin-top: 10vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -225,8 +220,8 @@ body {
 .promo__image-item-burger {
   background-image: url("../img/forsprite/other/burgers-slider/burger-promo.png");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   width: 45.1rem;
   height: 42.4rem; }
 
@@ -237,7 +232,7 @@ body {
   line-height: 8.5rem; }
 
 .promo__text-item {
-  font-size: 6.5rem;
+  font-size: 7.2rem;
   font-family: Lifehack, Arial, Helvetica, sans-serif;
   color: #ffffff;
   line-height: 8.5rem;
@@ -265,6 +260,132 @@ body {
 
 .promo__image {
   margin-right: 5rem; }
+
+.features__container {
+  max-width: 1100px;
+  min-height: 65rem;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url("../img/background-images/bg-features.jpg");
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.features__main-title {
+  font-size: 7.2rem;
+  font-family: Gagalin, Arial, Helvetica, sans-serif;
+  color: #2f3234;
+  margin: 15% auto 0 auto; }
+
+.features__items {
+  margin: 10% auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  text-align: center; }
+
+.features__list {
+  width: 32%;
+  margin-right: 1%; }
+
+.features__item {
+  margin-bottom: 7%; }
+
+.features__title {
+  line-height: 2.8rem; }
+
+.features__image {
+  background-image: url("../img/forsprite/svg/beef(1).svg");
+  width: 10rem;
+  height: 9rem;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.features__title {
+  font-size: 2.41rem;
+  font-family: Lifehack, Arial, Helvetica, sans-serif;
+  color: #2f3234; }
+
+.features__text {
+  color: #6e6e6e;
+  font-size: 1.4rem;
+  line-height: 2.4rem; }
+
+.comments__container {
+  max-width: 1100px;
+  min-height: 65rem;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.comments__image {
+  background-image: url("../img/comments-images/3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  min-height: 32.5rem;
+  height: 50vh;
+  width: 25%; }
+
+.comments__item {
+  opacity: 0; }
 
 .main-logo {
   padding-left: 1.77rem; }
