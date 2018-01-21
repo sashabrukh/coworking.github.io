@@ -11,17 +11,18 @@
 </head>
 
 <body class="body">
-	<div class="container">
 
-		<!-- HEADER -->
-		<header class="header__container">
+	<!-- HEADER -->
+
+	<div class="header__bg">
+		<div class="header__container">
 			<div class="header__main">
 				<div class="main-logo">
 					<img class="main-logo__item" src="img/forsprite/svg/logo.svg" alt="logo">
 				</div>
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<a href="" class="main-nav__link">
+						<a href="#features" class="main-nav__link">
 							<li class="main-nav__item">О нас</li>
 						</a>
 						<a href="" class="main-nav__link">
@@ -33,7 +34,7 @@
 						<a href="" class="main-nav__link">
 							<li class="main-nav__item">Меню</li>
 						</a>
-						<a href="" class="main-nav__link">
+						<a href="#comments" class="main-nav__link">
 							<li class="main-nav__item">Отзывы</li>
 						</a>
 						<a href="" class="main-nav__link">
@@ -61,14 +62,17 @@
 				</div>
 			</section>
 			<a href="" class="btn-down__link">
-				<div class="btn-down">
+				<div class="btn__down">
 
 				</div>
 			</a>
-		</header>
 
-		<!-- FEATURES -->
+		</div>
+	</div>
 
+	<!-- FEATURES -->
+
+	<div class="features__bg" id="features">
 		<section class="features__container">
 			<span class="features__main-title">
 				Мы лучшие
@@ -130,9 +134,11 @@
 				</ul>
 			</div>
 		</section>
+	</div>
 
-		<!-- COMMENTS	 -->
+	<!-- COMMENTS	 -->
 
+	<div class="comments__bg" id="comments">
 		<section class="comments__container">
 			<div class="comments__image comments__image--1">
 				<div class="comments__item">
@@ -247,17 +253,52 @@
 				</div>
 			</div>
 		</section>
+	</div>
 
-		<div class="btn__slide-container">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
-			<input type="radio" class="btn__slide">
+	<div class="btn__slide-container">
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
 		</div>
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+
+
+		<div class="btn__slide-relative-item">
+			<input type="radio" class="btn__slide" id="btn__slide" name="btn__slide">
+			<label for="btn__slide" class="btn__slide-label"></label>
+		</div>
+	</div>
 
 	</div>
 	<script src="js/libs.min.js"></script>
