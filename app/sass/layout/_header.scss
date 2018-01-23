@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+.header__bg {
+  min-height: 650px;
+  height: 100vh;
+  background-image: url('../img/background-images/bg-first.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header__main {
+  padding-top: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

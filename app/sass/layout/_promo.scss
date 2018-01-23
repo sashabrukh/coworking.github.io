@@ -1,0 +1,44 @@
+@import '../abstracts/variables';
+.promo {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.promo__image-item-burger {
+  background-image: url('../img/forsprite/other/burgers-slider/burger-promo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 451px;
+  height: 424px;
+}
+
+.promo__title {
+  font-size: $textHuge;
+  font-family: $fontGagalin;
+  color: $colYellow;
+  line-height: 8.5rem;
+}
+
+.promo__text-item {
+  font-size: $textHuge;
+  font-family: $fontLifehack;
+  color: $colWhite;
+  line-height: 8.5rem;
+  text-transform: lowercase;
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10%;
+}
+
+.promo__image {
+  margin-right: 5rem;
+}

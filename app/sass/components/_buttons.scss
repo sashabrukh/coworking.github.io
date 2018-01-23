@@ -1,0 +1,54 @@
+@import '../abstracts/variables';
+.btn {
+  padding: 13px 16px;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: none;
+  background-color: $colOrange;
+  color: $colWhite;
+  margin-right: 80px;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    background-color: darken($colOrange, 20%);
+  }
+}
+
+.btn__down {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotate(-45deg);
+  padding: 15px;
+  border: 2px solid $colWhite;
+  border-right: transparent;
+  border-top: transparent;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    border: 2px solid $colOrange;
+    border-right: transparent;
+    border-top: transparent;
+  }
+}
+
+.btn__more {
+  padding: 13px 16px;
+  margin-top: 17px;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: auto;
+  background-color: $colLightGray;
+  border: none;
+  color: $colWhite;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    background-color: darken($colLightGray, 20%);
+  }
+}

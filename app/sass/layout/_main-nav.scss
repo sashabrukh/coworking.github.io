@@ -1,0 +1,50 @@
+@import '../abstracts/variables';
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: $textSmall;
+  text-transform: uppercase;
+}
+
+.main-nav__item {
+  cursor: pointer;
+  margin-right: 4rem;
+  transition: all 0.45s;
+  &:after {
+    position: absolute;
+    right: 1.5rem;
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $colWhite;
+    cursor: default;
+    transition: all 0.25s;
+  }
+  &:hover {
+    color: $colOrange;
+  }
+  &:hover:after {
+    background-color: $colOrange;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  text-decoration: none;
+  color: $colWhite;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
+}
