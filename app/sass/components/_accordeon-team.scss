@@ -1,0 +1,76 @@
+@import '../abstracts/variables';
+.accordeon-team__team {
+  font-size: $textSmall;
+  color: $colWhite;
+  line-height: 24px;
+}
+
+.accordeon-team__desc-area {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  height: 0;
+  overflow: hidden;
+}
+
+.accordeon-team__desc-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url('../../img/forsprite/our-team/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
+}
+
+.accordeon-team__desc-people {
+  position: relative;
+  display: inline-block;
+  font-family: $fontGagalin;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.8rem solid transparent;
+    border-top-color: $colYellow;
+    border-bottom: 0;
+    cursor: pointer;
+  }
+  &.accordeon-team__desc-people--active {
+    color: $colYellow;
+  }
+  &.accordeon-team__desc-people--active+.accordeon-team__desc-area {
+    height: 100%;
+    overflow: hidden;
+  }
+  &.accordeon-team__desc-people--active:before {
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.8rem solid transparent;
+    border-bottom-color: $colYellow;
+    border-top: 0;
+    cursor: pointer;
+  }
+}
+
+.accordeon-team__desc__text {
+  width: 15vw;
+  flex-wrap: wrap;
+}
+
+.accordeon-team__desc-text-title,
+.accordeon-team__desc-text-item {
+  display: inline-block;
+  margin-bottom: 10px;
+}

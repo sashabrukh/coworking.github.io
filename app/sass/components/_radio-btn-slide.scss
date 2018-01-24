@@ -10,7 +10,7 @@
 }
 
 .btn__slide-relative-item {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -45,7 +45,7 @@
     border-radius: 50%;
     background: #FFF;
     border: 1px solid $colOrange;
-    transition: all 0.25s;
+    transition: all 0.10s;
   }
     &:not(checked)+.btn__slide-label:after {
     content: '';
@@ -56,7 +56,7 @@
     height: 20px;
     border-radius: 50%;
     opacity: 0;
-    transition: all 0.25s;
+    transition: all 0.10s;
   }
     &:checked+.btn__slide-label:after {
     opacity: 1;

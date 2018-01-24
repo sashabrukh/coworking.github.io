@@ -1,0 +1,24 @@
+@import '../abstracts/variables';
+.menu__bg {
+  min-height: 650px;
+  height: 100vh;
+  background-image: url("../img/background-images/bg-menu.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.menu__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__title {
+  font-family: $fontGagalin;
+  font-size: $textHuge;
+  color: $colWhite;
+  display: inline-block;
+  margin-top: 15vh;
+  margin-left: 15vw;
+}
