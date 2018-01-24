@@ -839,6 +839,9 @@ li {
   height: 100%;
   background-color: rgba(51, 54, 56, 0.4); }
 
+.accordeon-menu__list-item:hover:before {
+  background-color: rgba(2, 3, 3, 0.4); }
+
 .accordeon-menu__list-title {
   font-family: Gagalin, Arial, Helvetica, sans-serif;
   font-size: 4rem;
@@ -856,19 +859,20 @@ li {
   font-size: 1.4rem;
   color: #ffffff;
   line-height: 24px;
-  padding: 50px 20px;
-  width: 35vw;
   background-color: rgba(51, 54, 56, 0.9);
-  display: none; }
+  width: 0;
+  overflow: hidden; }
 
 .accordeon-menu__hidden-desc.accordeon-menu__hidden-desc--active {
+  width: 35vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  padding: 50px 20px; }
 
 .accordeon-menu__list-item--meat {
   background-image: url("../../img/forsprite/menu/for-meat.jpg");

@@ -25,6 +25,9 @@
     height: 100%;
     background-color: $colGray04;
   }
+  &:hover:before {
+    background-color: darken($colGray04, 20%);
+  }
 }
 
 .accordeon-menu__list-title {
@@ -44,14 +47,14 @@
   font-size: $textSmall;
   color: $colWhite;
   line-height: 24px;
-  padding: 50px 20px;
-  width: 35vw;
   background-color: $colGray09;
-  ;
-  display: none;
+  width: 0;
+  overflow: hidden;
   &.accordeon-menu__hidden-desc--active {
+    width: 35vw;
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 20px;
   }
 }
 
