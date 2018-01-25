@@ -402,28 +402,73 @@
 
 	<div class="delivery__bg">
 		<div class="delivery__container">
-			<span class="delivery__title">
-
-			</span>
+			<div class="delivery__title">
+				Закажите доставку
+			</div>
 			<form class="delivery__form">
-				<div class="div delivery__form-item-left">
-					<input type="text" name="user__name">
-					<input type="phone" name="user__phone-number">
-					<input type="text" name="usert__street">
-					<input type="text" name="user__house">
-					<input type="text" name="user__house-ap">
-					<input type="text" name="user__flat">
-					<input type="text" name="user__floor">
+				<div class="delivery__form-left">
+					<div class="delivery__item-row">
+						<label class="delivery__block">
+							<div class="delivery__block-title">Имя</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+						<label class="delivery__block">
+							<div class="delivery__block-title">Телефон</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+					</div>
+					<div class="delivery__item-row">
+						<label class="delivery__block">
+							<div class="delivery__block-title">Улица</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+					</div>
+					<div class="delivery__item-row">
+						<label class="delivery__block">
+							<div class="delivery__block-title">Дом</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+						<label class="delivery__block">
+							<div class="delivery__block-title">Корпус</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+						<label class="delivery__block">
+							<div class="delivery__block-title">Квартира</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+						<label class="delivery__block">
+							<div class="delivery__block-title">Этаж</div>
+							<input type="text" class="delivery__item-input">
+						</label>
+					</div>
 				</div>
-				<div class="delivery__form__item-right">
-					<textarea name="user__comment" id="" cols="30" rows="10">
-					</textarea>
-					<input type="radio" name="need-change">
-					<input type="radio" name="pay-card">
-					<input type="checkbox" name="no-call">
-					<input type="submit" value="Заказать">
-					<input type="reset" value="очистить">
-
+				<div class="delivery__form__right">
+					<div class="delivery__item-row">
+						<label class="delivery__block">
+							<div class="delivery__block-title">Дом</div>
+							<input type="textarea" class="delivery__item-textarea">
+						</label>
+					</div>
+					<div class="delivery__item-row">
+						<div class="delivery__block">
+							<label for="pay-cash" class="delivery__block-title delivery__block-inline">Потребуется сдача</label>
+							<input type="radio" class="delivery__item-radio" id="pay-cash" value="pay-cash">
+							<label for="pay-card" class="delivery__block-title delivery__block-inline">Оплата по карте</label>
+							<input type="radio" class="delivery__item-radio" id="pay-card" value="pay-card">
+						</div>
+					</div>
+					<div class="delivery__item-row">
+						<label class="delivery__block">
+							<input type="checkbox" class="delivery__item-check delivery__block-inline">
+							<div class="delivery__block-title delivery__block-inline">Не перезванивать</div>
+						</label>
+					</div>
+					<div class="delivery__item-row">
+						<div class="delivery__block">
+							<input type="submit" value="ЗАКАЗАТЬ" class="btn">
+							<input type="reset" value="Очистить">
+						</div>
+					</div>
 			</form>
 			</div>
 		</div>
@@ -461,7 +506,7 @@
 		</div>
 	</div>
 
-	<!-- SLIDE BUTTONS -->
+	<!-- FIXED SLIDE BUTTONS -->
 
 	<div class="btn__slide-container">
 		<div class="btn__slide-relative-item">
