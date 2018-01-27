@@ -36,6 +36,7 @@
   color: $colWhite;
   transform: rotate(-90deg);
   margin-top: 80vh;
+  padding: 0px;
 }
 
 .accordeon-menu__list-title-rotate {
@@ -59,19 +60,19 @@
 }
 
 .accordeon-menu__list-item--meat {
-  background-image: url("../../img/forsprite/menu/for-meat.jpg");
+  background-image: url("../img/background-menu/for-meat.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .accordeon-menu__list-item--vegan {
-  background-image: url("../../img/forsprite/menu/for-vegan.jpg");
+  background-image: url("../img/background-menu/for-vegan.jpg");
   background-size: cover;
   background-position: 90% 50%;
 }
 
 .accordeon-menu__list-item--diet {
-  background-image: url("../../img/forsprite/menu/for-diet.jpg");
+  background-image: url("../img/background-menu/for-diet.jpg");
   background-size: cover;
   background-position: 80% 50%;
 }

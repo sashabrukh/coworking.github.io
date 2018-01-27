@@ -1,4 +1,5 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
 .team__bg {
   min-height: 650px;
   height: 100vh;
@@ -15,17 +16,31 @@
   margin-left: auto;
   background-color: $colGray09;
   display: flex;
-
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .team__item {
-  margin: 25vh 0 0 10vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .team__title {
-  display: inline-block;
   font-family: $fontGagalin;
   font-size: $textHuge;
   color: $colYellow;
   margin-bottom: 10vh;
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.accordeon-team__list {
+  margin-left: 25px;
+  @include tablets {
+    width: 30%;
+    margin: 0 auto;
+  }
 }

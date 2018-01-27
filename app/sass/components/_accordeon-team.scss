@@ -1,23 +1,31 @@
 @import '../abstracts/variables';
-.accordeon-team__team {
+@import '../abstracts/mixins';
+.accordeon-team {
   font-size: $textSmall;
   color: $colWhite;
   line-height: 24px;
 }
 
+.accordeon-team__list-item {
+  margin-bottom: 15px;
+}
+
 .accordeon-team__desc-area {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
   height: 0;
   overflow: hidden;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .accordeon-team__desc-avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-image: url('../../img/forsprite/our-team/1.jpg');
+  background-image: url('../img/our-team/1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 0%;
@@ -29,7 +37,10 @@
   position: relative;
   display: inline-block;
   font-family: $fontGagalin;
-  margin-bottom: 2vh;
+  margin-bottom: 15px;
+    @include tablets {
+      margin-left:10px;
+    }
   cursor: pointer;
   &:before {
     position: absolute;
@@ -66,11 +77,8 @@
 
 .accordeon-team__desc__text {
   width: 15vw;
-  flex-wrap: wrap;
-}
-
-.accordeon-team__desc-text-title,
-.accordeon-team__desc-text-item {
-  display: inline-block;
-  margin-bottom: 10px;
+  @include tablets {
+    text-align: center;
+    width: 100%;
+  }
 }

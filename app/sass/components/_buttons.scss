@@ -1,6 +1,7 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
 .btn {
-  padding: 13px 16px;
+  padding: 1.3rem 1.6rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -8,7 +9,7 @@
   border: none;
   background-color: $colOrange;
   color: $colWhite;
-  margin-right: 80px;
+  margin-right: 8rem;
   cursor: pointer;
   transition: all 0.25s;
   &:hover {
@@ -16,14 +17,18 @@
   }
 }
 
+.btn__delivery {
+  margin-right: 0;
+}
+
 .btn__down {
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 47%;
   transform: translateX(-50%);
   transform: rotate(-45deg);
-  padding: 15px;
-  border: 2px solid $colWhite;
+  padding: 1.5rem;
+  border: 0.2rem solid $colWhite;
   border-right: transparent;
   border-top: transparent;
   cursor: pointer;
@@ -36,8 +41,8 @@
 }
 
 .btn__more {
-  padding: 13px 16px;
-  margin-top: 17px;
+  padding: 1.3rem 1.6rem;
+  margin-top: 1.7rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -50,5 +55,23 @@
   transition: all 0.25s;
   &:hover {
     background-color: darken($colLightGray, 20%);
+  }
+  @include tablets {
+    margin-left: auto;
+  }
+}
+
+.btn__clear {
+  padding: 1.3rem 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: $colWhite;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    color: darken($colWhite, 20%);
   }
 }

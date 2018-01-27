@@ -1,0 +1,38 @@
+@import '../abstracts/variables';
+.footer__social {
+  margin: 10px;
+  fill: $colWhite;
+  width: 20px;
+  height: 20px;
+  &:hover {
+    fill: $colOrange;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.footer__phone {
+  fill: $colWhite;
+  width: 10px;
+  height: 10px;
+  fill: $colOrange;
+}
+
+.features__icon--meat {
+  width: 97px;
+  height: 89px;
+  fill: $colOrange;
+}
+
+.features__icon--hand {
+  width: 97px;
+  height: 89px;
+  fill: $colYellow;
+}
+
+.features__icon--natural {
+  width: 97px;
+  height: 89px;
+  fill: $colGreen;
+}

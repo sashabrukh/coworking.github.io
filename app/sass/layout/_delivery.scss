@@ -3,6 +3,7 @@
 .delivery__bg {
   min-height: 650px;
   height: 100vh;
+  width: 100%;
   background-image: url("../img/background-images/bg-order-form.jpg");
   background-size: cover;
   background-position: center center;
@@ -11,10 +12,8 @@
 
 .delivery__container {
   max-width: 1100px;
-  min-height: 650px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -34,15 +33,19 @@
   margin-top: 45px;
   display: block;
   width: 80vw;
-  min-height: 55vh;
-  border: 1px solid #ffc0cb;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  @include tablets {
+    flex-direction: column;
+  }
+  @include phones {
+    width: 100%;
+  }
 }
 
 .delivery__form-left {
-  border: 1px solid green;
   width: 45%;
   margin: 0 auto;
 }
@@ -50,14 +53,15 @@
 .delivery__item-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
 .delivery__item-input {
+  width: 100%;
   border: none;
   border-radius: 5px;
   padding: 5px;
-  width: 100%;
   height: 30px;
   font-size: $textSmall;
   outline: none;
@@ -69,6 +73,7 @@
 .delivery__block {
   flex: 1;
   margin-right: 20px;
+  text-align: left;
   &:last-child {
     margin-right: 0;
   }
@@ -77,15 +82,12 @@
 .delivery__block-title {
   font-size: $textSmall;
   color: $colWhite;
-  text-align: left;
-  padding: 10px;
+  padding: 5px;
 }
 
 .delivery__form__right {
-  border: 1px solid red;
   width: 45%;
   margin: 0 auto;
-  text-align: left;
 }
 
 .delivery__item-textarea {
@@ -97,12 +99,27 @@
   height: 90px;
   font-size: $textSmall;
   outline: none;
+  resize: none;
+  overflow: auto;
+  text-align: left;
   &:focus {
     border: 3px solid $colYellow;
   }
+  @include placecolor();
 }
 
-.delivery__block-inline {
-  display: inline; 
-  vertical-align: center;
+.delivery__item-radio,
+.delivery__block-title,
+.delivery__item-check {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+.delivery__item-radio,
+.delivery__item-check {
+  outline: 0;
+  &:hover {
+    outline: 0;
+  }
 }

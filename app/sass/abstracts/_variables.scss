@@ -1,8 +1,10 @@
 $colWhite: #ffffff;
 $colOrange: #e15431;
 $colYellow: #f6b641;
+$colGreen: #89c242;
 $colGray: #2f3234;
 $colLightGray: #6e6e6e;
+$colBlack: #191919;
 $colGray09: rgba(51, 54, 56, .9);
 $colGray04: rgba(51, 54, 56, .4);
 $textSmall: 1.4rem;
@@ -17,7 +19,8 @@ $fontGagalin: Gagalin,
 Arial,
 Helvetica,
 sans-serif;
-
+$tablets: 768px;
+$phones: 480px;
 $component-dimension: 180px;
 $timing: 2s;
 $color-shadow: lightgray;

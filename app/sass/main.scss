@@ -3,6 +3,7 @@
 @import 'abstracts/mixins';
 @import 'base/fonts';
 @import 'base/reset';
+@import 'base/sprite';
 @import 'layout/header.scss';
 @import 'layout/main-nav.scss';
 @import 'layout/promo.scss';
@@ -10,8 +11,8 @@
 @import 'layout/comments.scss';
 @import 'layout/menu.scss';
 @import 'layout/team.scss';
-@import 'layout/contacts.scss';
 @import 'layout/delivery.scss';
+@import 'layout/footer.scss';
 @import 'components/logo.scss';
 @import 'components/buttons.scss';
 @import 'components/radio-btn-slide.scss';

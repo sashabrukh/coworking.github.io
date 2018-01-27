@@ -1,9 +1,13 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
 .main-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  @include tablets {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -11,7 +15,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   font-weight: 500;
   font-size: $textSmall;
   text-transform: uppercase;
@@ -20,7 +24,7 @@
 .main-nav__item {
   cursor: pointer;
   margin-right: 4rem;
-  transition: all 0.45s;
+  transition: all 0.25s;
   &:after {
     position: absolute;
     right: 1.5rem;
