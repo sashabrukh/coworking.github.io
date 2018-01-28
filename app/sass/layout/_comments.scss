@@ -1,8 +1,7 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 .comments__bg {
-  min-height: 650px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .comments__container {
@@ -88,35 +87,33 @@
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: column;
   height: 90%;
   width: 70%;
-  margin: auto;
+  margin: 5vh auto;
   @include tablets {
     text-align: center;
   }
-    @include phones {
-      flex-direction: column;
-    }
+  @include phones {
+    margin: 25vh auto;
+  }
 }
 
 .comments__title {
   font-size: $textSmall;
   color: $colWhite;
   font-family: $fontGagalin;
-  margin-top: 5vh;
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
   @include tablets {
     text-align: center;
     flex: 1;
-    margin-top: 2.5vh;
   }
-    @include phones {
-      text-align: center;
-      flex: 1;
-      margin-top: 7.5vh;
-    }
+  @include phones {
+    text-align: center;
+    flex: 1;
+    letter-spacing: 1px;
+  }
 }
 
 .comments__text {

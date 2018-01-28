@@ -22,12 +22,16 @@
 }
 
 .main-nav__item {
-  cursor: pointer;
-  margin-right: 4rem;
-  transition: all 0.25s;
+  position: relative;
+  text-decoration: none;
+  color: $colWhite;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
   &:after {
     position: absolute;
-    right: 1.5rem;
+    top: 2px;
+    right: 15px;
     content: '';
     width: 0.5rem;
     height: 0.5rem;
@@ -36,19 +40,16 @@
     cursor: default;
     transition: all 0.25s;
   }
+}
+
+.main-nav__link {
+  cursor: pointer;
+  margin-right: 4rem;
+  transition: all 0.25s;
   &:hover {
     color: $colOrange;
   }
   &:hover:after {
     background-color: $colOrange;
   }
-}
-
-.main-nav__link {
-  position: relative;
-  text-decoration: none;
-  color: $colWhite;
-  list-style: none;
-  vertical-align: middle;
-  cursor: default;
 }

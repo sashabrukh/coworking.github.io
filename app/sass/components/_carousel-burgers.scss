@@ -1,0 +1,114 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.carousel-burgers__img-item {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.carousel-burgers__img,
+.carousel-burgers__desc {
+  margin: 0 auto;
+  flex: 1;
+}
+
+.carousel-burgers__desc {
+  text-align: left;
+}
+
+.carousel-burgers__desc-price {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-burgers__desc-title {
+  font-size: $textHuge;
+  color: $colWhite;
+  font-family: $fontGagalin;
+  margin: 2rem;
+  line-height: 6.4rem;
+}
+
+.carousel-burgers__desc-text {
+  font-size: $textSmall;
+  color: $colWhite;
+  margin: 2rem;
+  line-height: 2.4rem;
+}
+
+.carousel-burgers__desc-price-summ {
+  font-size: $textHuge;
+  color: $colOrange;
+  font-family: $fontGagalin;
+  line-height: 6.4rem;
+  margin: 2rem;
+}
+
+.carousel-burgers__desc-price-rubles {
+  font-size: $textBig;
+  text-transform: uppercase;
+  color: $colOrange;
+  font-family: $fontGagalin;
+  margin: 2rem 2rem 2rem 0;
+  line-height: 6.4rem;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.carousel-burgers__icon {
+  background-color: transparent;
+  width: 6rem;
+  height: 3rem;
+  fill: $colWhite;
+}
+
+.carousel-burgers__calories {
+  position: absolute;
+  left: 5vw;
+  bottom: 20vh;
+  text-align: center;
+}
+
+.carousel-burgers__icon--cal {
+  width: 6rem;
+  height: 6rem;
+  fill-opacity: 0.5;
+}
+
+.carousel-burgers__calories-item {
+  font-family: $fontGagalin;
+  font-size: $textSmall;
+  color: $colWhite;
+  line-height: 2.8rem;
+}
+
+.carousel-burgers__calories-item--in {
+  margin-top: -3.4rem;
+  font-size: $textMedium;
+}
+
+.carousel-burgers__menu {
+  position: absolute;
+  left: 5vw;
+  top: 20vh;
+  text-align: center;
+  background-color: $colOrange;
+  border: none;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    border: 0.2rem solid $colGray;
+  }
+}
+
+.carousel-burgers__icon--menu {
+  width: 6rem;
+  height: 6rem;
+}
+
+.carousel-burgers__menu-title {
+  font-family: $fontGagalin;
+  font-size: $textSmall;
+  color: $colWhite;
+}

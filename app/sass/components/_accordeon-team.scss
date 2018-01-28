@@ -4,6 +4,11 @@
   font-size: $textSmall;
   color: $colWhite;
   line-height: 24px;
+  width: 100%;
+}
+
+.accordeon-team__list {
+  width: 90%;
 }
 
 .accordeon-team__list-item {
@@ -18,6 +23,8 @@
   overflow: hidden;
   @include tablets {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -31,6 +38,13 @@
   background-position: 60% 0%;
   margin-right: 2vw;
   margin-bottom: 2vh;
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.accordeon-team__desc-text-title {
+  font-weight: bold;
 }
 
 .accordeon-team__desc-people {
@@ -38,14 +52,16 @@
   display: inline-block;
   font-family: $fontGagalin;
   margin-bottom: 15px;
-    @include tablets {
-      margin-left:10px;
-    }
+  @include tablets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   cursor: pointer;
   &:before {
     position: absolute;
-    left: -25px;
-    top: 8px;
+    left: -2.5rem;
+    top: 0.8rem;
     content: "";
     width: 0;
     height: 0;
@@ -53,6 +69,15 @@
     border-top-color: $colYellow;
     border-bottom: 0;
     cursor: pointer;
+    @include tablets {
+      left: 13rem;
+      top: 1.2rem;
+    }
+    @include phones {
+      left: 13rem;
+      top: 1.6rem;
+      z-index: 10;
+    }
   }
   &.accordeon-team__desc-people--active {
     color: $colYellow;
@@ -72,6 +97,16 @@
     border-bottom-color: $colYellow;
     border-top: 0;
     cursor: pointer;
+    cursor: pointer;
+    @include tablets {
+      left: 13rem;
+      top: 1.2rem;
+    }
+    @include phones {
+      left: 13rem;
+      top: 1.6rem;
+      z-index: 10;
+    }
   }
 }
 
