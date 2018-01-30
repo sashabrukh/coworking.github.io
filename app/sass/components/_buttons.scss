@@ -108,7 +108,7 @@
   left: 1%;
   z-index: 10;
   @include bigscreen {
-    left: 15%;
+    left: 15vw;
   }
 }
 
@@ -119,6 +119,6 @@
   right: 1%;
   z-index: 10;
   @include bigscreen {
-    right: 15%;
+    right: 15vw;
   }
 }

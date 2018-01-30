@@ -405,10 +405,9 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -428,7 +427,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .features__list {
-    width: 70%;
+    width: 90%;
     margin-right: 0;
     margin-bottom: 1vh; } }
 
@@ -571,7 +570,8 @@ a {
 
 @media screen and (max-width: 480px) {
   .comments__item {
-    margin: 25vh auto; } }
+    margin: 25vh auto;
+    opacity: 1; } }
 
 .comments__title {
   font-size: 1.4rem;
@@ -594,7 +594,9 @@ a {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    letter-spacing: 1px; } }
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+    font-size: 2.41rem; } }
 
 .comments__text {
   font-size: 1.4rem;
@@ -948,7 +950,7 @@ a {
   height: 1rem;
   fill: #e15431; }
 
-.mobile-menu-btnContainer {
+.mobile-menu-btn-container {
   z-index: 9999999; }
 
 .mobile-menu {
@@ -968,7 +970,7 @@ a {
   .mobile-menu {
     top: 22px; } }
 
-.mobile-menu-btnContainer {
+.mobile-menu-btn-container {
   right: 1rem;
   position: absolute;
   top: 0.2rem;
@@ -1101,19 +1103,19 @@ a {
        -o-transition-delay: 0s;
           transition-delay: 0s; }
 
-.mobile-menu-checkbox:checked ~ .mobile-menu-btnContainer .mobile-menu-btn::after {
+.mobile-menu-checkbox:checked ~ .mobile-menu-btn-container .mobile-menu-btn::after {
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   top: -0.4rem; }
 
-.mobile-menu-checkbox:checked ~ .mobile-menu-btnContainer .mobile-menu-btn::before {
+.mobile-menu-checkbox:checked ~ .mobile-menu-btn-container .mobile-menu-btn::before {
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   top: 1.2rem; }
 
-.mobile-menu-checkbox:checked ~ .mobile-menu-btnContainer .mobile-menu-btn {
+.mobile-menu-checkbox:checked ~ .mobile-menu-btn-container .mobile-menu-btn {
   background: rgba(255, 255, 255, 0); }
 
 .best-burgers__bg {
@@ -1152,6 +1154,36 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 5vw; }
+
+@media screen and (max-width: 768px) {
+  .best-burgers__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    margin: 20rem; } }
+
+@media screen and (max-width: 480px) {
+  .best-burgers__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 20rem; } }
 
 .main-logo {
   padding-left: 1.77rem;
@@ -1278,7 +1310,7 @@ a {
 
 @media screen and (min-width: 1500px) {
   .carousel-burgers__btn--prev {
-    left: 15%; } }
+    left: 15vw; } }
 
 .carousel-burgers__btn--next {
   position: absolute;
@@ -1291,7 +1323,7 @@ a {
 
 @media screen and (min-width: 1500px) {
   .carousel-burgers__btn--next {
-    right: 15%; } }
+    right: 15vw; } }
 
 .btn__slide-container {
   position: fixed;
@@ -1607,8 +1639,10 @@ a {
   background-position: 80% 50%; }
 
 .carousel-burgers__img-item {
+  display: inline-block;
   margin: 0 auto;
-  width: 95%; }
+  width: 40rem;
+  height: 30rem; }
 
 .carousel-burgers__img,
 .carousel-burgers__desc {
@@ -1620,6 +1654,10 @@ a {
 
 .carousel-burgers__desc {
   text-align: left; }
+
+@media screen and (max-width: 768px) {
+  .carousel-burgers__desc {
+    text-align: center; } }
 
 .carousel-burgers__desc-price {
   display: -webkit-inline-box;
@@ -1676,6 +1714,16 @@ a {
   bottom: 20vh;
   text-align: center; }
 
+@media screen and (max-width: 768px) {
+  .carousel-burgers__calories {
+    left: 42rem;
+    top: -8rem; } }
+
+@media screen and (max-width: 480px) {
+  .carousel-burgers__calories {
+    left: 36rem;
+    top: -8rem; } }
+
 .carousel-burgers__icon--cal {
   width: 6rem;
   height: 6rem;
@@ -1707,11 +1755,109 @@ a {
 .carousel-burgers__menu:hover {
   border: 0.2rem solid #2f3234; }
 
+@media screen and (max-width: 768px) {
+  .carousel-burgers__menu {
+    left: -2rem;
+    top: -8rem;
+    height: 8rem;
+    width: 8rem; } }
+
+@media screen and (max-width: 480px) {
+  .carousel-burgers__menu {
+    left: 0;
+    top: -8rem;
+    height: 8rem;
+    width: 8rem; } }
+
 .carousel-burgers__icon--menu {
   width: 6rem;
   height: 6rem; }
+
+@media screen and (max-width: 768px) {
+  .carousel-burgers__icon--menu {
+    height: 5rem;
+    width: 5rem; } }
 
 .carousel-burgers__menu-title {
   font-family: Gagalin, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: #ffffff; }
+
+.carousel-burgers__menu-list {
+  position: absolute;
+  left: 13vw;
+  top: 20vh;
+  min-width: 27rem;
+  min-height: 30rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem; }
+
+@media screen and (max-width: 768px) {
+  .carousel-burgers__menu-list {
+    left: 6rem;
+    top: -8rem;
+    height: 8rem;
+    width: 8rem; } }
+
+@media screen and (max-width: 480px) {
+  .carousel-burgers__menu-list {
+    left: 8rem;
+    top: -8rem;
+    height: 8rem;
+    width: 8rem; } }
+
+.carousel-burgers__menu-item {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.carousel-burgers__menu-icon {
+  width: 5rem;
+  height: 4rem; }
+
+@media screen and (max-width: 768px) {
+  .carousel-burgers__menu-icon {
+    width: 4rem;
+    height: 3rem; } }
+
+.carousel-burgers__icon--beef {
+  fill: #e15431; }
+
+.carousel-burgers__icon--buns {
+  fill: #f6b641; }
+
+.carousel-burgers__icon--salad {
+  fill: #89c242; }
+
+.carousel-burgers__icon--sauce {
+  fill: #e15431; }
+
+.carousel-burgers__icon--cucumber {
+  fill: #89c242; }
+
+.carousel-burgers__icon--cheese {
+  fill: #f6b641; }
+
+.carousel-burgers__menu-name,
+.carousel-burgers__menu-weight {
+  color: #191919;
+  font-size: 1.4rem; }
+
+.carousel-burgers__menu-name {
+  margin-left: -5.5rem; }

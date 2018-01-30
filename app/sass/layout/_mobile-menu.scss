@@ -1,6 +1,6 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
-.mobile-menu-btnContainer {
+.mobile-menu-btn-container {
   z-index: 9999999;
 }
 
@@ -18,7 +18,7 @@
   @include phones {
     top: 22px;
   }
-  &-btnContainer {
+  &-btn-container {
     right: 1rem;
     position: absolute;
     top: 0.2rem;
@@ -120,17 +120,17 @@
       height: 100%;
       transition-delay: 0s
     }
-    &:checked~.mobile-menu-btnContainer .mobile-menu-btn::after {
+    &:checked~.mobile-menu-btn-container .mobile-menu-btn::after {
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
       top: -0.4rem;
     }
-    &:checked~.mobile-menu-btnContainer .mobile-menu-btn::before {
+    &:checked~.mobile-menu-btn-container .mobile-menu-btn::before {
       transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       top: 1.2rem;
     }
-    &:checked~.mobile-menu-btnContainer .mobile-menu-btn {
+    &:checked~.mobile-menu-btn-container .mobile-menu-btn {
       background: rgba(255, 255, 255, .0);
     }
   }

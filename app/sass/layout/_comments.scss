@@ -97,6 +97,7 @@
   }
   @include phones {
     margin: 25vh auto;
+    opacity: 1;
   }
 }
 
@@ -112,7 +113,9 @@
   @include phones {
     text-align: center;
     flex: 1;
-    letter-spacing: 1px;
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+    font-size: $textMedium;
   }
 }
 
