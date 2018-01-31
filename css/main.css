@@ -1261,11 +1261,6 @@ a {
   border-right: transparent;
   border-top: transparent; }
 
-@media screen and (max-width: 768px) {
-  .btn__down {
-    top: 85%;
-    left: 47%; } }
-
 .btn__more {
   padding: 1.3rem 1.6rem;
   margin-top: 1.7rem;
