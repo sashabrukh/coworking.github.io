@@ -8,6 +8,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+        overflow: hidden;
       }
 
       .delivery__container {
@@ -29,9 +30,7 @@
         @include tablets {
           font-size: $textBig;
         }
-        @include phones {
-
-        }
+        @include phones {}
       }
 
       .delivery__form {

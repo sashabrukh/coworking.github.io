@@ -2,6 +2,7 @@
 @import '../abstracts/mixins';
 .comments__bg {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .comments__container {

@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .menu__container {
@@ -23,8 +24,8 @@
   margin-top: 15vh;
   margin-left: 15vw;
   z-index: -1;
-      @include tablets {
-          margin-top: 5vh;
-          margin-left: 5vw;
-      }
+  @include tablets {
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
 }

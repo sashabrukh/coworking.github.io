@@ -32,6 +32,7 @@
 .promo__text {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .promo__title {
