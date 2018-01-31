@@ -69,7 +69,7 @@
 .carousel-burgers__calories {
   position: absolute;
   left: 5vw;
-  bottom: 20vh;
+  bottom: 24vh;
   text-align: center;
   @include tablets {
     left: 42rem;
@@ -99,10 +99,22 @@
   font-size: $textMedium;
 }
 
-.carousel-burgers__menu {
+.carousel-burgers__container {
   position: absolute;
-  left: 5vw;
-  top: 20vh;
+  left: 4vw;
+  top: 23vh;
+  display: flex;
+  @include tablets {
+    top: -8rem;
+    left: -2.5rem;
+  }
+  @include phones {
+    top: -8rem;
+    left: 0;
+  }
+}
+
+.carousel-burgers__menu {
   text-align: center;
   background-color: $colOrange;
   border: none;
@@ -112,18 +124,6 @@
   cursor: pointer;
   &:hover {
     border: 0.2rem solid $colGray;
-  }
-  @include tablets {
-    left: -2rem;
-    top: -8rem;
-    height: 8rem;
-    width: 8rem;
-  }
-  @include phones {
-    left: 0;
-    top: -8rem;
-    height: 8rem;
-    width: 8rem;
   }
 }
 
@@ -143,25 +143,16 @@
 }
 
 .carousel-burgers__menu-list {
-  position: absolute;
-  left: 13vw;
-  top: 20vh;
-  min-width: 27rem;
-  min-height: 30rem;
   background-color: $colWhite08;
   border-radius: 0.5rem;
-  @include tablets {
-    left: 6rem;
-    top: -8rem;
-    height: 8rem;
-    width: 8rem;
-  }
-  @include phones {
-    left: 8rem;
-    top: -8rem;
-    height: 8rem;
-    width: 8rem;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-burgers__menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .carousel-burgers__menu-item {
@@ -209,8 +200,15 @@
 .carousel-burgers__menu-weight {
   color: $colBlack;
   font-size: $textSmall;
+  padding: 0.5rem;
+}
+
+.carousel-burgers__menu-icon {
+  margin-right: 3rem;
 }
 
 .carousel-burgers__menu-name {
-  margin-left: -5.5rem;
+  margin-right: 6rem;
 }
+
+.carousel-burgers__menu-name {}

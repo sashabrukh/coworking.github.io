@@ -49,6 +49,7 @@
     border-top: transparent;
   }
   @include tablets {
+    top: 85%;
     left: 47%;
   }
 }
