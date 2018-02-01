@@ -8,6 +8,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  @include fixingPromo {
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+  }
   @include tablets {
     flex-direction: column;
     margin-top: 0;
@@ -40,6 +48,11 @@
   font-family: $fontGagalin;
   color: $colYellow;
   line-height: 8.5rem;
+  @include fixingPromo {
+    flex-wrap: wrap;
+    margin-top: 0;
+    text-align: center;
+  }
   @include tablets {
     flex-wrap: wrap;
     margin-top: 0;
@@ -53,6 +66,9 @@
   color: $colWhite;
   line-height: 8.5rem;
   text-transform: lowercase;
+  @include fixingPromo {
+    text-align: center;
+  }
   @include tablets {
     text-align: center;
   }

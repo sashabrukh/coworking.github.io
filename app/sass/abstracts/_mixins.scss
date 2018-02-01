@@ -13,6 +13,12 @@
 	}
 };
 
+@mixin fixingPromo {
+		@media screen and (max-width: $fixingPromo) {
+			@content
+		}
+};
+
 @mixin tablets {
 	@media screen and (max-width: $tablets) {
 		@content

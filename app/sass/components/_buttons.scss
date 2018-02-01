@@ -48,6 +48,12 @@
     border-right: transparent;
     border-top: transparent;
   }
+  @include fixingPromo {
+    left: 47%;
+  }
+  @include tablets {
+    left: 47%;
+  }
 }
 
 .btn__more {
