@@ -677,8 +677,9 @@ a {
     margin-left: 5vw; } }
 
 .team__bg {
+  position: relative;
   min-height: 650px;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/background-images/bg-team.jpg");
   -webkit-background-size: cover;
           background-size: cover;
@@ -687,10 +688,12 @@ a {
   overflow: hidden; }
 
 .team__container {
+  position: absolute;
+  top: 0;
+  right: 0;
   min-height: 650px;
   height: 100vh;
   width: 50%;
-  margin-left: auto;
   background-color: rgba(51, 54, 56, 0.9);
   display: -webkit-box;
   display: -webkit-flex;
@@ -1093,7 +1096,10 @@ a {
        -o-transition-delay: .5s;
           transition-delay: .5s;
   overflow: hidden;
-  background-color: rgba(51, 54, 56, 0.9); }
+  background-color: rgba(51, 54, 56, 0.9);
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; }
 
 .mobile-menu-list {
   -webkit-transition: .5s;
@@ -1140,12 +1146,6 @@ a {
 
 .mobile-menu-checkbox {
   display: none; }
-
-.mobile-menu-checkbox:checked ~ .mobile-menu-container {
-  height: 100%;
-  -webkit-transition-delay: 0s;
-       -o-transition-delay: 0s;
-          transition-delay: 0s; }
 
 .mobile-menu-checkbox:checked ~ .mobile-menu-btn-container .mobile-menu-btn::after {
   -ms-transform: rotate(-45deg);
@@ -1392,7 +1392,7 @@ a {
 .btn__slide-container {
   position: fixed;
   top: 12vh;
-  right: 1vw;
+  right: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1659,23 +1659,16 @@ a {
   background-color: rgba(51, 54, 56, 0.4); }
 
 .accordeon-menu__list-title {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 100%;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -1709,7 +1702,7 @@ a {
   background-image: url("../img/background-menu/for-meat.jpg");
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 85% 50%; }
 
 .accordeon-menu__list-btn--vegan {
   background-image: url("../img/background-menu/for-vegan.jpg");
@@ -1886,7 +1879,10 @@ a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
 
 .carousel-burgers__menu-item {
   display: -webkit-box;

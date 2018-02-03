@@ -79,6 +79,7 @@
     transition-delay: .5s;
     overflow: hidden;
     background-color: $colGray09;
+    transition: all 0.25s;
   }
   &-list {
     transition: .5s;
@@ -116,10 +117,6 @@
   }
   &-checkbox {
     display: none;
-    &:checked~.mobile-menu-container {
-      height: 100%;
-      transition-delay: 0s
-    }
     &:checked~.mobile-menu-btn-container .mobile-menu-btn::after {
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
