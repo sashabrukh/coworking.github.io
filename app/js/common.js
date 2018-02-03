@@ -1,15 +1,17 @@
 // MOBILE MENU
 
-const mobileMenuCheck = document.querySelector('.mobile-menu-checkbox');
-const mobileMenuCont = document.querySelector('.mobile-menu-container');
+const mobileMenuCheck = document.querySelector('#checkbox');
+const mobileMenuCont = document.querySelector('#mobile-cont');
 
 mobileMenuCheck.addEventListener('click', function () {
   let activeClass = mobileMenuCont.classList.contains('mobile-menu-container--active');
   if (!activeClass) {
     mobileMenuCont.classList.add('mobile-menu-container--active');
+    document.body.style.overflow = 'hidden';
   }
   if (activeClass) {
     mobileMenuCont.classList.remove('mobile-menu-container--active');
+    document.body.style.overflow = 'auto';
   }
 });
 
@@ -40,7 +42,6 @@ for (let i = 0; i < accoMenuBtn.length; i++) {
       let activeClass = accoMenuDesc[y].classList.contains('accordeon-menu__hidden-desc--active')
       if (!activeClass) {
         accoMenuDesc[y].classList.add('accordeon-menu__hidden-desc--active');
-        document.body.style.overflow = 'hidden';
       }
       if (activeClass) {
         accoMenuDesc[y].classList.remove('accordeon-menu__hidden-desc--active');
@@ -70,9 +71,9 @@ burgerMenu.addEventListener('click', function () {
 
 // SLIDER
 
-const sliderLeft = document.querySelector('.carousel-burgers__btn--prev');
-const sliderRight = document.querySelector('.carousel-burgers__btn--next');
-const slider = document.querySelector('.best-burgers__container');
+const sliderLeft = document.querySelector('#carousel-prev');
+const sliderRight = document.querySelector('#carousel-next');
+const slider = document.querySelector('#burger-container');
 const minRight = 0;
 const maxRight = 5500;
 const step = 1100;

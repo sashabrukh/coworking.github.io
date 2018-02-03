@@ -61,9 +61,10 @@
 						<nav class="mobile-menu">
 							<input type="checkbox" id="checkbox" class="mobile-menu-checkbox">
 							<label for="checkbox" class="mobile-menu-btn-container">
-								<div class="mobile-menu-btn"></div>
+								<div class="mobile-menu-btn">
+								</div>
 							</label>
-							<div class="mobile-menu-container">
+							<div class="mobile-menu-container" id="mobile-cont">
 								<ul class="mobile-menu-list">
 									<li class="mobile-menu-item">
 										<a href="#" class="mobile-menu-link">О нас</a>
@@ -176,7 +177,7 @@
 		<section class="best-burgers__bg">
 			<div class="best-burgers-slider">
 
-				<div class="best-burgers__container">
+				<div class="best-burgers__container" id="burger-container">
 					<div class="carousel-burgers__img">
 						<img src="./img/forsprite/png/chiken-burger.png" alt="burger" class="carousel-burgers__img-item">
 					</div>
@@ -292,12 +293,12 @@
 				</div>
 			</div>
 
-			<button class="carousel-burgers__btn carousel-burgers__btn--prev">
+			<button class="carousel-burgers__btn carousel-burgers__btn--prev" id='carousel-prev'>
 				<svg class="carousel-burgers__icon carousel-burgers__icon--arrows">
 					<use xlink:href="#arrow-scroll"></use>
 				</svg>
 			</button>
-			<button class="carousel-burgers__btn carousel-burgers__btn--next">
+			<button class="carousel-burgers__btn carousel-burgers__btn--next" id='carousel-next'>
 				<svg class="carousel-burgers__icon carousel-burgers__icon--arrows">
 					<use xlink:href="#arrow-scroll"></use>
 				</svg>
@@ -313,7 +314,7 @@
 					<div class="accordeon-team">
 						<ul class="accordeon-team__list">
 							<li class="accordeon-team__list-item">
-								<div class="accordeon-team__desc-people">
+								<div class="accordeon-team__desc-people" id="acco-team">
 									Дэниэл Редклиф
 								</div>
 								<div class="accordeon-team__desc-area">
@@ -331,7 +332,7 @@
 								</div>
 							</li>
 							<li class="accordeon-team__list-item">
-								<div class="accordeon-team__desc-people">
+								<div class="accordeon-team__desc-people" id="acco-team">
 									Дэниэл Редклиф
 								</div>
 								<div class="accordeon-team__desc-area">
@@ -349,7 +350,7 @@
 								</div>
 							</li>
 							<li class="accordeon-team__list-item">
-								<div class="accordeon-team__desc-people">
+								<div class="accordeon-team__desc-people" id="acco-team">
 									Дэниэл Редклиф
 								</div>
 								<div class="accordeon-team__desc-area">
@@ -367,7 +368,7 @@
 								</div>
 							</li>
 							<li class="accordeon-team__list-item">
-								<div class="accordeon-team__desc-people">
+								<div class="accordeon-team__desc-people" id="acco-team">
 									Дэниэл Редклиф
 								</div>
 								<div class="accordeon-team__desc-area">
@@ -439,9 +440,9 @@
 									dolorem beatae nihil quae voluptatum.</p>
 							</div>
 						</li>
+
 					</ul>
 				</div>
-			</div>
 		</section>
 
 		<section class="comments__bg" id="comments">
