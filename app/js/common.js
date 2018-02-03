@@ -19,14 +19,16 @@ for (let i = 0; i < accoTeam.length; i++) {
 const accoMenuBtn = document.getElementsByClassName('accordeon-menu__list-btn');
 const accoMenuDesc = document.getElementsByClassName('accordeon-menu__hidden-desc');
 
-for (let i = 0; i < accoTeam.length; i++) {
-  accoTeam[i].addEventListener('click', function () {
-    let activeClass = this.classList.contains('accordeon-team__desc-people--active');
-    if (!activeClass) {
-      this.classList.add('accordeon-team__desc-people--active');
-    }
-    if (activeClass) {
-      this.classList.remove('accordeon-team__desc-people--active');
+for (let i = 0; i < accoMenuBtn.length; i++) {
+  accoMenuBtn[i].addEventListener('click', function() {
+    for (let y = 0; y < accoMenuDesc.length; y++) {
+      let activeClass = accoMenuDesc[y].classList.contains('accordeon-menu__hidden-desc--active')
+      if (!activeClass) {
+        accoMenuDesc[y].classList.add('accordeon-menu__hidden-desc--active');
+      }
+      if (activeClass) {
+        accoMenuDesc[y].classList.remove('accordeon-menu__hidden-desc--active');
+      }
     }
   });
 }
@@ -36,7 +38,7 @@ for (let i = 0; i < accoTeam.length; i++) {
 const sliderMenu = document.querySelector('carousel-burgers__menu');
 const sliderMenuDesc = document.querySelector('carousel-burgers__menu-list');
 const minOp = 0;
-const maxOp = 2;
+const maxOp = 1;
 const stepOp = 1;
 let currentOp = 0;
 
