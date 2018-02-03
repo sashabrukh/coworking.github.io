@@ -6,43 +6,44 @@
   right: 0px;
   min-height: 650px;
   height: 100vh;
-  width: 100%;
 }
 
 .accordeon-menu__list {
-  min-height: 650px;
-  height: 100vh;
   display: flex;
   justify-content: flex-end;
+  height: 100%;
 }
 
-.accordeon-menu__list-item {
-  width: 5.75vw;
+.accordeon-menu__list-btn {
+  display: flex;
+  width: 5vw;
   cursor: pointer;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 5.75vw;
-    height: 100%;
-    background-color: $colGray04;
-  }
+  position: relative;
   &:hover:before {
-    background-color: darken($colGray04, 20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-color: $colGray04;
   }
 }
 
 .accordeon-menu__list-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transform: rotate(-90deg);
   font-family: $fontGagalin;
   font-size: $textBig;
   color: $colWhite;
-  transform: rotate(-90deg);
-  margin-top: 60vh;
-  padding: 0px;
-}
-
-.accordeon-menu__list-title-rotate {
-  display: inline-block;
-  line-height: 0;
 }
 
 .accordeon-menu__hidden-desc {
@@ -52,28 +53,28 @@
   background-color: $colGray09;
   width: 0;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all .25s;
   &.accordeon-menu__hidden-desc--active {
+    padding: 2rem;
     width: 35vw;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem 2rem;
   }
-
 }
 
-.accordeon-menu__list-item--meat {
+.accordeon-menu__list-btn--meat {
   background-image: url("../img/background-menu/for-meat.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.accordeon-menu__list-item--vegan {
+.accordeon-menu__list-btn--vegan {
   background-image: url("../img/background-menu/for-vegan.jpg");
   background-size: cover;
   background-position: 90% 50%;
 }
 
-.accordeon-menu__list-item--diet {
+.accordeon-menu__list-btn--diet {
   background-image: url("../img/background-menu/for-diet.jpg");
   background-size: cover;
   background-position: 80% 50%;

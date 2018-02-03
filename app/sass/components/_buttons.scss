@@ -109,7 +109,7 @@
   transform: rotate(90deg);
   top: 50%;
   left: 1%;
-  z-index: 10;
+  z-index: 10000;
   @include bigscreen {
     left: 15vw;
   }
@@ -120,7 +120,7 @@
   transform: rotate(-90deg);
   top: 50%;
   right: 1%;
-  z-index: 10;
+  z-index: 10000;
   @include bigscreen {
     right: 15vw;
   }
