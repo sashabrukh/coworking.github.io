@@ -81,6 +81,9 @@
     background-color: $colGray09;
     transition: all 0.25s;
   }
+  &-container--active {
+    height: 100%;
+  }
   &-list {
     transition: .5s;
     transition-delay: .5s;

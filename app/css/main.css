@@ -1101,6 +1101,9 @@ a {
   -o-transition: all 0.25s;
   transition: all 0.25s; }
 
+.mobile-menu-container--active {
+  height: 100%; }
+
 .mobile-menu-list {
   -webkit-transition: .5s;
   -o-transition: .5s;
