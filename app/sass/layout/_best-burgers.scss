@@ -3,7 +3,7 @@
 .best-burgers__bg {
   min-height: 650px;
   height: 100vh;
-  background-image: url("../img/background-images/bg-best-burgers.jpg");
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   display: flex;
   justify-content: center;
   position: relative;
@@ -11,12 +11,12 @@
 }
 
 .best-burgers-slider {
-    position: relative;
-    max-width: 1100px;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .best-burgers__container {
@@ -28,7 +28,6 @@
   justify-content: center;
   align-items: center;
   padding: 0 5vw;
-  border: 1px solid red;
   @include tablets {
     flex-direction: column;
     text-align: center;

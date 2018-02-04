@@ -29,17 +29,17 @@
 									</a>
 								</li>
 								<li class="main-nav__item">
-									<a href="" class="main-nav__link">
+									<a href="#burgers" class="main-nav__link">
 										Бургеры
 									</a>
 								</li>
-								<li class="main-nav__item">
-									<a href="" class="main-nav__link">
+								<li href="#burgers" class="main-nav__item">
+									<a href="#team" class="main-nav__link">
 										Команда
 									</a>
 								</li>
 								<li class="main-nav__item">
-									<a href="" class="main-nav__link">
+									<a href="#menu" class="main-nav__link">
 										Меню
 									</a>
 								</li>
@@ -49,7 +49,7 @@
 									</a>
 								</li>
 								<li class="main-nav__item">
-									<a href="" class="main-nav__link">
+									<a href="#contacts" class="main-nav__link">
 										Контакты
 									</a>
 								</li>
@@ -67,22 +67,22 @@
 							<div class="mobile-menu-container" id="mobile-cont">
 								<ul class="mobile-menu-list">
 									<li class="mobile-menu-item">
-										<a href="#" class="mobile-menu-link">О нас</a>
+										<a href="#features" class="mobile-menu-link">О нас</a>
 									</li>
 									<li class="mobile-menu-item">
-										<a href="#" class="mobile-menu-link">Бургеры</a>
+										<a href="burgers" class="mobile-menu-link">Бургеры</a>
 									</li>
 									<li class="mobile-menu-item">
-										<a href="#" class="mobile-menu-link">Команда</a>
+										<a href="team" class="mobile-menu-link">Команда</a>
 									</li>
 									<li class="mobile-menu-item">
-										<a href="#" class="mobile-menu-link">Меню</a>
+										<a href="menu" class="mobile-menu-link">Меню</a>
 									</li>
 									<li class="mobile-menu-item">
-										<a href="#" class="mobile-menu-link">Отзывы</a>
+										<a href="comments" class="mobile-menu-link">Отзывы</a>
 									</li>
 									<li class="mobile-menu-item">
-										<a href="#" class="mobile-menu-link">Контакты</a>
+										<a href="contacts" class="mobile-menu-link">Контакты</a>
 									</li>
 								</ul>
 							</div>
@@ -174,7 +174,7 @@
 			</div>
 		</section>
 
-		<section class="best-burgers__bg">
+		<section class="best-burgers__bg" id="burgers">
 			<div class="best-burgers-slider">
 
 				<div class="best-burgers__container" id="burger-container">
@@ -305,7 +305,7 @@
 			</button>
 		</section>
 
-		<section class="team__bg">
+		<section class="team__bg" id="team">
 			<div class="team__container">
 				<div class="team__item">
 					<h2 class="team__title">
@@ -391,14 +391,14 @@
 			</div>
 		</section>
 
-		<section class="menu__bg">
+		<section class="menu__bg" id="menu">
 			<div class="menu__container">
 				<h2 class="menu__title">
 					Меню
 				</h2>
 				<div class="accordeon-menu__desc">
 					<ul class="accordeon-menu__list">
-						<button class="accordeon-menu__list-btn accordeon-menu__list-btn--meat">
+						<button class="accordeon-menu__list-btn accordeon-menu__list-btn--meat" id="meat">
 							<div class="accordeon-menu__list-title">Для&nbsp;мясоедов</div>
 						</button>
 						<li class="accordeon-menu__hidden-desc">
@@ -412,7 +412,7 @@
 									dolorem beatae nihil quae voluptatum.</p>
 							</div>
 						</li>
-						<button class="accordeon-menu__list-btn accordeon-menu__list-btn--vegan">
+						<button class="accordeon-menu__list-btn accordeon-menu__list-btn--vegan" id="vegan">
 							<div class="accordeon-menu__list-title">Вегитарианское</div>
 						</button>
 						<li class="accordeon-menu__hidden-desc">
@@ -426,7 +426,7 @@
 									dolorem beatae nihil quae voluptatum.</p>
 							</div>
 						</li>
-						<button class="accordeon-menu__list-btn accordeon-menu__list-btn--diet">
+						<button class="accordeon-menu__list-btn accordeon-menu__list-btn--diet" id="diet">
 							<div class="accordeon-menu__list-title">Диетическое</div>
 						</button>
 						<li class="accordeon-menu__hidden-desc">
@@ -562,7 +562,7 @@
 			</div>
 		</section>
 
-		<section class="delivery__bg">
+		<section class="delivery__bg" id="contacts">
 			<div class="delivery__container">
 				<div class="delivery__title">
 					Закажите доставку
@@ -636,6 +636,9 @@
 		</section>
 
 		<section class="footer__bg">
+			<div class="footer__map" id="map">
+
+			</div>
 			<div class="footer-container">
 				<footer class="footer">
 					<div class="footer__contacts">
@@ -647,7 +650,7 @@
 							<use xlink:href="#phone"></use>
 						</svg>
 						<span class="footer__phone">
-							+7 (812) 377-13-77
+							<a class="footer__phone-item" href="tel:">+7 (812) 377-13-77</a>
 						</span>
 					</div>
 					<div class="footer__socials">
@@ -666,7 +669,7 @@
 					</div>
 				</footer>
 			</div>
-		</section>
+		</sectionc>
 
 		</div>
 
@@ -868,9 +871,11 @@
 			</svg>
 
 		</div>
-
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/libs.min.js"></script>
 		<script src="js/common.js"></script>
+
+
 
 </body>
 
