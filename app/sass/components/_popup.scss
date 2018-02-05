@@ -1,0 +1,60 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.popup {
+  display: none;
+}
+
+.full-review {
+  padding: 2.5rem 2rem;
+  position: relative;
+}
+
+.full-review__title {
+  font-family: $fontGagalin;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.full-review__content {
+  font-size: 1.4rem;
+}
+
+.full-review__close {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  opacity: .7;
+  transition: .3s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.status-popup__inner {
+  padding: 2rem;
+  text-align: center;
+}
+
+.status-popup__message {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.status-popup {
+  width: 24rem;
+}
+
+.error-message {
+  color: $colRed;
+}

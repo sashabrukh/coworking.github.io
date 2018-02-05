@@ -13,8 +13,8 @@
 	}
 };
 
-@mixin fixingPromo {
-		@media screen and (max-width: $fixingPromo) {
+@mixin mediumscreen {
+		@media screen and (max-width: $mediumscreen) {
 			@content
 		}
 };

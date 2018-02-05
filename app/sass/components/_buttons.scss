@@ -23,6 +23,10 @@
   }
 }
 
+a.btn {
+  padding: 1.6rem 1.6rem;
+}
+
 .btn__carousel-burgers {
   margin: 0;
 }
@@ -48,7 +52,7 @@
     border-right: transparent;
     border-top: transparent;
   }
-  @include fixingPromo {
+  @include mediumscreen {
     left: 47%;
   }
   @include tablets {

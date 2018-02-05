@@ -55,13 +55,13 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="btn">
+                    <a class="btn" href="#contacts">
                         Заказать
-                    </button>
+                    </a>
                     <nav class="mobile-menu">
                         <input type="checkbox" id="checkbox" class="mobile-menu-checkbox">
                         <label for="checkbox" class="mobile-menu-btn-container">
-                            <div class="mobile-menu-btn"></div>
+                            <div class="mobile-menu-btn" id="mobile-btn"></div>
                         </label>
                         <div class="mobile-menu-container" id="mobile-cont">
                             <ul class="mobile-menu-list">
@@ -198,9 +198,9 @@
                         <div class="carousel-burgers__desc-price-rubles">
                             рублей
                         </div>
-                        <button class="btn btn__carousel-burgers">
+                        <a class="btn btn__carousel-burgers" href="#contacts">
                             Заказать
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="carousel-burgers__container">
@@ -650,9 +650,9 @@
                     </div>
                     <div class="delivery__item-row">
                         <div class="delivery__block delivery__block--media-phones">
-                            <input type="radio" class="delivery__item-radio" id="pay-cash" name="pay-cash">
+                            <input type="radio" class="delivery__item-radio" id="pay-cash" name="payment">
                             <label for="pay-cash" class="delivery__block-title">Потребуется сдача</label>
-                            <input type="radio" class="delivery__item-radio" id="pay-card" name="pay-card">
+                            <input type="radio" class="delivery__item-radio" id="pay-card" name="payment">
                             <label for="pay-card" class="delivery__block-title">Оплата по карте</label>
                         </div>
                     </div>
@@ -711,50 +711,55 @@
 
 </div>
 
-<!-- FIXED SLIDE BUTTONS -->
+<!-- FIXED MENU -->
 
-<div class="btn__slide-container">
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide1" name="btn__slide">
-        <label for="btn__slide1" class="btn__slide-label"></label>
-    </div>
+<ul class="fixed-menu">
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="0"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="1"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="2"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="3"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="4"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="5"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="6"></a>
+    </li>
+    <li class="fixed-menu__item">
+        <a class="fixed-menu__link" href="" data-scroll-to="7"></a>
+    </li>
+</ul>
 
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide2" name="btn__slide">
-        <label for="btn__slide2" class="btn__slide-label"></label>
-    </div>
+<!--REVIEWS POPUP-->
 
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide3" name="btn__slide">
-        <label for="btn__slide3" class="btn__slide-label"></label>
-    </div>
+<div class="full-review popup" id="full-review">
+    <a class="full-review__close" href="#">
+        <svg class="full-review__close-btn">
+            <use xlink:href="./img/sprite/sprite.svg#close"></use>
+        </svg>
+    </a>
+    <div class="full-review__inner">
+        <div class="full-review__title">Констнтин Спилберг</div>
+        <div class="full-review__content">
+            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+            могут быть такими
+            мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя
+            устоять,
+            невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр
+            таким
+            расплавленным.
 
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide4" name="btn__slide">
-        <label for="btn__slide4" class="btn__slide-label"></label>
-    </div>
-
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide5" name="btn__slide">
-        <label for="btn__slide5" class="btn__slide-label"></label>
-    </div>
-
-
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide6" name="btn__slide">
-        <label for="btn__slide6" class="btn__slide-label"></label>
-    </div>
-
-
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide7" name="btn__slide">
-        <label for="btn__slide7" class="btn__slide-label"></label>
-    </div>
-
-
-    <div class="btn__slide-relative-item">
-        <input type="radio" class="btn__slide" id="btn__slide8" name="btn__slide">
-        <label for="btn__slide8" class="btn__slide-label"></label>
+        </div>
     </div>
 </div>
 

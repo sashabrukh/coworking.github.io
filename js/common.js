@@ -1,28 +1,42 @@
 "use strict";
 
+// FIXED MENU
+
+
 // MOBILE MENU
 
 const mobileMenuCheck = document.querySelector('#checkbox');
 const mobileMenuCont = document.querySelector('#mobile-cont');
-const mobileLink = document.getElementsByClassName('mobile-menu-link');
+const mobileMenuLink = document.getElementsByClassName('mobile-menu-link');
+const mobileMenuBtn = document.querySelector('#mobile-btn');
 
 mobileMenuCheck.addEventListener('click', function () {
     let activeClass = mobileMenuCont.classList.contains('mobile-menu-container--active');
     if (!activeClass) {
         mobileMenuCont.classList.add('mobile-menu-container--active');
         document.body.style.overflow = 'hidden';
+        mobileMenuBtn.classList.add('mobile-menu-btn--active:after');
+        mobileMenuBtn.classList.add('mobile-menu-btn--active:before');
+        mobileMenuBtn.classList.add('mobile-menu-btn--active');
     }
     if (activeClass) {
         mobileMenuCont.classList.remove('mobile-menu-container--active');
         mobileMenuCont.classList.remove('mobile-menu-container--active');
         document.body.style.overflow = 'auto';
+        mobileMenuBtn.classList.remove('mobile-menu-btn--active:after');
+        mobileMenuBtn.classList.remove('mobile-menu-btn--active:before');
+        mobileMenuBtn.classList.remove('mobile-menu-btn--active');
     }
 });
 
-for (let i = 0; i < mobileLink.length; i++) {
-    mobileLink[i].addEventListener('click', function () {
+for (let i = 0; i < mobileMenuLink.length; i++) {
+    mobileMenuLink[i].addEventListener('click', function () {
         mobileMenuCont.classList.remove('mobile-menu-container--active');
         document.body.style.overflow = 'auto';
+        mobileMenuBtn.classList.remove('mobile-menu-btn--active:after');
+        mobileMenuBtn.classList.remove('mobile-menu-btn--active:before');
+        mobileMenuBtn.classList.remove('mobile-menu-btn--active');
+
     });
 }
 
@@ -84,7 +98,7 @@ burgerMenu.addEventListener('click', function () {
 
 const sliderLeft = document.querySelector('#carousel-prev');
 const sliderRight = document.querySelector('#carousel-next');
-const slider = document.querySelector('#burger-container');
+const slider = document.querySelector('#burger-slider');
 const minRight = 0;
 const maxRight = 5500;
 const step = 1100;
