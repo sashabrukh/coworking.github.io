@@ -176,124 +176,593 @@
     </section>
 
     <section class="best-burgers__bg" id="burgers">
-        <div class="best-burgers-slider">
-
-            <div class="best-burgers__container" id="burger-container">
-                <div class="carousel-burgers__img">
-                    <img src="./img/forsprite/png/chiken-burger.png" alt="burger" class="carousel-burgers__img-item">
-                </div>
-                <div class="carousel-burgers__desc">
-                    <h3 class="carousel-burgers__desc-title">
-                        Dark Beef Burger
-                    </h3>
-                    <p class="carousel-burgers__desc-text">
-                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
-                        сыра эмменталь, двумя помидорами,
-                        луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                    </p>
-                    <div class="carousel-burgers__desc-price">
-                        <div class="carousel-burgers__desc-price-summ">
-                            500
-                        </div>
-                        <div class="carousel-burgers__desc-price-rubles">
-                            рублей
-                        </div>
-                        <a class="btn btn__carousel-burgers" href="#contacts">
-                            Заказать
-                        </a>
+        <ul class="best-burgers__slider" id="best-burgers__slider">
+            <li class="best-burgers__list">
+                <div class="best-burgers__container" id="best-burgers__item">
+                    <div class="carousel-burgers__img">
+                        <img src="./img/forsprite/png/chiken-burger.png" alt="burger" class="carousel-burgers__img-item">
                     </div>
-                </div>
-                <div class="carousel-burgers__container">
-                    <button class="carousel-burgers__menu" id="burger-menu">
-                        <svg class="carousel-burgers__icon carousel-burgers__icon--menu">
-                            <use xlink:href="#burger"></use>
-                            <div class="carousel-burgers__menu-title">
-                                Состав
+                    <div class="carousel-burgers__desc">
+                        <h3 class="carousel-burgers__desc-title">
+                            Dark Beef Burger
+                        </h3>
+                        <p class="carousel-burgers__desc-text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                            сыра эмменталь, двумя помидорами,
+                            луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="carousel-burgers__desc-price">
+                            <div class="carousel-burgers__desc-price-summ">
+                                500
                             </div>
+                            <div class="carousel-burgers__desc-price-rubles">
+                                рублей
+                            </div>
+                            <a class="btn btn__carousel-burgers" href="#contacts">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-burgers__container">
+                        <button class="carousel-burgers__menu">
+                            <svg class="carousel-burgers__icon carousel-burgers__icon--menu">
+                                <use xlink:href="#burger"></use>
+                                <div class="carousel-burgers__menu-title">
+                                    Состав
+                                </div>
+                            </svg>
+                        </button>
+                        <ul class="carousel-burgers__menu-list">
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--beef">
+                                    <use xlink:href="#beef"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Говядина
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    300&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--buns">
+                                    <use xlink:href="#buns"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Булочки
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    100&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--salad">
+                                    <use xlink:href="#salad"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Зелень
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    70&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--sauce">
+                                    <use xlink:href="#sauce"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Соус
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    150&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cucumber">
+                                    <use xlink:href="#cucumber"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Овощи
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    200&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cheese">
+                                    <use xlink:href="#cheese"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Сыр
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    80&nbsp;г
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-burgers__calories">
+                        <svg class="carousel-burgers__icon carousel-burgers__icon--cal">
+                            <use xlink:href="#kkal"></use>
                         </svg>
-                    </button>
-                    <ul class="carousel-burgers__menu-list" id="burger-list">
-                        <li class="carousel-burgers__menu-item">
-                            <svg class="carousel-burgers__menu-icon carousel-burgers__icon--beef">
-                                <use xlink:href="#beef"></use>
-                            </svg>
-                            <div class="carousel-burgers__menu-name">
-                                Говядина
-                            </div>
-                            <div class="carousel-burgers__menu-weight">
-                                300&nbsp;г
-                            </div>
-                        </li>
-                        <li class="carousel-burgers__menu-item">
-                            <svg class="carousel-burgers__menu-icon carousel-burgers__icon--buns">
-                                <use xlink:href="#buns"></use>
-                            </svg>
-                            <div class="carousel-burgers__menu-name">
-                                Булочки
-                            </div>
-                            <div class="carousel-burgers__menu-weight">
-                                100&nbsp;г
-                            </div>
-                        </li>
-                        <li class="carousel-burgers__menu-item">
-                            <svg class="carousel-burgers__menu-icon carousel-burgers__icon--salad">
-                                <use xlink:href="#salad"></use>
-                            </svg>
-                            <div class="carousel-burgers__menu-name">
-                                Зелень
-                            </div>
-                            <div class="carousel-burgers__menu-weight">
-                                70&nbsp;г
-                            </div>
-                        </li>
-                        <li class="carousel-burgers__menu-item">
-                            <svg class="carousel-burgers__menu-icon carousel-burgers__icon--sauce">
-                                <use xlink:href="#sauce"></use>
-                            </svg>
-                            <div class="carousel-burgers__menu-name">
-                                Соус
-                            </div>
-                            <div class="carousel-burgers__menu-weight">
-                                150&nbsp;г
-                            </div>
-                        </li>
-                        <li class="carousel-burgers__menu-item">
-                            <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cucumber">
-                                <use xlink:href="#cucumber"></use>
-                            </svg>
-                            <div class="carousel-burgers__menu-name">
-                                Овощи
-                            </div>
-                            <div class="carousel-burgers__menu-weight">
-                                200&nbsp;г
-                            </div>
-                        </li>
-                        <li class="carousel-burgers__menu-item">
-                            <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cheese">
-                                <use xlink:href="#cheese"></use>
-                            </svg>
-                            <div class="carousel-burgers__menu-name">
-                                Сыр
-                            </div>
-                            <div class="carousel-burgers__menu-weight">
-                                80&nbsp;г
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="carousel-burgers__calories">
-                    <svg class="carousel-burgers__icon carousel-burgers__icon--cal">
-                        <use xlink:href="#kkal"></use>
-                    </svg>
-                    <div class="carousel-burgers__calories-item carousel-burgers__calories-item--in">
-                        1200
-                    </div>
-                    <div class="carousel-burgers__calories-item">
-                        ккал
+                        <div class="carousel-burgers__calories-item carousel-burgers__calories-item--in">
+                            1200
+                        </div>
+                        <div class="carousel-burgers__calories-item">
+                            ккал
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li class="best-burgers__list">
+                <div class="best-burgers__container">
+                    <div class="carousel-burgers__img">
+                        <img src="./img/forsprite/png/Burger_sandwich.png" alt="burger" class="carousel-burgers__img-item">
+                    </div>
+                    <div class="carousel-burgers__desc">
+                        <h3 class="carousel-burgers__desc-title">
+                            Dark Beef Burger
+                        </h3>
+                        <p class="carousel-burgers__desc-text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                            сыра эмменталь, двумя помидорами,
+                            луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="carousel-burgers__desc-price">
+                            <div class="carousel-burgers__desc-price-summ">
+                                500
+                            </div>
+                            <div class="carousel-burgers__desc-price-rubles">
+                                рублей
+                            </div>
+                            <a class="btn btn__carousel-burgers" href="#contacts">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-burgers__container">
+                        <button class="carousel-burgers__menu">
+                            <svg class="carousel-burgers__icon carousel-burgers__icon--menu">
+                                <use xlink:href="#burger"></use>
+                                <div class="carousel-burgers__menu-title">
+                                    Состав
+                                </div>
+                            </svg>
+                        </button>
+                        <ul class="carousel-burgers__menu-list">
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--beef">
+                                    <use xlink:href="#beef"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Говядина
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    300&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--buns">
+                                    <use xlink:href="#buns"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Булочки
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    100&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--salad">
+                                    <use xlink:href="#salad"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Зелень
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    70&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--sauce">
+                                    <use xlink:href="#sauce"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Соус
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    150&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cucumber">
+                                    <use xlink:href="#cucumber"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Овощи
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    200&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cheese">
+                                    <use xlink:href="#cheese"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Сыр
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    80&nbsp;г
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-burgers__calories">
+                        <svg class="carousel-burgers__icon carousel-burgers__icon--cal">
+                            <use xlink:href="#kkal"></use>
+                        </svg>
+                        <div class="carousel-burgers__calories-item carousel-burgers__calories-item--in">
+                            1200
+                        </div>
+                        <div class="carousel-burgers__calories-item">
+                            ккал
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="best-burgers__list">
+                <div class="best-burgers__container">
+                    <div class="carousel-burgers__img">
+                        <img src="./img/forsprite/png/NYC-Diner-Bacon-Cheeseburger.png" alt="burger" class="carousel-burgers__img-item">
+                    </div>
+                    <div class="carousel-burgers__desc">
+                        <h3 class="carousel-burgers__desc-title">
+                            Dark Beef Burger
+                        </h3>
+                        <p class="carousel-burgers__desc-text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                            сыра эмменталь, двумя помидорами,
+                            луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="carousel-burgers__desc-price">
+                            <div class="carousel-burgers__desc-price-summ">
+                                500
+                            </div>
+                            <div class="carousel-burgers__desc-price-rubles">
+                                рублей
+                            </div>
+                            <a class="btn btn__carousel-burgers" href="#contacts">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-burgers__container">
+                        <button class="carousel-burgers__menu">
+                            <svg class="carousel-burgers__icon carousel-burgers__icon--menu">
+                                <use xlink:href="#burger"></use>
+                                <div class="carousel-burgers__menu-title">
+                                    Состав
+                                </div>
+                            </svg>
+                        </button>
+                        <ul class="carousel-burgers__menu-list">
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--beef">
+                                    <use xlink:href="#beef"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Говядина
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    300&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--buns">
+                                    <use xlink:href="#buns"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Булочки
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    100&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--salad">
+                                    <use xlink:href="#salad"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Зелень
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    70&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--sauce">
+                                    <use xlink:href="#sauce"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Соус
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    150&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cucumber">
+                                    <use xlink:href="#cucumber"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Овощи
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    200&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cheese">
+                                    <use xlink:href="#cheese"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Сыр
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    80&nbsp;г
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-burgers__calories">
+                        <svg class="carousel-burgers__icon carousel-burgers__icon--cal">
+                            <use xlink:href="#kkal"></use>
+                        </svg>
+                        <div class="carousel-burgers__calories-item carousel-burgers__calories-item--in">
+                            1200
+                        </div>
+                        <div class="carousel-burgers__calories-item">
+                            ккал
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="best-burgers__list">
+                <div class="best-burgers__container">
+                    <div class="carousel-burgers__img">
+                        <img src="./img/forsprite/png/Spicy_Shrimp_Burger.png" alt="burger" class="carousel-burgers__img-item">
+                    </div>
+                    <div class="carousel-burgers__desc">
+                        <h3 class="carousel-burgers__desc-title">
+                            Dark Beef Burger
+                        </h3>
+                        <p class="carousel-burgers__desc-text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                            сыра эмменталь, двумя помидорами,
+                            луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="carousel-burgers__desc-price">
+                            <div class="carousel-burgers__desc-price-summ">
+                                500
+                            </div>
+                            <div class="carousel-burgers__desc-price-rubles">
+                                рублей
+                            </div>
+                            <a class="btn btn__carousel-burgers" href="#contacts">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-burgers__container">
+                        <button class="carousel-burgers__menu">
+                            <svg class="carousel-burgers__icon carousel-burgers__icon--menu">
+                                <use xlink:href="#burger"></use>
+                                <div class="carousel-burgers__menu-title">
+                                    Состав
+                                </div>
+                            </svg>
+                        </button>
+                        <ul class="carousel-burgers__menu-list">
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--beef">
+                                    <use xlink:href="#beef"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Говядина
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    300&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--buns">
+                                    <use xlink:href="#buns"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Булочки
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    100&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--salad">
+                                    <use xlink:href="#salad"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Зелень
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    70&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--sauce">
+                                    <use xlink:href="#sauce"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Соус
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    150&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cucumber">
+                                    <use xlink:href="#cucumber"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Овощи
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    200&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cheese">
+                                    <use xlink:href="#cheese"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Сыр
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    80&nbsp;г
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-burgers__calories">
+                        <svg class="carousel-burgers__icon carousel-burgers__icon--cal">
+                            <use xlink:href="#kkal"></use>
+                        </svg>
+                        <div class="carousel-burgers__calories-item carousel-burgers__calories-item--in">
+                            1200
+                        </div>
+                        <div class="carousel-burgers__calories-item">
+                            ккал
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="best-burgers__list">
+                <div class="best-burgers__container">
+                    <div class="carousel-burgers__img">
+                        <img src="./img/forsprite/png/black-burger.png" alt="burger" class="carousel-burgers__img-item">
+                    </div>
+                    <div class="carousel-burgers__desc">
+                        <h3 class="carousel-burgers__desc-title">
+                            Dark Beef Burger
+                        </h3>
+                        <p class="carousel-burgers__desc-text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                            сыра эмменталь, двумя помидорами,
+                            луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="carousel-burgers__desc-price">
+                            <div class="carousel-burgers__desc-price-summ">
+                                500
+                            </div>
+                            <div class="carousel-burgers__desc-price-rubles">
+                                рублей
+                            </div>
+                            <a class="btn btn__carousel-burgers" href="#contacts">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-burgers__container">
+                        <button class="carousel-burgers__menu">
+                            <svg class="carousel-burgers__icon carousel-burgers__icon--menu">
+                                <use xlink:href="#burger"></use>
+                                <div class="carousel-burgers__menu-title">
+                                    Состав
+                                </div>
+                            </svg>
+                        </button>
+                        <ul class="carousel-burgers__menu-list">
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--beef">
+                                    <use xlink:href="#beef"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Говядина
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    300&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--buns">
+                                    <use xlink:href="#buns"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Булочки
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    100&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--salad">
+                                    <use xlink:href="#salad"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Зелень
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    70&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--sauce">
+                                    <use xlink:href="#sauce"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Соус
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    150&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cucumber">
+                                    <use xlink:href="#cucumber"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Овощи
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    200&nbsp;г
+                                </div>
+                            </li>
+                            <li class="carousel-burgers__menu-item">
+                                <svg class="carousel-burgers__menu-icon carousel-burgers__icon--cheese">
+                                    <use xlink:href="#cheese"></use>
+                                </svg>
+                                <div class="carousel-burgers__menu-name">
+                                    Сыр
+                                </div>
+                                <div class="carousel-burgers__menu-weight">
+                                    80&nbsp;г
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-burgers__calories">
+                        <svg class="carousel-burgers__icon carousel-burgers__icon--cal">
+                            <use xlink:href="#kkal"></use>
+                        </svg>
+                        <div class="carousel-burgers__calories-item carousel-burgers__calories-item--in">
+                            1200
+                        </div>
+                        <div class="carousel-burgers__calories-item">
+                            ккал
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
         <button class="carousel-burgers__btn carousel-burgers__btn--prev" id='carousel-prev'>
             <svg class="carousel-burgers__icon carousel-burgers__icon--arrows">
@@ -745,7 +1214,7 @@
 <div class="full-review popup" id="full-review">
     <a class="full-review__close" href="#">
         <svg class="full-review__close-btn">
-            <use xlink:href="./img/sprite/sprite.svg#close"></use>
+            <use xlink:href=""></use>
         </svg>
     </a>
     <div class="full-review__inner">
@@ -914,9 +1383,9 @@
     </svg>
 
 </div>
-<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script type="text/javascript" src="js/libs.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
 
 
 </body>

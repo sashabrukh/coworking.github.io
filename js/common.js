@@ -49,7 +49,10 @@ for (let i = 0; i < accoTeam.length; i++) {
     accoTeam[i].addEventListener('click', function () {
         let activeClass = this.classList.contains('accordeon-team__desc-people--active');
         if (!activeClass) {
-            this.classList.add('accordeon-team__desc-people--active');
+            for (let y = 0; y < accoTeam.length; y++) {
+                accoTeam[y].classList.remove('accordeon-team__desc-people--active');
+                accoTeam[i].classList.add('accordeon-team__desc-people--active');
+            }
         }
         if (activeClass) {
             this.classList.remove('accordeon-team__desc-people--active');
@@ -67,7 +70,10 @@ for (let i = 0; i < accoMenuBtn.length; i++) {
         for (let y = 0; y < accoMenuDesc.length; y++) {
             let activeClass = accoMenuDesc[i].classList.contains('accordeon-menu__hidden-desc--active');
             if (!activeClass) {
-                accoMenuDesc[i].classList.add('accordeon-menu__hidden-desc--active');
+                for (let x = 0; x < accoMenuDesc.length; x++) {
+                    accoMenuDesc[x].classList.remove('accordeon-menu__hidden-desc--active');
+                    accoMenuDesc[i].classList.add('accordeon-menu__hidden-desc--active');
+                }
             }
             if (activeClass) {
                 accoMenuDesc[i].classList.remove('accordeon-menu__hidden-desc--active');
@@ -78,47 +84,76 @@ for (let i = 0; i < accoMenuBtn.length; i++) {
 
 // BURGER MENU
 
-const burgerMenu = document.querySelector('#burger-menu');
-const burgerMenuList = document.querySelector('#burger-list');
-let burgerOp = burgerMenuList.style.opacity;
-let computedStyle = getComputedStyle(burgerMenuList);
-let maxOp = 1;
+const burgerMenu = document.getElementsByClassName('carousel-burgers__menu');
+const burgerMenuList = document.getElementsByClassName('carousel-burgers__menu-list');
 
-burgerMenu.addEventListener('click', function () {
-    if (computedStyle.opacity < maxOp) {
-        burgerMenuList.style.opacity += 1;
-    } else {
-        burgerMenuList.style.opacity -= 1;
-    }
+for (let i = 0; i < burgerMenu.length; i++) {
+    burgerMenu[i].addEventListener('click', function () {
+        for (let y = 0; y < burgerMenuList.length; y++) {
+            let activeClass = burgerMenuList[i].classList.contains('carousel-burgers__menu-list--active');
+            if (!activeClass) {
+                for (let x = 0; x < burgerMenuList.length; x++) {
+                    burgerMenuList[x].classList.remove('carousel-burgers__menu-list--active');
+                    burgerMenuList[i].classList.add('carousel-burgers__menu-list--active');
+                }
+            }
+            if (activeClass) {
+                burgerMenuList[i].classList.remove('carousel-burgers__menu-list--active');
+            }
+        }
+    });
+}
 
-});
 
+// const burgerMenu = document.querySelector('#burger-menu');
+// const burgerMenuList = document.querySelector('#burger-list');
+// let burgerOp = burgerMenuList.style.opacity;
+// let computedStyle = getComputedStyle(burgerMenuList);
+// let maxOp = 1;
+//
+// burgerMenu.addEventListener('click', function () {
+//     if (computedStyle.opacity < maxOp) {
+//         burgerMenuList.style.opacity += 1;
+//     } else {
+//         burgerMenuList.style.opacity -= 1;
+//     }
+//
+// });
 
 // SLIDER
 
-const sliderLeft = document.querySelector('#carousel-prev');
-const sliderRight = document.querySelector('#carousel-next');
-const slider = document.querySelector('#burger-slider');
-const minRight = 0;
-const maxRight = 5500;
-const step = 1100;
-let currentRight = 0;
+const slides = document.querySelectorAll('#best-burgers__slider .best-burgers__list');
+const slideInterval = setInterval(nextSlide, 2000);
+const next = document.querySelector('#carousel-next');
+const prev = document.querySelector('#carousel-prev');
+const controls = document.querySelectorAll('.btn__none');
+let currentSlide = 0;
 
-sliderRight.addEventListener('click', function (e) {
+function nextSlide() {
+    goToSlide(currentSlide + 1);
+}
 
-    if (currentRight < maxRight) {
-        currentRight += step;
-        slider.style.right = currentRight + 'px';
-    }
-});
+function previousSlide() {
+    goToSlide(currentSlide - 1);
+}
 
-sliderLeft.addEventListener('click', function (e) {
+function goToSlide(n) {
+    slides[currentSlide].className = 'best-burgers__list';
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].className = 'best-burgers__list best-burgers__list--active';
+}
 
-    if (currentRight > minRight) {
-        currentRight -= step;
-        slider.style.right = currentRight + 'px';
-    }
-});
+next.onclick = function () {
+    nextSlide();
+};
+
+prev.onclick = function () {
+    previousSlide();
+};
+
+
+
+
 
 // MAPS
 
