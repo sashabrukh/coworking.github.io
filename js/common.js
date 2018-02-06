@@ -151,10 +151,6 @@ prev.onclick = function () {
     previousSlide();
 };
 
-
-
-
-
 // MAPS
 
 ymaps.ready(init);

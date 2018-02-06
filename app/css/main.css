@@ -246,15 +246,15 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 80%;
-    margin: 5% auto; } }
+    margin: auto; } }
 
 .features__list {
   width: 32%;
-  margin-right: 1%; }
+  margin-right: 1vw; }
 
 @media screen and (max-width: 480px) {
   .features__list {
-    width: 90%;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 1vh; } }
 
@@ -1174,7 +1174,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .promo {
-    margin: 5vh auto; } }
+    margin: 0 auto; } }
 
 .promo__image-item-burger {
   background-image: url("../img/forsprite/png/burger-promo.png");
@@ -1742,6 +1742,10 @@ a.btn {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+@media screen and (max-width: 480px) {
+  .best-burgers__slider {
+    margin-top: 7vh; } }
 
 .best-burgers__list {
   position: absolute;

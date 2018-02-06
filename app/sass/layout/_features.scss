@@ -19,6 +19,9 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  @include  phones {
+
+  }
 }
 
 .features__icon--meat {
@@ -58,15 +61,15 @@
   @include phones {
     flex-direction: column;
     width: 80%;
-    margin: 5% auto;
+    margin: auto;
   }
 }
 
 .features__list {
   width: 32%;
-  margin-right: 1%;
+  margin-right: 1vw;
   @include phones {
-    width: 90%;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 1vh;
   }
