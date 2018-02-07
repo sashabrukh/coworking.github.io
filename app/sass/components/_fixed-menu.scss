@@ -5,7 +5,7 @@
   position: fixed;
   top: 9rem;
   right: 4rem;
-
+  z-index: 10000;
   @include tablets {
     display: none;
   }
@@ -34,19 +34,6 @@
     border: 0.05rem solid $colOrange;
   }
 
-  .fixed-menu__link--active:after {
-    width: 0.6rem;
-    height: 0.6rem;
-    background: #fff;
-    border: 0.05rem solid $colOrange;
-  }
-
-  .fixed-menu__link--active:before {
-    width: 1.8rem;
-    height: 1.8rem;
-    opacity: 1;
-  }
-
   &:before {
     width: 0;
     height: 0;
@@ -54,6 +41,10 @@
     border: 0.2rem solid $colOrange;
     opacity: 0;
     transition: .3s;
+  }
+
+  &--active {
+
   }
 
   &:hover {

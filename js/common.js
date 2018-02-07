@@ -1,6 +1,6 @@
 "use strict";
 
-// FIXED MENU
+// FULL PAGE SCROLL
 
 
 // MOBILE MENU
@@ -103,6 +103,12 @@ for (let i = 0; i < burgerMenu.length; i++) {
         }
     });
 }
+
+// POPUP COMMENTS
+
+// const commentItem = document.querySelectorAll('.btn__more');
+// const commentPopupClose = document.querySelector('.full-review__close');
+
 
 
 // const burgerMenu = document.querySelector('#burger-menu');
@@ -223,3 +229,4 @@ function init() {
     map.geoObjects.add(clusterer);
     clusterer.add(geoObjects);
 }
+

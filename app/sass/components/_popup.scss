@@ -2,12 +2,31 @@
 @import '../abstracts/mixins';
 
 .popup {
-  display: none;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $colGray09;
 }
 
 .full-review {
-  padding: 2.5rem 2rem;
+
+}
+
+.full-review__wrapper {
   position: relative;
+  display: flex;
+  width: 35vw;
+  margin: auto;
+  background-color: $colWhite;
+  padding: 2rem;
+  border-radius: 1rem;
+  @include phones {
+    width: 90vw;
+  }
 }
 
 .full-review__title {
@@ -19,29 +38,28 @@
 
 .full-review__content {
   font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 .full-review__close {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
+  display: flex;
   position: absolute;
   right: 2rem;
-  top: 2rem;
-  opacity: .7;
+  top: 0;
+  opacity: .4;
   transition: .3s;
-
   &:hover {
     opacity: 1;
   }
-
   svg {
-    width: 100%;
-    height: 100%;
+    fill: red;
+    width: 2rem;
+    height: 3rem;
   }
 }
 
 .status-popup__inner {
+  position: relative;
   padding: 2rem;
   text-align: center;
 }
