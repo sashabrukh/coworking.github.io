@@ -106,8 +106,31 @@ for (let i = 0; i < burgerMenu.length; i++) {
 
 // POPUP COMMENTS
 
-// const commentItem = document.querySelectorAll('.btn__more');
-// const commentPopupClose = document.querySelector('.full-review__close');
+const commentItem = document.querySelectorAll('.btn__more');
+const commentClose = document.querySelectorAll('.full-review__close');
+const fullReview = document.querySelectorAll('#full-review');
+
+
+for (let i = 0; i < commentItem.length; i++) {
+    commentItem[i].addEventListener('click', function () {
+        let activeClass = commentItem[i].classList.contains('full-review--active');
+        if (!activeClass) {
+            for (let x = 0; x < fullReview.length; x++) {
+                fullReview[x].classList.add('full-review--active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    });
+    for (let y = 0; y < commentClose.length; y++) {
+        commentClose[y].addEventListener('click', function () {
+            fullReview[i].classList.remove('full-review--active');
+            document.body.style.overflow = 'auto';
+        });
+    }
+}
+
+
+
 
 
 
@@ -128,34 +151,57 @@ for (let i = 0; i < burgerMenu.length; i++) {
 
 // SLIDER
 
-const slides = document.querySelectorAll('#best-burgers__slider .best-burgers__list');
-const slideInterval = setInterval(nextSlide, 2000);
-const next = document.querySelector('#carousel-next');
-const prev = document.querySelector('#carousel-prev');
-const controls = document.querySelectorAll('.btn__none');
-let currentSlide = 0;
+const left = document.querySelector("#carousel-prev");
+const right = document.querySelector("#carousel-next");
+const items = document.querySelector("#best-burgers__slider");
 
-function nextSlide() {
-    goToSlide(currentSlide + 1);
-}
+const minRight = -1800;
+const maxRight = 6000;
+const step = 500;
+let currentRight = 0;
 
-function previousSlide() {
-    goToSlide(currentSlide - 1);
-}
+right.addEventListener("click", function() {
+    if (currentRight < maxRight) {
+        currentRight += step;
+        items.style.right = currentRight + "px";
+    }
+});
 
-function goToSlide(n) {
-    slides[currentSlide].className = 'best-burgers__list';
-    currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].className = 'best-burgers__list best-burgers__list--active';
-}
+left.addEventListener("click", function() {
+    if (currentRight > minRight) {
+        currentRight -= step;
+        items.style.right = currentRight + "px";
+    }
+});
 
-next.onclick = function () {
-    nextSlide();
-};
-
-prev.onclick = function () {
-    previousSlide();
-};
+// const slides = document.querySelectorAll('#best-burgers__slider .best-burgers__list');
+// const slideInterval = setInterval(nextSlide, 2000);
+// const next = document.querySelector('#carousel-next');
+// const prev = document.querySelector('#carousel-prev');
+// const controls = document.querySelectorAll('.btn__none');
+// let currentSlide = 0;
+//
+// function nextSlide() {
+//     goToSlide(currentSlide + 1);
+// }
+//
+// function previousSlide() {
+//     goToSlide(currentSlide - 1);
+// }
+//
+// function goToSlide(n) {
+//     slides[currentSlide].className = 'best-burgers__list';
+//     currentSlide = (n + slides.length) % slides.length;
+//     slides[currentSlide].className = 'best-burgers__list best-burgers__list--active';
+// }
+//
+// next.onclick = function () {
+//     nextSlide();
+// };
+//
+// prev.onclick = function () {
+//     previousSlide();
+// };
 
 // MAPS
 
@@ -228,5 +274,5 @@ function init() {
 
     map.geoObjects.add(clusterer);
     clusterer.add(geoObjects);
-}
+};
 

@@ -2,8 +2,11 @@
 @import '../abstracts/mixins';
 
 .popup {
-  display: flex;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -13,7 +16,10 @@
 }
 
 .full-review {
-
+  display: none;
+  &--active {
+    display: flex;
+  }
 }
 
 .full-review__wrapper {
