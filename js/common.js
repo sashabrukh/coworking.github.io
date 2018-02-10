@@ -121,6 +121,7 @@ for (let i = 0; i < commentItem.length; i++) {
             }
         }
     });
+
     for (let y = 0; y < commentClose.length; y++) {
         commentClose[y].addEventListener('click', function () {
             fullReview[i].classList.remove('full-review--active');
@@ -128,10 +129,6 @@ for (let i = 0; i < commentItem.length; i++) {
         });
     }
 }
-
-
-
-
 
 
 // const burgerMenu = document.querySelector('#burger-menu');
@@ -154,20 +151,22 @@ for (let i = 0; i < commentItem.length; i++) {
 const left = document.querySelector("#carousel-prev");
 const right = document.querySelector("#carousel-next");
 const items = document.querySelector("#best-burgers__slider");
-
-const minRight = -1800;
-const maxRight = 6000;
-const step = 500;
+const burgerItem = document.querySelector('.best-burgers__slider-container');
+const currentWidth = parseInt(burgerItem.offsetWidth, 10);
+alert(currentWidth);
+const minRight = -currentWidth * 2;
+const maxRight = currentWidth * 2;
+const step = currentWidth;
 let currentRight = 0;
 
-right.addEventListener("click", function() {
+right.addEventListener("click", function () {
     if (currentRight < maxRight) {
         currentRight += step;
         items.style.right = currentRight + "px";
     }
 });
 
-left.addEventListener("click", function() {
+left.addEventListener("click", function () {
     if (currentRight > minRight) {
         currentRight -= step;
         items.style.right = currentRight + "px";
@@ -274,5 +273,5 @@ function init() {
 
     map.geoObjects.add(clusterer);
     clusterer.add(geoObjects);
-};
+}
 

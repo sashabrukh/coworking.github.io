@@ -62,9 +62,12 @@
   transition: all .25s;
   &.accordeon-menu__hidden-desc--active {
     padding: 2rem;
-    width: 83.7vw;
+    width: 40vw;
     @include tablets {
-      width: 65vw;
+      width: 83vw;
+    }
+    @include phones {
+      width: 70vw;
     }
   }
 }

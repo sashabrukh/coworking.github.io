@@ -1732,11 +1732,15 @@ a.btn {
 
 .accordeon-menu__hidden-desc.accordeon-menu__hidden-desc--active {
   padding: 2rem;
-  width: 83.7vw; }
+  width: 40vw; }
 
 @media screen and (max-width: 768px) {
   .accordeon-menu__hidden-desc.accordeon-menu__hidden-desc--active {
-    width: 65vw; } }
+    width: 83vw; } }
+
+@media screen and (max-width: 480px) {
+  .accordeon-menu__hidden-desc.accordeon-menu__hidden-desc--active {
+    width: 70vw; } }
 
 .accordeon-menu__list-btn--meat {
   background-image: url("../img/background-menu/for-meat.jpg");
@@ -1755,6 +1759,22 @@ a.btn {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: 80% 50%; }
+
+.best-burgers__slider-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  max-width: 1100px;
+  height: 100%;
+  overflow: hidden; }
 
 .best-burgers__slider {
   position: relative;
@@ -1777,6 +1797,7 @@ a.btn {
     margin-top: 7vh; } }
 
 .best-burgers__list {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1802,8 +1823,7 @@ a.btn {
 
 .best-burgers__container {
   position: relative;
-  width: 100%;
-  max-width: 1100px;
+  width: 1100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1929,18 +1949,18 @@ a.btn {
 .carousel-burgers__calories {
   position: absolute;
   left: 5vw;
-  bottom: -4vh;
+  bottom: -10vh;
   text-align: center; }
 
 @media screen and (max-width: 768px) {
   .carousel-burgers__calories {
-    left: 43.5rem;
+    left: 48rem;
     top: -7rem; } }
 
 @media screen and (max-width: 480px) {
   .carousel-burgers__calories {
     top: -10rem;
-    left: 35rem; } }
+    left: 41rem; } }
 
 .carousel-burgers__icon--cal {
   width: 6rem;
@@ -1960,7 +1980,7 @@ a.btn {
 .carousel-burgers__container {
   position: absolute;
   left: 4vw;
-  top: -6vh;
+  top: -12vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1974,7 +1994,7 @@ a.btn {
 @media screen and (max-width: 480px) {
   .carousel-burgers__container {
     top: -10rem;
-    left: 0; } }
+    left: 3rem; } }
 
 .carousel-burgers__menu {
   text-align: center;
