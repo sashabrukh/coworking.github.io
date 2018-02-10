@@ -153,7 +153,6 @@ const right = document.querySelector("#carousel-next");
 const items = document.querySelector("#best-burgers__slider");
 const burgerItem = document.querySelector('.best-burgers__slider-container');
 const currentWidth = parseInt(burgerItem.offsetWidth, 10);
-alert(currentWidth);
 const minRight = -currentWidth * 2;
 const maxRight = currentWidth * 2;
 const step = currentWidth;
