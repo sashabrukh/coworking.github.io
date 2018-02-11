@@ -50,14 +50,19 @@
 .full-review__close {
   display: flex;
   position: absolute;
+  cursor: pointer;
   right: 2rem;
+  width: 3rem;
+  height: 3rem;
   top: 0;
   opacity: .4;
   transition: .3s;
+  background-color: transparent;
+  border:none;
   &:hover {
     opacity: 1;
   }
-  svg {
+  &-btn {
     fill: red;
     width: 2rem;
     height: 3rem;

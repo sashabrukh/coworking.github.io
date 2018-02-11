@@ -36,21 +36,17 @@ a.btn {
 }
 
 .btn__down {
+  display: flex;
+  width: 6rem;
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
-  transform: translateX(-50%);
-  transform: rotate(-45deg);
-  padding: 1.5rem;
-  border: 0.2rem solid $colWhite;
-  border-right: transparent;
-  border-top: transparent;
   cursor: pointer;
+  animation: bounce 5s infinite;
   transition: all 0.25s;
+  fill: $colWhite;
   &:hover {
-    border: 2px solid $colOrange;
-    border-right: transparent;
-    border-top: transparent;
+    fill: $colOrange;
   }
   @include mediumscreen {
     left: 47%;
@@ -59,6 +55,33 @@ a.btn {
     left: 47%;
   }
 }
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -45px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
 
 .btn__more {
   padding: 1.3rem 1.6rem;

@@ -100,10 +100,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="btn-down__link">
-                    <div class="btn__down">
 
-                    </div>
+                <a href="" class="btn-down__link">
+                    <svg class="btn__down">
+                        <use xlink:href="#btn-down"></use>
+                    </svg>
                 </a>
             </header>
         </div>
@@ -1212,11 +1213,11 @@
 
 <div class="full-review popup" id="full-review">
     <div class="full-review__wrapper">
-        <a class="full-review__close" href="#">
+        <button class="full-review__close">
             <svg class="full-review__close-btn">
                 <use xlink:href="#close"></use>
             </svg>
-        </a>
+        </button>
         <div class="full-review__inner">
             <div class="full-review__title">Констнтин Спилберг</div>
             <div class="full-review__content">
@@ -1277,6 +1278,9 @@
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 28.685 14.479">
             <path d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="btn-down" viewBox="0 0 129 129">
+            <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
         </symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-scroll" viewBox="0 0 28.685 14.479">
             <path d="M14.332 14.479a4.964 4.964 0 0 1-3.525-1.458L.268 1.681A1 1 0 1 1 1.733.32l10.514 11.314c1.145 1.143 3.049 1.142 4.218-.026L26.952.319a1 1 0 0 1 1.465 1.361L17.903 12.995a5.033 5.033 0 0 1-3.571 1.484z"

@@ -1,5 +1,45 @@
 "use strict";
 
+// BUTTON Animation
+
+const btnDown = document.querySelector('.js-btnDown');
+
+function animateProp(el, prop, from, to, duration) {
+    return new Promise(function(resolve) {
+        function animate() {
+            const currentTime = Date.now();
+            const timesLeft = startTime + duration - currentTime;
+
+            if (timesLeft <= 0) {
+                el.style[prop] = to + "px";
+                resolve();
+            } else {
+                const progress = 1 / duration * (duration - timesLeft);
+
+                el.style[prop] = from + (to - from) * progress + "px";
+                requestAnimationFrame(animate);
+            }
+        }
+
+        const startTime = Date.now();
+
+        requestAnimationFrame(animate);
+    });
+}
+
+animateProp(btnDown, "top", 680, 630, 1000)
+    .then(function() {
+        return animateProp(btnDown, "top", 630, 680,1000);
+    })
+    .then(function() {
+        return animateProp(btnDown, "", 20,10, 1500);
+    })
+    .then(function() {
+        return animateProp(btnDown, "", 20, 200, 1500);
+    });
+
+
+
 // FULL PAGE SCROLL
 
 
@@ -20,7 +60,6 @@ mobileMenuCheck.addEventListener('click', function () {
         mobileMenuBtn.classList.add('mobile-menu-btn--active');
     }
     if (activeClass) {
-        mobileMenuCont.classList.remove('mobile-menu-container--active');
         mobileMenuCont.classList.remove('mobile-menu-container--active');
         document.body.style.overflow = 'auto';
         mobileMenuBtn.classList.remove('mobile-menu-btn--active:after');
@@ -152,21 +191,23 @@ const left = document.querySelector("#carousel-prev");
 const right = document.querySelector("#carousel-next");
 const items = document.querySelector("#best-burgers__slider");
 const burgerItem = document.querySelector('.best-burgers__slider-container');
+const body = document.body;
 const currentWidth = parseInt(burgerItem.offsetWidth, 10);
+const currentBodyWidth = parseInt(body.offsetWidth, 10);
 const minRight = -currentWidth * 2;
 const maxRight = currentWidth * 2;
-const step = currentWidth;
+const step = 1100;
 let currentRight = 0;
 
 right.addEventListener("click", function () {
-    if (currentRight < maxRight) {
+    if (currentRight < maxRight && currentBodyWidth > 768) {
         currentRight += step;
         items.style.right = currentRight + "px";
     }
 });
 
 left.addEventListener("click", function () {
-    if (currentRight > minRight) {
+    if (currentRight > minRight && currentBodyWidth > 768) {
         currentRight -= step;
         items.style.right = currentRight + "px";
     }
