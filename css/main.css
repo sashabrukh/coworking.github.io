@@ -1889,12 +1889,9 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       -ms-flex-pack: center;
           justify-content: center; }
 
-@media screen and (max-width: 768px) {
-  .best-burgers__slider {
-    margin-top: 7vh; } }
-
 .best-burgers__list {
   max-width: 1100px;
+  padding: 3rem;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1909,15 +1906,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  opacity: 1;
-  z-index: 1;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s; }
-
-.best-burgers__list--active {
-  opacity: 1;
-  z-index: 5; }
+  z-index: 1; }
 
 .best-burgers__container {
   position: relative;
@@ -2062,7 +2051,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 
 .carousel-burgers__calories {
   position: absolute;
-  left: 5vw;
+  left: 0;
   bottom: -10vh;
   text-align: center; }
 
@@ -2093,7 +2082,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 
 .carousel-burgers__container {
   position: absolute;
-  left: 4vw;
+  left: 0;
   top: -12vh;
   display: -webkit-box;
   display: -webkit-flex;
