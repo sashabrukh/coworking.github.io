@@ -2,7 +2,6 @@
 @import '../abstracts/mixins';
 .comments__bg {
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .comments__container {
@@ -30,6 +29,11 @@
   @include tablets {
     width: 50%;
     height: 25%;
+  }
+  @include tablets {
+    width: 50%;
+    height: 15%;
+
   }
 }
 

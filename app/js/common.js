@@ -2,45 +2,62 @@
 
 // BUTTON Animation
 
-const btnDown = document.querySelector('.js-btnDown');
+// const btnDown = document.querySelector('.js-btnDown');
+//
+// function animateProp(el, prop, from, to, duration) {
+//     return new Promise(function(resolve) {
+//         function animate() {
+//             const currentTime = Date.now();
+//             const timesLeft = startTime + duration - currentTime;
+//
+//             if (timesLeft <= 0) {
+//                 el.style[prop] = to + "px";
+//                 resolve();
+//             } else {
+//                 const progress = 1 / duration * (duration - timesLeft);
+//
+//                 el.style[prop] = from + (to - from) * progress + "px";
+//                 requestAnimationFrame(animate);
+//             }
+//         }
+//
+//         const startTime = Date.now();
+//
+//         requestAnimationFrame(animate);
+//     });
+// }
+//
+// animateProp(btnDown, "top", 680, 630, 1000)
+//     .then(function() {
+//         return animateProp(btnDown, "top", 630, 680,1000);
+//     })
+//     .then(function() {
+//         return animateProp(btnDown, "", 20,10, 1500);
+//     })
+//     .then(function() {
+//         return animateProp(btnDown, "", 20, 200, 1500);
+//     });
 
-function animateProp(el, prop, from, to, duration) {
-    return new Promise(function(resolve) {
-        function animate() {
-            const currentTime = Date.now();
-            const timesLeft = startTime + duration - currentTime;
 
-            if (timesLeft <= 0) {
-                el.style[prop] = to + "px";
-                resolve();
-            } else {
-                const progress = 1 / duration * (duration - timesLeft);
 
-                el.style[prop] = from + (to - from) * progress + "px";
-                requestAnimationFrame(animate);
-            }
-        }
+// ONE PAGE SCROLL
 
-        const startTime = Date.now();
-
-        requestAnimationFrame(animate);
+    $(".main").onepage_scroll({
+        sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+        easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                         // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+        animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+        pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+        updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+        beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+        afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+        loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+        keyboard: true,                  // You can activate the keyboard controls
+        responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+        // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+        // the browser's width is less than 600, the fallback will kick in.
+        direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
     });
-}
-
-animateProp(btnDown, "top", 680, 630, 1000)
-    .then(function() {
-        return animateProp(btnDown, "top", 630, 680,1000);
-    })
-    .then(function() {
-        return animateProp(btnDown, "", 20,10, 1500);
-    })
-    .then(function() {
-        return animateProp(btnDown, "", 20, 200, 1500);
-    });
-
-
-
-// FULL PAGE SCROLL
 
 
 // MOBILE MENU
@@ -187,31 +204,34 @@ for (let i = 0; i < commentItem.length; i++) {
 
 // SLIDER
 
-const left = document.querySelector("#carousel-prev");
-const right = document.querySelector("#carousel-next");
-const items = document.querySelector("#best-burgers__slider");
-const burgerItem = document.querySelector('.best-burgers__slider-container');
-const body = document.body;
-const currentWidth = parseInt(burgerItem.offsetWidth, 10);
-const currentBodyWidth = parseInt(body.offsetWidth, 10);
-const minRight = -currentWidth * 2;
-const maxRight = currentWidth * 2;
-const step = 1100;
-let currentRight = 0;
+// const left = document.querySelector("#carousel-prev");
+// const right = document.querySelector("#carousel-next");
+// const items = document.querySelector("#best-burgers__slider");
+// const burgerItem = document.querySelector('.best-burgers__slider-container');
+// const body = document.body;
+// const currentWidth = parseInt(burgerItem.offsetWidth, 10);
+// const currentBodyWidth = parseInt(body.offsetWidth, 10);
+// const minRight = -currentWidth * 2;
+// const maxRight = currentWidth * 2;
+// const step = 1100;
+// let currentRight = 0;
+//
+// right.addEventListener("click", function () {
+//     if (currentRight < maxRight && currentBodyWidth > 768) {
+//         currentRight += step;
+//         items.style.right = currentRight + "px";
+//     }
+// });
+//
+// left.addEventListener("click", function () {
+//     if (currentRight > minRight && currentBodyWidth > 768) {
+//         currentRight -= step;
+//         items.style.right = currentRight + "px";
+//     }
+// });
 
-right.addEventListener("click", function () {
-    if (currentRight < maxRight && currentBodyWidth > 768) {
-        currentRight += step;
-        items.style.right = currentRight + "px";
-    }
-});
+slidr.create('best-burgers__slider').start();
 
-left.addEventListener("click", function () {
-    if (currentRight > minRight && currentBodyWidth > 768) {
-        currentRight -= step;
-        items.style.right = currentRight + "px";
-    }
-});
 
 // const slides = document.querySelectorAll('#best-burgers__slider .best-burgers__list');
 // const slideInterval = setInterval(nextSlide, 2000);

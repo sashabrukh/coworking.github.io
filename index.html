@@ -12,7 +12,7 @@
 
 <body class="body">
 
-<div class="container" id="main">
+<div class="main" id="main">
     <section class="section header__bg" id="header">
         <div class="header__container">
             <header class="header">
@@ -178,7 +178,7 @@
     <section class="section best-burgers__bg" id="burgers">
         <div class="best-burgers__slider-container">
             <ul class="best-burgers__slider" id="best-burgers__slider">
-                <li class="best-burgers__list">
+                <li class="best-burgers__list" data-slidr="one">
                     <div class="best-burgers__container" id="best-burgers__item">
                         <div class="carousel-burgers__img">
                             <img src="./img/forsprite/png/chiken-burger.png" alt="burger"
@@ -297,7 +297,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="best-burgers__list">
+                <li class="best-burgers__list" data-slidr="two">
                     <div class="best-burgers__container">
                         <div class="carousel-burgers__img">
                             <img src="./img/forsprite/png/Burger_sandwich.png" alt="burger"
@@ -416,7 +416,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="best-burgers__list">
+                <li class="best-burgers__list" data-slidr="three">
                     <div class="best-burgers__container">
                         <div class="carousel-burgers__img">
                             <img src="./img/forsprite/png/NYC-Diner-Bacon-Cheeseburger.png" alt="burger"
@@ -535,7 +535,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="best-burgers__list">
+                <li class="best-burgers__list" data-slidr="four">
                     <div class="best-burgers__container">
                         <div class="carousel-burgers__img">
                             <img src="./img/forsprite/png/Spicy_Shrimp_Burger.png" alt="burger"
@@ -654,7 +654,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="best-burgers__list">
+                <li class="best-burgers__list" data-slidr="five">
                     <div class="best-burgers__container">
                         <div class="carousel-burgers__img">
                             <img src="./img/forsprite/png/black-burger.png" alt="burger"
@@ -775,20 +775,21 @@
                 </li>
             </ul>
 
-            <button class="carousel-burgers__btn carousel-burgers__btn--prev" id='carousel-prev'>
-                <svg class="carousel-burgers__icon carousel-burgers__icon--arrows">
-                    <use xlink:href="#arrow-scroll"></use>
-                </svg>
-            </button>
-            <button class="carousel-burgers__btn carousel-burgers__btn--next" id='carousel-next'>
-                <svg class="carousel-burgers__icon carousel-burgers__icon--arrows">
-                    <use xlink:href="#arrow-scroll"></use>
-                </svg>
-            </button>
+
+            <!--<button class="carousel-burgers__btn carousel-burgers__btn&#45;&#45;prev" id='carousel-prev'>-->
+            <!--<svg class="carousel-burgers__icon carousel-burgers__icon&#45;&#45;arrows">-->
+            <!--<use xlink:href="#arrow-scroll"></use>-->
+            <!--</svg>-->
+            <!--</button>-->
+            <!--<button class="carousel-burgers__btn carousel-burgers__btn&#45;&#45;next" id='carousel-next'>-->
+            <!--<svg class="carousel-burgers__icon carousel-burgers__icon&#45;&#45;arrows">-->
+            <!--<use xlink:href="#arrow-scroll"></use>-->
+            <!--</svg>-->
+            <!--</button>-->
         </div>
     </section>
 
-    <section class="team__bg section" id="team">
+    <section class="section team__bg" id="team">
         <div class="team__container">
             <div class="team__item">
                 <h2 class="team__title">
@@ -1428,8 +1429,10 @@
 
 </div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script src="js/common.js"></script>
 <script src="js/libs.min.js"></script>
+<script src="js/slidr.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+<script src="js/common.js"></script>
 
 
 </body>

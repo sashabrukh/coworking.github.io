@@ -1,9 +1,8 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-
 body, html {
   margin: 0;
   overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
   transition: opacity 400ms;
 }
 
@@ -21,7 +20,7 @@ body, .onepage-wrapper, html {
   display: block;
   position: relative;
   padding: 0;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .onepage-wrapper .section {
@@ -31,15 +30,12 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  right: 5rem;
-  top: 10%;
+  right: 10px;
+  top: 50%;
   z-index: 5;
   list-style: none;
   margin: 0;
   padding: 0;
-  @include tablets {
-    display: none;
-  }
 }
 .onepage-pagination li {
   padding: 0;
@@ -50,25 +46,26 @@ body, .onepage-wrapper, html {
   width: 4px;
   height: 4px;
   display: block;
-
+  
 }
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
   width: 4px;
   height: 4px;
-  background: $colWhite;
-  border: 0.5px solid $colOrange;
+  background: rgba(0,0,0,0.85);
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
 }
 
 .onepage-pagination li a.active:before{
   width: 10px;
   height: 10px;
-  background: $colOrange;
-  border: 0.5px solid $colOrange;
+  background: rgba(225, 84, 49, 1);
+  border: 1px solid black;
   margin-top: -4px;
-  left: 7px;
+  left: 8px;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {

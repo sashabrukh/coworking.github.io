@@ -1,5 +1,6 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
+
 .btn {
   padding: 1.3rem 1.6rem;
   border-radius: 0.5rem;
@@ -35,12 +36,16 @@ a.btn {
   margin-right: 0;
 }
 
+.btn-down__link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
 .btn__down {
   display: flex;
   width: 6rem;
-  position: absolute;
-  top: 80%;
-  left: 50%;
   cursor: pointer;
   animation: bounce 5s infinite;
   transition: all 0.25s;
@@ -81,7 +86,6 @@ a.btn {
     transform: translate3d(0, -8px, 0);
   }
 }
-
 
 .btn__more {
   padding: 1.3rem 1.6rem;
