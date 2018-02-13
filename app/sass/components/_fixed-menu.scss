@@ -1,10 +1,11 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
+
 body, html {
   margin: 0;
-  overflow: hidden;
   transition: opacity 400ms;
+
 }
 
 body, .onepage-wrapper, html {
@@ -30,13 +31,16 @@ body, .onepage-wrapper, html {
 }
 
 .onepage-pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
   position: absolute;
   right: 5rem;
   top: 10%;
   z-index: 5;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
   @include tablets {
     display: none;
   }
@@ -65,10 +69,10 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a.active:before{
   width: 10px;
   height: 10px;
-  background: $colOrange;
-  border: 0.5px solid $colOrange;
+  background: $colWhite;
+  border: 1px solid $colOrange;
   margin-top: -4px;
-  left: 7px;
+  left: 9px;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {

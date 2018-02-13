@@ -47,17 +47,11 @@ a.btn {
   display: flex;
   width: 6rem;
   cursor: pointer;
-  animation: bounce 5s infinite;
+  animation: bounce 3s infinite;
   transition: all 0.25s;
   fill: $colWhite;
   &:hover {
     fill: $colOrange;
-  }
-  @include mediumscreen {
-    left: 47%;
-  }
-  @include tablets {
-    left: 47%;
   }
 }
 
@@ -89,7 +83,7 @@ a.btn {
 
 .btn__more {
   padding: 1.3rem 1.6rem;
-  margin-top: 1.7rem;
+  margin-top: 3rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -105,6 +99,9 @@ a.btn {
   }
   @include tablets {
     margin-left: auto;
+  }
+  @include tablets {
+    margin-top: 0;
   }
 }
 

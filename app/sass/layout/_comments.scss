@@ -2,6 +2,9 @@
 @import '../abstracts/mixins';
 .comments__bg {
   min-height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
 .comments__container {
@@ -14,7 +17,6 @@
 }
 
 .comments__image {
-  min-height: 32.5rem;
   height: 50vh;
   width: 25%;
   filter: grayscale(1);
@@ -28,12 +30,10 @@
   }
   @include tablets {
     width: 50%;
-    height: 25%;
+    height: 25vh;
   }
-  @include tablets {
+  @include phones {
     width: 50%;
-    height: 15%;
-
   }
 }
 
@@ -89,18 +89,18 @@
   background-size: contain;
   opacity: 0;
   display: flex;
-  justify-content: flex-start;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
   height: 90%;
   width: 70%;
-  margin: 5vh auto;
+  margin: auto;
   @include tablets {
     text-align: center;
+    margin-top: 1rem;
   }
   @include phones {
-    margin: 25vh auto;
     opacity: 1;
   }
 }
@@ -109,14 +109,10 @@
   font-size: $textSmall;
   color: $colWhite;
   font-family: $fontGagalin;
-  margin-bottom: 2vh;
-  @include tablets {
-    text-align: center;
-    flex: 1;
-  }
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height:2rem;
   @include phones {
-    text-align: center;
-    flex: 1;
     letter-spacing: 0.2rem;
     line-height: 4rem;
     font-size: $textMedium;
@@ -126,7 +122,11 @@
 .comments__text {
   font-size: $textSmall;
   color: $colWhite;
-  line-height: 2.4rem;
+  line-height: 2.3rem;
+  overflow: hidden;
+  @include tablets {
+    line-height: 2.2rem;
+  }
   @include phones {
     display: none;
   }

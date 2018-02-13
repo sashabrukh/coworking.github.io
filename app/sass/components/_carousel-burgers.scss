@@ -13,28 +13,20 @@
 .best-burgers__slider {
   position: relative;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-
-  @include tablets {
-    margin-top: 7vh;
-  }
+  height: 100%;
 }
 
 .best-burgers__list {
-  max-width:1100px;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content:center;
   align-items: center;
-  height: 100%;
-  opacity: 1;
+  padding: 2rem;
   z-index: 1;
-  transition: all 1s;
-  &--active {
-    opacity: 1;
-    z-index: 5;
-  }
+
 }
 
 .best-burgers__container {
@@ -90,6 +82,7 @@
   align-items: center;
   @include tablets {
     justify-content:center;
+
   }
 }
 
@@ -135,16 +128,18 @@
 
 .carousel-burgers__calories {
   position: absolute;
-  left: 5vw;
+  left: 0;
   bottom: -10vh;
   text-align: center;
+  height: 10rem;
   @include tablets {
-    left: 42rem;
-    top: -7rem;
+    left: 50%;
+    top: -9rem;
+    transform: translateX(280%);
   }
   @include phones {
     top: -10rem;
-    left: 36rem;
+    transform: translateX(200%);
   }
 }
 
@@ -168,16 +163,17 @@
 
 .carousel-burgers__container {
   position: absolute;
-  left: 4vw;
+  left: 0;
   top: -12vh;
   display: flex;
   @include tablets {
-    top: -8rem;
-    left: 0;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-70%);
   }
   @include phones {
     top: -10rem;
-    left: 3rem;
+    transform: translateX(-55%);
   }
 }
 
@@ -282,3 +278,5 @@
 .carousel-burgers__menu-name {
   margin-right: 6rem;
 }
+
+

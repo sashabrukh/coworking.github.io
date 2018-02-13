@@ -45,7 +45,7 @@
 }
 
 .accordeon-team__desc-text-title {
-  font-weight: bold;
+
 }
 
 .accordeon-team__desc-people {
@@ -53,6 +53,13 @@
   display: flex;
   font-family: $fontGagalin;
   margin-bottom: 15px;
+  font-size:$textSmall;
+  @include tablets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:$textMedium;
+  }
   @include tablets {
     display: flex;
     flex-direction: row;
@@ -66,17 +73,17 @@
     content: "";
     width: 0;
     height: 0;
-    border: 0.8rem solid transparent;
+    border: 1rem solid transparent;
     border-top-color: $colYellow;
     border-bottom: 0;
     cursor: pointer;
     @include tablets {
-      left: 13rem;
+      left: 8rem;
       top: 1.2rem;
     }
     @include phones {
-      left: 13rem;
-      top: 1.6rem;
+      left: 8rem;
+      top: 1.4rem;
       z-index: 10;
     }
   }
@@ -93,18 +100,18 @@
     content: "";
     width: 0;
     height: 0;
-    border: 0.8rem solid transparent;
+    border: 1rem solid transparent;
     border-bottom-color: $colYellow;
     border-top: 0;
     cursor: pointer;
     cursor: pointer;
     @include tablets {
-      left: 13rem;
+      left: 8rem;
       top: 1.2rem;
     }
     @include phones {
-      left: 13rem;
-      top: 1.6rem;
+      left: 8rem;
+      top: 1.4rem;
       z-index: 10;
     }
   }

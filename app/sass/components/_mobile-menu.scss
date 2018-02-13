@@ -6,9 +6,8 @@
 
 .mobile-menu {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 2.5rem;
-  left: 0;
   right: 1rem;
   z-index: 9999999;
   @include tablets {
