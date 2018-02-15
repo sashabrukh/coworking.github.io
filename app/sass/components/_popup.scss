@@ -51,10 +51,10 @@
   display: flex;
   position: absolute;
   cursor: pointer;
-  right: 2rem;
-  width: 3rem;
-  height: 3rem;
-  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 1.5rem;
+  top: 1.5rem;
   opacity: .4;
   transition: .3s;
   background-color: transparent;
@@ -64,8 +64,8 @@
   }
   &-btn {
     fill: red;
-    width: 2rem;
-    height: 3rem;
+    height: 100%;
+    width: 100%;
   }
 }
 

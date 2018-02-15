@@ -1,46 +1,10 @@
 "use strict";
 
-// BUTTON Animation
-
-// const btnDown = document.querySelector('.js-btnDown');
-//
-// function animateProp(el, prop, from, to, duration) {
-//     return new Promise(function(resolve) {
-//         function animate() {
-//             const currentTime = Date.now();
-//             const timesLeft = startTime + duration - currentTime;
-//
-//             if (timesLeft <= 0) {
-//                 el.style[prop] = to + "px";
-//                 resolve();
-//             } else {
-//                 const progress = 1 / duration * (duration - timesLeft);
-//
-//                 el.style[prop] = from + (to - from) * progress + "px";
-//                 requestAnimationFrame(animate);
-//             }
-//         }
-//
-//         const startTime = Date.now();
-//
-//         requestAnimationFrame(animate);
-//     });
-// }
-//
-// animateProp(btnDown, "top", 680, 630, 1000)
-//     .then(function() {
-//         return animateProp(btnDown, "top", 630, 680,1000);
-//     })
-//     .then(function() {
-//         return animateProp(btnDown, "", 20,10, 1500);
-//     })
-//     .then(function() {
-//         return animateProp(btnDown, "", 20, 200, 1500);
-//     });
-
+// BUTTON ANIMATION
 
 // ONE PAGE SCROLL
-$('[data-index]').on('click', function(e) {
+
+$('[data-index]').on('click', function (e) {
     const target = parseInt($(e.currentTarget).attr('data-index'));
     $.fn.moveTo(target);
 })
@@ -63,12 +27,6 @@ $(".main").onepage_scroll({
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
-
-
-
-
-// noinspection JSAnnotator
-
 
 // MOBILE MENU
 
@@ -196,81 +154,9 @@ for (let i = 0; i < commentItem.length; i++) {
     }
 }
 
-
-// const burgerMenu = document.querySelector('#burger-menu');
-// const burgerMenuList = document.querySelector('#burger-list');
-// let burgerOp = burgerMenuList.style.opacity;
-// let computedStyle = getComputedStyle(burgerMenuList);
-// let maxOp = 1;
-//
-// burgerMenu.addEventListener('click', function () {
-//     if (computedStyle.opacity < maxOp) {
-//         burgerMenuList.style.opacity += 1;
-//     } else {
-//         burgerMenuList.style.opacity -= 1;
-//     }
-//
-// });
-
-// SLIDER
-
-// const left = document.querySelector("#carousel-prev");
-// const right = document.querySelector("#carousel-next");
-// const items = document.querySelector("#best-burgers__slider");
-// const burgerItem = document.querySelector('.best-burgers__slider-container');
-// const body = document.body;
-// const currentWidth = parseInt(burgerItem.offsetWidth, 10);
-// const currentBodyWidth = parseInt(body.offsetWidth, 10);
-// const minRight = -currentWidth * 2;
-// const maxRight = currentWidth * 2;
-// const step = 1100;
-// let currentRight = 0;
-//
-// right.addEventListener("click", function () {
-//     if (currentRight < maxRight && currentBodyWidth > 768) {
-//         currentRight += step;
-//         items.style.right = currentRight + "px";
-//     }
-// });
-//
-// left.addEventListener("click", function () {
-//     if (currentRight > minRight && currentBodyWidth > 768) {
-//         currentRight -= step;
-//         items.style.right = currentRight + "px";
-//     }
-// });
+// ADD SLIDER
 
 slidr.create('best-burgers__slider').start();
-
-
-// const slides = document.querySelectorAll('#best-burgers__slider .best-burgers__list');
-// const slideInterval = setInterval(nextSlide, 2000);
-// const next = document.querySelector('#carousel-next');
-// const prev = document.querySelector('#carousel-prev');
-// const controls = document.querySelectorAll('.btn__none');
-// let currentSlide = 0;
-//
-// function nextSlide() {
-//     goToSlide(currentSlide + 1);
-// }
-//
-// function previousSlide() {
-//     goToSlide(currentSlide - 1);
-// }
-//
-// function goToSlide(n) {
-//     slides[currentSlide].className = 'best-burgers__list';
-//     currentSlide = (n + slides.length) % slides.length;
-//     slides[currentSlide].className = 'best-burgers__list best-burgers__list--active';
-// }
-//
-// next.onclick = function () {
-//     nextSlide();
-// };
-//
-// prev.onclick = function () {
-//     previousSlide();
-// };
 
 // MAPS
 
@@ -317,7 +203,7 @@ function init() {
         center: [59.94, 30.32],
         zoom: 12,
         controls: ['zoomControl'],
-        behaviors: ['drag']
+        behaviors: []
     });
 
     for (let i = 0; i < placemarks.length; i++) {

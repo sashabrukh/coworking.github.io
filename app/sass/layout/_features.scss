@@ -1,5 +1,6 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
+
 .features__bg {
   min-height: 100vh;
   background-image: url('../img/background-images/bg-features.jpg');
@@ -8,7 +9,7 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .features__container {
@@ -40,17 +41,19 @@
 
 .features__main-title {
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   font-size: $textHuge;
   font-family: $fontGagalin;
   color: $colGray;
   height: $textHuge;
   margin-bottom: $textHuge;
+  @include phones {
+    margin-bottom: $textHuge / 2;
+  }
 }
 
 .features__items {
-  margin-top: 5vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -60,8 +63,8 @@
   text-align: center;
   @include phones {
     flex-direction: column;
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -76,7 +79,7 @@
 }
 
 .features__item {
-  margin-bottom: 7%;
+  margin-bottom: 1rem;
 }
 
 .features__title {

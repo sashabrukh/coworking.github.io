@@ -279,4 +279,26 @@
   margin-right: 6rem;
 }
 
+.slidr-control.right {
+  width: 50px !important;
+  height: 50px !important;
+  top: 50% !important;
+  margin-top: -25px !important;
+  right: -10px !important;
+  background: url('../../img/forsprite/svg/001-keyboard-right-arrow-button.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slidr-control.left {
+  width: 50px !important;
+  height: 50px !important;
+  top: 50% !important;
+  margin-top: -25px !important;
+  left: -10px !important;
+  background: url('../../img/forsprite/svg/002-left-arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 

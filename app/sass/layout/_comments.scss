@@ -1,9 +1,10 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
+
 .comments__bg {
   min-height: 100vh;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -97,24 +98,27 @@
   width: 70%;
   margin: auto;
   @include tablets {
-    text-align: center;
     margin-top: 1rem;
   }
   @include phones {
-    opacity: 1;
+
   }
 }
 
 .comments__title {
+  display: flex;
+  margin-right: auto;
   font-size: $textSmall;
   color: $colWhite;
   font-family: $fontGagalin;
   margin-bottom: 2rem;
-  text-align: center;
-  line-height:2rem;
+  line-height: 2rem;
+  @include tablets {
+    margin-right: 0;
+    text-align: center;
+  }
   @include phones {
-    letter-spacing: 0.2rem;
-    line-height: 4rem;
+    line-height: 3rem;
     font-size: $textMedium;
   }
 }
@@ -122,10 +126,11 @@
 .comments__text {
   font-size: $textSmall;
   color: $colWhite;
-  line-height: 2.3rem;
+  line-height: 2.2rem;
   overflow: hidden;
+  margin-bottom: 2rem;
   @include tablets {
-    line-height: 2.2rem;
+    text-align: center;
   }
   @include phones {
     display: none;

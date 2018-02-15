@@ -65,7 +65,7 @@
                         <div class="mobile-menu-container" id="mobile-cont">
                             <ul class="mobile-menu-list">
                                 <li class="mobile-menu-item">
-                                    <a href="#features" class="mobile-menu-link">О нас</a>
+                                    <a href="#2" class="mobile-menu-link">О нас</a>
                                 </li>
                                 <li class="mobile-menu-item">
                                     <a href="#burgers" class="mobile-menu-link">Бургеры</a>
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <section class="section features__bg" id="2">
+    <section class="section features__bg" id="features">
         <div class="features__container">
             <h2 class="features__main-title">
                 Мы лучшие
@@ -1216,7 +1216,7 @@
     <div class="full-review__wrapper">
         <button class="full-review__close">
             <svg class="full-review__close-btn">
-                <use xlink:href="#close"></use>
+                <use xlink:href="#close-btn"></use>
             </svg>
         </button>
         <div class="full-review__inner">
@@ -1242,47 +1242,17 @@
     </div>
 </div>
 
-<!-- FIXED MENU -->
-
-<ul class="fixed-menu">
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#header" data-scroll-to="0"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#features" data-scroll-to="1"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#burgers" data-scroll-to="2"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#team" data-scroll-to="3"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#menu" data-scroll-to="4"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#comments" data-scroll-to="5"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#contacts" data-scroll-to="6"></a>
-    </li>
-    <li class="fixed-menu__item">
-        <a class="fixed-menu__link" href="#footer" data-scroll-to="7"></a>
-    </li>
-</ul>
-
 <!-- SVG SPRITE -->
 
 <div class="hidden">
 
     <?xml version="1.0" encoding="utf-8"?>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <symbol xmlns="http://www.w3.org/2000/svg" id="prev" viewBox="0 0 477.175 477.175">
-            <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-		c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
-        </symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" id="btn-down" viewBox="0 0 129 129">
             <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close-btn" viewBox="0 0 21.9 21.9">
+            <path d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z"/>
         </symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-scroll" viewBox="0 0 28.685 14.479">
             <path d="M14.332 14.479a4.964 4.964 0 0 1-3.525-1.458L.268 1.681A1 1 0 1 1 1.733.32l10.514 11.314c1.145 1.143 3.049 1.142 4.218-.026L26.952.319a1 1 0 0 1 1.465 1.361L17.903 12.995a5.033 5.033 0 0 1-3.571 1.484z"
@@ -1429,6 +1399,7 @@
     </svg>
 
 </div>
+
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/slidr.js"></script>
