@@ -41,9 +41,6 @@ body, .onepage-wrapper, html {
   list-style: none;
   margin: 0;
   padding: 2px;
-  @include tablets {
-    display: none;
-  }
 }
 .onepage-pagination li {
   padding: 0;

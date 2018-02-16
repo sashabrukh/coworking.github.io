@@ -1104,40 +1104,40 @@
             <div class="delivery__title">
                 Закажите доставку
             </div>
-            <form class="delivery__form">
+            <form class="delivery__form" action="ser" method="post" id="order-form">
                 <div class="delivery__form-left">
                     <div class="delivery__item-row">
                         <label class="delivery__block">
                             <div class="delivery__block-title">Имя</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="user-name" required >
                         </label>
                         <label class="delivery__block">
                             <div class="delivery__block-title">Телефон</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="user-phone" required>
                         </label>
                     </div>
                     <div class="delivery__item-row">
                         <label class="delivery__block">
                             <div class="delivery__block-title">Улица</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="street" required>
                         </label>
                     </div>
                     <div class="delivery__item-row">
                         <label class="delivery__block">
                             <div class="delivery__block-title">Дом</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="home-number" required>
                         </label>
                         <label class="delivery__block">
                             <div class="delivery__block-title">Корпус</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="home-part" required>
                         </label>
                         <label class="delivery__block">
                             <div class="delivery__block-title">Квартира</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="flat" required>
                         </label>
                         <label class="delivery__block delivery__block--hide-item">
                             <div class="delivery__block-title">Этаж</div>
-                            <input type="text" class="delivery__item-input">
+                            <input type="text" class="delivery__item-input" name="floor">
                         </label>
                     </div>
                 </div>
@@ -1145,27 +1145,27 @@
                     <div class="delivery__item-row">
                         <label class="delivery__block">
                             <div class="delivery__block-title">Комментарий</div>
-                            <textarea name="" id="" class="delivery__item-textarea"></textarea>
+                            <textarea class="delivery__item-textarea" name="message" id="message"></textarea>
                         </label>
                     </div>
                     <div class="delivery__item-row">
                         <div class="delivery__block delivery__block--media-phones">
-                            <input type="radio" class="delivery__item-radio" id="pay-cash" name="payment">
+                            <input type="radio" class="delivery__item-radio" id="pay-cash" name="pay-option" value="cash">
                             <label for="pay-cash" class="delivery__block-title">Потребуется сдача</label>
-                            <input type="radio" class="delivery__item-radio" id="pay-card" name="payment">
+                            <input type="radio" class="delivery__item-radio" id="pay-card" name="pay-option" value="card">
                             <label for="pay-card" class="delivery__block-title">Оплата по карте</label>
                         </div>
                     </div>
                     <div class="delivery__item-row">
                         <label class="delivery__block delivery__block--media-phones">
                             <input type="checkbox" class="delivery__item-check">
-                            <div class="delivery__block-title">Не перезванивать</div>
+                            <div class="delivery__block-title" id="dont-disturb" name="dont-disturb" value="1">Не перезванивать</div>
                         </label>
                     </div>
                     <div class="delivery__item-row">
                         <div class="delivery__block delivery__block--media-phones">
-                            <input type="submit" value="Заказать" class="btn btn__delivery">
-                            <input type="reset" value="Очистить" class="btn__clear">
+                            <button type="submit" class="btn btn__delivery">Заказать</button>
+                            <button type="reset"  class="btn__clear">Очистить</button>
                         </div>
                     </div>
                 </div>

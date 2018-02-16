@@ -7,15 +7,14 @@
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 2.5rem;
   right: 1rem;
   z-index: 9999999;
   @include tablets {
     display: initial;
-    top: 2.8rem;
+    top: 4.8rem;
   }
   @include phones {
-    top: 3rem;
+    top: 5rem;
   }
   &-btn-container {
     right: 1rem;
