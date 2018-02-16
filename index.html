@@ -48,43 +48,16 @@
                                 </a>
                             </li>
                             <li class="main-nav__item">
-                                <a href="#contacts" href="#8" data-index="8" class="main-nav__link">
+                                <a href="#8" data-index="8" class="main-nav__link">
                                     Контакты
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <a class="btn" href="#7" data-index="7">
+                    <a class="btn" data-index="7">
                         Заказать
                     </a>
-                    <nav class="mobile-menu">
-                        <input type="checkbox" id="checkbox" class="mobile-menu-checkbox">
-                        <label for="checkbox" class="mobile-menu-btn-container">
-                            <div class="mobile-menu-btn" id="mobile-btn"></div>
-                        </label>
-                        <div class="mobile-menu-container" id="mobile-cont">
-                            <ul class="mobile-menu-list">
-                                <li class="mobile-menu-item">
-                                    <a href="#2" class="mobile-menu-link">О нас</a>
-                                </li>
-                                <li class="mobile-menu-item">
-                                    <a href="#burgers" class="mobile-menu-link">Бургеры</a>
-                                </li>
-                                <li class="mobile-menu-item">
-                                    <a href="#team" class="mobile-menu-link">Команда</a>
-                                </li>
-                                <li class="mobile-menu-item">
-                                    <a href="#menu" class="mobile-menu-link">Меню</a>
-                                </li>
-                                <li class="mobile-menu-item">
-                                    <a href="#comments" class="mobile-menu-link">Отзывы</a>
-                                </li>
-                                <li class="mobile-menu-item">
-                                    <a href="#contacts" class="mobile-menu-link">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+
                 </div>
                 <div class="promo">
                     <div class="promo__image">
@@ -1109,7 +1082,7 @@
                     <div class="delivery__item-row">
                         <label class="delivery__block">
                             <div class="delivery__block-title">Имя</div>
-                            <input type="text" class="delivery__item-input" name="user-name" required >
+                            <input type="text" class="delivery__item-input" name="user-name" required>
                         </label>
                         <label class="delivery__block">
                             <div class="delivery__block-title">Телефон</div>
@@ -1150,22 +1123,26 @@
                     </div>
                     <div class="delivery__item-row">
                         <div class="delivery__block delivery__block--media-phones">
-                            <input type="radio" class="delivery__item-radio" id="pay-cash" name="pay-option" value="cash">
+                            <input type="radio" class="delivery__item-radio" id="pay-cash" name="pay-option"
+                                   value="cash">
                             <label for="pay-cash" class="delivery__block-title">Потребуется сдача</label>
-                            <input type="radio" class="delivery__item-radio" id="pay-card" name="pay-option" value="card">
+                            <input type="radio" class="delivery__item-radio" id="pay-card" name="pay-option"
+                                   value="card">
                             <label for="pay-card" class="delivery__block-title">Оплата по карте</label>
                         </div>
                     </div>
                     <div class="delivery__item-row">
                         <label class="delivery__block delivery__block--media-phones">
                             <input type="checkbox" class="delivery__item-check">
-                            <div class="delivery__block-title" id="dont-disturb" name="dont-disturb" value="1">Не перезванивать</div>
+                            <div class="delivery__block-title" id="dont-disturb" name="dont-disturb" value="1">Не
+                                перезванивать
+                            </div>
                         </label>
                     </div>
                     <div class="delivery__item-row">
                         <div class="delivery__block delivery__block--media-phones">
                             <button type="submit" class="btn btn__delivery">Заказать</button>
-                            <button type="reset"  class="btn__clear">Очистить</button>
+                            <button type="reset" class="btn__clear">Очистить</button>
                         </div>
                     </div>
                 </div>
@@ -1209,6 +1186,37 @@
         </div>
     </section>
 </div>
+
+<!--MOBILE MENU-->
+
+<nav class="mobile-menu">
+    <input type="checkbox" id="checkbox" class="mobile-menu-checkbox">
+    <label for="checkbox" class="mobile-menu-btn-container">
+        <div class="mobile-menu-btn" id="mobile-btn"></div>
+    </label>
+    <div class="mobile-menu-container" id="mobile-cont">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <a href="#features" class="mobile-menu-link">О нас</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#burgers" class="mobile-menu-link">Бургеры</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#team" class="mobile-menu-link">Команда</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#menu" class="mobile-menu-link">Меню</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#comments" class="mobile-menu-link">Отзывы</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#contacts" class="mobile-menu-link">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <!--REVIEWS POPUP-->
 

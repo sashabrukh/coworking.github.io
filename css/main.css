@@ -833,7 +833,7 @@ a {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 1rem;
   z-index: 9999999; }
 
