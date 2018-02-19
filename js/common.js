@@ -1,19 +1,9 @@
 "use strict";
 
-// BUTTON ANIMATION
+// ONE PAGE SCROLL
 
 const currentWidth = document.body.offsetWidth;
 const tabletWidth = 768;
-// const btnDown = document.querySelector('.JS-btnDown');
-//
-// if (currentWidth > 768) {
-//     btnDown.addEventListener('click', function(){
-//         alert('qq')
-//     })
-// }
-
-
-// ONE PAGE SCROLL
 
 $('[data-index]').on('click', function (e) {
     const target = parseInt($(e.currentTarget).attr('data-index'));
@@ -38,8 +28,8 @@ $(".main").onepage_scroll({
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
 
-$('.btn').on('click', function() {
-    if(currentWidth <= tabletWidth) {
+$('.btn').on('click', function () {
+    if (currentWidth <= tabletWidth) {
         $('.btn').attr('href', '#contacts');
     }
     else {
@@ -47,15 +37,14 @@ $('.btn').on('click', function() {
     }
 });
 
-$('.btn-down__link').on('click', function() {
-    if(currentWidth <= tabletWidth) {
+$('.btn-down__link').on('click', function () {
+    if (currentWidth <= tabletWidth) {
         $('.btn-down__link').attr('href', '#features');
     }
     else {
         $('.btn-down__link').removeAttr('href', '#features');
     }
 });
-
 
 // MOBILE MENU
 
@@ -92,7 +81,6 @@ for (let i = 0; i < mobileMenuLink.length; i++) {
 
     });
 }
-
 
 // TEAM ACCO
 
@@ -191,7 +179,7 @@ slidr.create('best-burgers__slider').start();
 
 $('#order-form').on('submit', submitForm);
 
-function submitForm (ev) {
+function submitForm(ev) {
     ev.preventDefault();
 
     var form = $(ev.target),
@@ -199,16 +187,16 @@ function submitForm (ev) {
         url = form.attr('action'),
         type = form.attr('method');
 
-    ajaxForm(form).done(function(msg) {
+    ajaxForm(form).done(function (msg) {
         var mes = msg.mes,
             status = msg.status;
 
         if (status === 'OK') {
             form.append('<p class="success">' + mes + '</p>');
-        } else{
+        } else {
             form.append('<p class="error">' + mes + '</p>');
         }
-    }).fail(function(jqXHR, textStatus) {
+    }).fail(function (jqXHR, textStatus) {
         alert("Request failed: " + textStatus);
     });
 
@@ -222,7 +210,7 @@ var ajaxForm = function (form) {
     return $.ajax({
         type: 'POST',
         url: url,
-        dataType : 'JSON',
+        dataType: 'JSON',
         data: data
     })
 };
