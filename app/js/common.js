@@ -166,7 +166,6 @@ $(commentItem).click(function () {
 });
 
 for (let i = 0; i < getBtnMore.length; i++) {
-
     getBtnMore[i].addEventListener('click', function () {
         let activeClass = getBtnMore[i].classList.contains('full-review--active');
         if (!activeClass) {
@@ -176,7 +175,6 @@ for (let i = 0; i < getBtnMore.length; i++) {
             }
         }
     });
-
     for (let y = 0; y < closeBtn.length; y++) {
         closeBtn[y].addEventListener('click', function () {
             fullReview[i].classList.remove('full-review--active');
@@ -283,7 +281,7 @@ function init() {
             balloonContent: placemarks[i].balloonContent.join('')
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '../img/forsprite/svg/map-marker.svg',
+            iconImageHref: 'img/sprites/map-marker.svg',
             iconImageSize: [46, 57],
             iconImageOffset: [-23, -57]
         });
@@ -291,7 +289,7 @@ function init() {
 
     const clusterer = new ymaps.Clusterer({
         clusterIcons: [{
-            href: '../img/burger-promo.png',
+            href: 'img/burger-promo.png',
             size: [100, 100],
             offset: [-50, -50]
         }],
