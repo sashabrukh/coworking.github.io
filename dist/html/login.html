@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/libs.min.css">
+    <link rel="icon" type="image/png" href="">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="background-image">
+          <div class="log-form__container">
+            <form class="log-form">
+              <fieldset class="log-form__fieldset"><span class="log-form__title">Авторизуйтесь</span>
+                <input class="log-form__login" type="text" name="login" placeholder="Логин">
+                <input class="log-form__pw" type="password" name="password" placeholder="Пароль">
+                <div class="log-form__captcha-cont">
+                  <input class="log-form__captcha" type="checkbox" id="log-form__captcha" name="captcha" value="captcha">
+                  <label class="log-form__label" for="log-form__captcha"></label><span class="log_form__captcha-answer">Я человек</span>
+                </div><span class="log-form__captcha-question">Вы точно не робот?</span>
+                <div class="log-form__radio-cont">
+                  <input class="log-form__radio" type="radio" id="log-form__label-radio--yes" name="robot" value="yes">
+                  <label class="log-form__label-radio" for="log-form__label-radio--yes">Да</label><span class="log-form__radio-text yes"></span>
+                  <input class="log-form__radio" type="radio" id="log-form__label-radio--no" name="robot" value="no">
+                  <label class="log-form__label-radio" for="log-form__label-radio--no">Не уверен</label><span class="log-form__radio-text no"></span>
+                </div>
+                <div class="log-form__buttons">
+                  <div class="log-form__buttons--left">
+                    <button class="log-form__to-main">На главную</button>
+                  </div>
+                  <div class="log-form__buttons--right">
+                    <button class="log-form__submit" type="submit">Войти</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="footer__wrapper">
+            <div class="footer__container">
+              <footer class="footer"><span class="footer__rights">Александр Брюханов</span><span class="footer__text">создано с любовью в LoftSchool | 2016</span></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../../js/libs.min.js"></script>
+  <script src="../../js/bundle.js"></script>
+</html>
