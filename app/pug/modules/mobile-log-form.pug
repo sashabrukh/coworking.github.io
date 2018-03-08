@@ -1,25 +1,24 @@
-.log-form__wrapper
-  .log-form__container
-    form.log-form
-      fieldset.log-form__fieldset
-        h1.log-form__title Авторизуйтесь
-        input(type='text', class='log-form__login', name='login', placeholder="Логин")
-        input(type='password', class='log-form__pw', name='password', placeholder="Пароль")
-        .log-form__captcha-cont
-          input(type="checkbox", id='log-form__captcha', class='log-form__captcha', name="captcha" value='captcha')
-          label(class='log-form__label', for='log-form__captcha')
-          span.log_form__captcha-answer Я человек
-        span.log-form__captcha-question Вы точно не робот?
-        .log-form__radio-cont
-          input(type="radio", id='log-form__label-radio--yes', class='log-form__radio', name='robot', value='yes')
-          label(class='log-form__label-radio', for='log-form__label-radio--yes') Да
-          span.log-form__radio-text.yes
-          input(type="radio", id='log-form__label-radio--no', class='log-form__radio', name='robot', value='no')
-          label(class='log-form__label-radio', for='log-form__label-radio--no') Не уверен
-          span.log-form__radio-text.no
-        .log-form__buttons
-          .log-form__buttons--left
-            button.log-form__to-main На главную
-          .log-form__buttons--right
-            button(type="submit", class='log-form__submit') Войти
+.log-form__container
+  form.log-form
+    fieldset.log-form__fieldset
+      span.log-form__title Авторизуйтесь
+      input(type='text', class='log-form__login', name='login', placeholder="Логин")
+      input(type='password', class='log-form__pw', name='password', placeholder="Пароль")
+      .log-form__captcha-cont
+        input(type="checkbox", id='log-form__captcha', class='log-form__captcha', name="captcha" value='captcha')
+        label(class='log-form__label', for='log-form__captcha')
+        span.log_form__captcha-answer Я человек
+      span.log-form__captcha-question Вы точно не робот?
+      .log-form__radio-cont
+        input(type="radio", id='log-form__label-radio--yes', class='log-form__radio', name='robot', value='yes')
+        label(class='log-form__label-radio', for='log-form__label-radio--yes') Да
+        span.log-form__radio-text.yes
+        input(type="radio", id='log-form__label-radio--no', class='log-form__radio', name='robot', value='no')
+        label(class='log-form__label-radio', for='log-form__label-radio--no') Не уверен
+        span.log-form__radio-text.no
+      .log-form__buttons
+        .log-form__buttons--left
+          button.log-form__to-main На главную
+        .log-form__buttons--right
+          button(type="submit").log-form__submit Войти
 

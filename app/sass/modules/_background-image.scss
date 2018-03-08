@@ -1,0 +1,17 @@
+@import "../misc/variables.scss";
+@import "../misc/functions.scss";
+@import "../misc/mixins.scss";
+@import "../misc/media.scss";
+
+.background-image {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items:flex-start;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/back/mountains.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
