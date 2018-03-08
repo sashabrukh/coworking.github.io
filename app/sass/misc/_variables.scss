@@ -20,6 +20,7 @@ $bern: 'BERNIER',
 Helvetica,
 sans-serif;
 
+$softwhite2: rgba(239, 235, 224, 1);
 $softwhite: rgba(250, 248, 240, 1);
 $gray: rgba(69, 90, 100, 1);
 $lgray: rgba(208, 209, 209, 1);
@@ -27,11 +28,12 @@ $whiteOp: rgba(255, 255, 255, .8);
 $white: rgba(255, 255, 255, 1);
 $green: rgba(12, 179, 160, 1);
 
-$fz30: rem(40px);
+
+$fz14: rem(14px);
 $fz18: rem(18px);
 $fz21: rem(21px);
-$fz14: rem(14px);
 $fz35: rem(35px);
+$fz30: rem(40px);
 
 $lhmin: 1.15;
 

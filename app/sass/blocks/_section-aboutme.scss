@@ -3,7 +3,7 @@
 @import "../misc/mixins";
 @import "../misc/media";
 
-.section-works {
+.section-about {
   &__cont {
     display: flex;
     justify-content:center;
@@ -13,22 +13,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    height: 24.6%;
-  }
-  &__header {
-    margin:0;
-    font-family:$bern;
-    font-weight:bold;
-    font-size: $fz35;
-  }
-  &__title {
-    position: absolute;
-    z-index: 999;
-    height: 33px;
-    top: rem(-40px);
-    width: 100%;
-    background-image: url('../img/parts/bg-decorate.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 15.3%;
   }
 }
