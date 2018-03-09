@@ -5,17 +5,17 @@
 @import "base/fonts";
 @import "base/layout";
 @import "blocks/aside";
-@import "blocks/section-header";
-@import "blocks/section-works";
-@import "blocks/section-aboutme";
+@import "blocks/my-works-section-header";
+@import "blocks/my-works-section-works";
+@import "blocks/my-works-section-about";
 @import "blocks/header";
 @import "pages/login";
 @import "pages/welcome";
+@import "pages/my-works";
 @import "modules/mobile-log-form";
 @import "modules/main-nav";
 @import "modules/logo";
 @import "modules/buttons";
-@import "modules/background-image";
 @import "modules/welcome-form";
 @import "blocks/footer";
 

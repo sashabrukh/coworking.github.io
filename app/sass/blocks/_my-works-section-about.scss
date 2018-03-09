@@ -1,0 +1,67 @@
+@import "../misc/variables";
+@import "../misc/functions";
+@import "../misc/mixins";
+@import "../misc/media";
+
+.my-works__about {
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  &-title {
+    background-image: url('../img/parts/about-header.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 15.3%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  &-title-item {
+    position: relative;
+    font-family:$bern;
+    font-size:$fz35;
+    max-width:60%;
+    text-align: center;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      left: 50%;
+      top: 50%;
+      transform: translateX(-450%);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      left: 50%;
+      top: 50%;
+      transform: translateX(350%);
+    }
+  }
+  &-avatar {
+    float: left;
+    margin-right:rem(20px);
+  }
+  &-name {
+    color: darken($green, 10%);
+  }
+  &-desc {
+    color: $green;
+  }
+  &-quote-icon {
+    margin:rem(20px) auto;
+    text-align: center;
+  }
+  &-comment {
+    padding: 0 rem(20px);
+  }
+  &-avatar.first {
+
+  }
+}
