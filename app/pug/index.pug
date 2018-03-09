@@ -1,0 +1,15 @@
+doctype html
+html(lang = 'ru-RU')
+  head
+    include layout/index-prop
+    title Portfolio
+  body
+    .wrapper
+      .container
+        .welcome__bg
+          a(href='pages/login.html').welcome__link Авторизоваться
+          include modules/welcome-form
+        include blocks/footer
+  include layout/scripts-index
+
+

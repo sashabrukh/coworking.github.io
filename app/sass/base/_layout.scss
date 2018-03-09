@@ -1,0 +1,118 @@
+@import "../misc/variables";
+@import "../misc/functions";
+@import "../misc/mixins";
+@import "../misc/media";
+
+html {
+  @include laptop {
+    font-size: rem(15px);
+  }
+  @include phones {
+    font-size: rem(13px);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: rem(16px);
+  @include phones {
+
+  }
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  font-family: $rob;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  // min-width: rem(940px) + rem(20px);
+  // min-height: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  // min-width: rem(940px) + rem(20px);
+  // min-height: 100%;
+  margin: 0 auto;
+  @include desktop {
+    max-width: $desktop;
+  }
+  @include laptop {
+    max-width: $desktop;
+  }
+  @include tablets {
+    max-width: $laptop;
+  }
+  @include phones {
+    max-width: $tablets;
+  }
+  &__mobile {
+  }
+}
+
+.section {
+  width: 100%;
+  height:100%;
+  min-height: rem(650px);
+  position: relative;
+}
+
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: rem(35px);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// .section {
+//   // min-height: rem(650px);
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
