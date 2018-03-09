@@ -4,7 +4,12 @@
 @import "../misc/media";
 
 .section-works {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
   &__cont {
+    width: 100%;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -16,7 +21,10 @@
     min-height: 15.3%;
   }
   &__header {
-    margin:0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     font-family:$bern;
     font-weight:bold;
     font-size: $fz35;
@@ -39,7 +47,7 @@
       right: rem(30px);
     }
   }
-  &__title {
+  &__bg{
     position: absolute;
     z-index: 999;
     height: rem(40px);
@@ -52,6 +60,7 @@
   &__slider-horizontal {
     padding: rem(25px);
     min-height:39.5%;
+    width: 100%;
     background-color: $softwhite2;
     background-image: url('../img/parts/sliderH.png');
     background-repeat: no-repeat;
@@ -60,6 +69,7 @@
   }
   &__slider-desc {
     min-height: 33.69%;
+    width: 100%;
     display: flex;
     flex-direction:column;
     justify-content: center;

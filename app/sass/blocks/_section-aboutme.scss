@@ -4,15 +4,39 @@
 @import "../misc/media";
 
 .section-about {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
   &__cont {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    background-color: $softwhite;
-    background-image: url('../img/parts/works-header.png');
+    background-image: url('../img/parts/about-header.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
     min-height: 15.3%;
+  }
+  &__title {
+    font-family:$bern;
+    font-size:$fz35;
+    max-width:50%;
+    text-align: center;
+    &:before {
+      color: $lgray;
+      position: absolute;
+      font-family: arial;
+      content: '-';
+      font-size: rem(80px);
+      top: rem(-55px);
+      left: rem(30px);
+    }
+    &:after {
+      color: $lgray;
+      position: absolute;
+      font-family: arial;
+      content: '-';
+      font-size: rem(100px);
+      top: rem(-55px);
+      right: rem(30px);
+    }
   }
 }

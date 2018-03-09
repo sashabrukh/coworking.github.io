@@ -4,13 +4,13 @@
 @import "misc/media.scss";
 @import "base/fonts";
 @import "base/layout";
-@import "blocks/main-cont";
-@import "blocks/section";
 @import "blocks/aside";
 @import "blocks/section-header";
 @import "blocks/section-works";
 @import "blocks/section-aboutme";
 @import "blocks/header";
+@import "pages/login";
+@import "pages/welcome";
 @import "modules/mobile-log-form";
 @import "modules/main-nav";
 @import "modules/logo";
