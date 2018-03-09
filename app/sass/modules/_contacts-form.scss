@@ -1,0 +1,131 @@
+@import "../misc/variables.scss";
+@import "../misc/functions.scss";
+@import "../misc/mixins.scss";
+@import "../misc/media.scss";
+
+.my-works__contacts {
+  &-bg {
+    width: 99%;
+    height:100%;
+    background-image: url('../img/back/sea.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-form {
+    width: 90%;
+    height:90%;
+    margin:0 auto;
+    background-image: url('../img/back/blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: rem(20px);
+
+  }
+  &-form-fieldset {
+    position: relative;
+    height:100%;
+    width: 100%;
+    outline:none;
+    border: none;
+  }
+  &-form-title {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: $fz35;
+    font-family: $bern;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      left: 50%;
+      top: 50%;
+      transform: translateX(-550%);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      left: 50%;
+      top: 50%;
+      transform: translateX(450%);
+    }
+  }
+  &-form-login {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height:7.3%;
+    border-radius: rem(10px);
+    border: none;
+    padding:rem(10px) rem(20px);
+    margin-bottom:rem(20px);
+  }
+  &-form-pw {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height:7.3%;
+    border-radius: rem(10px);
+    border: none;
+    padding:rem(10px) rem(20px);
+    margin-bottom:rem(20px);
+  }
+  &-form-text {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height:33%;
+    border: none;
+    padding:rem(20px);
+    margin-bottom:rem(20px);
+  }
+  &-form-fieldset {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    outline:none;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 0;
+    border-radius: rem(10px);
+  }
+  &-buttons {
+    position: absolute;
+    bottom: 0;
+    background-color: $green;
+    width: 100%;
+    height: 11.11%;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: rem(10px);
+    border-bottom-right-radius: rem(10px);
+    &--left {
+      width: 50%;
+      height: 100%;
+      border-right: 2px solid $lgray;
+    }
+    &--right {
+      width: 50%;
+      height: 100%;
+    }
+  }
+  &-submit {
+    color: $white;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+}
