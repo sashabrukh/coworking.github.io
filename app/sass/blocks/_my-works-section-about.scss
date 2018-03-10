@@ -10,6 +10,7 @@
   height:100%;
   width: 100%;
   &-title {
+    width:100%;
     background-image: url('../img/parts/about-header.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -23,7 +24,7 @@
     position: relative;
     font-family:$bern;
     font-size:$fz35;
-    max-width:60%;
+    max-width:40%;
     text-align: center;
     &:before {
       position: absolute;

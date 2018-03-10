@@ -21,18 +21,22 @@
     background-size: cover;
   }
   &-title {
+    width:100%;
     background-color: $softwhite;
-    width: 100%;
-  }
-  &-title-item {
-    position: relative;
-    width: 100%;
+    background-image: url('../img/parts/works-header.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 15.3%;
     display: flex;
     justify-content:center;
     align-items:center;
+  }
+  &-title-item {
+    position: relative;
     font-family:$bern;
-    font-weight:bold;
-    font-size: $fz35;
+    font-size:$fz35;
+    text-align: center;
     &:before {
       position: absolute;
       content: '';
