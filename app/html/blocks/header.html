@@ -2,12 +2,23 @@
 <div class="header__wrapper">
   <div class="header__container">
     <header class="header">
-      <div class="header__socials">
-        <div class="div">1231</div>
-        <div class="div"> 222</div>
-        <div class="div">333</div>
-      </div>
-      <nav class="main-nav">Main-nav</nav>
+      <ul class="header__socials-list">
+        <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+        <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+        <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+      </ul>
+      <nav class="mobile-menu">
+        <input class="mobile-menu__checkbox" type="checkbox" id="mobile-checkbox"/>
+        <label class="mobile-menu__btn-container" for="mobile-checkbox"><span class="mobile-menu__btn" id="mobile-btn"></span></label>
+        <div class="mobile-menu__container" id="mobile-cont">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/my-works.html">Мои работы</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/about.html">Обо мне</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/blog.html">Блог</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/login.html">Авторизация</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
   </div>
 </div>

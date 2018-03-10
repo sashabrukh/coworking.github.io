@@ -12,59 +12,115 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <div class="section section-header">
-          <div class="section-header-bg">
+        <div class="section my-works__header">
+          <div class="my-works__header-bg">
             <div class="header__wrapper">
               <div class="header__container">
                 <header class="header">
-                  <div class="header__socials">
-                    <div class="div">1231</div>
-                    <div class="div"> 222</div>
-                    <div class="div">333</div>
-                  </div>
-                  <nav class="main-nav">Main-nav</nav>
+                  <ul class="header__socials-list">
+                    <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+                    <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+                    <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+                  </ul>
+                  <nav class="mobile-menu">
+                    <input class="mobile-menu__checkbox" type="checkbox" id="mobile-checkbox">
+                    <label class="mobile-menu__btn-container" for="mobile-checkbox"><span class="mobile-menu__btn" id="mobile-btn"></span></label>
+                    <div class="mobile-menu__container" id="mobile-cont">
+                      <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/my-works.html">Мои работы</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/about.html">Обо мне</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/blog.html">Блог</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="../pages/login.html">Авторизация</a></li>
+                      </ul>
+                    </div>
+                  </nav>
                 </header>
               </div>
-            </div><img class="section-header__img" src="../../img/my-photo.jpg"><span class="section-header__my-name">Александр Брюханов</span><span class="section-header__title">Личный сайт веб разработчика</span>
-            <div class="section-header__arrow-down">svg here</div>
+            </div><img class="my-works__header-img" src="../../img/my-photo.jpg">
+            <div class="my-works__header-my-name">Александр Брюханов</div>
+            <div class="my-works__header-title">Личный сайт веб разработчика</div>
+            <div class="my-works__header-arrow-down">svg will be here</div>
           </div>
         </div>
-        <div class="section section-works">
-          <div class="section-works__bg"></div>
-          <h2 class="section-works__header">Мои работы</h2>
-          <div class="section-works__slider-horizontal"></div>
-          <div class="section-works__slider-desc">
-            <h2 class="section-works__name">Сайт школы онлайн образования</h2>
-            <div class="section-works__tech"><span class="section-works__tech-item">Html,</span><span class="section-works__tech-item">Css,</span><span class="section-works__tech-item">Javascript</span></div><a class="section-works__link" href="#">Посмотреть сайт</a>
+        <div class="section my-works__works">
+          <div class="my-works__works-bg"></div>
+          <div class="my-works__works-title">
+            <h2 class="my-works__works-title-item">Мои работы</h2>
           </div>
-          <div class="section-works__slider-vertical">
-            <div class="section-works__slider-vertical left"></div>
-            <div class="section-works__slider-vertical right"></div>
+          <div class="my-works__works-slider-horizontal"></div>
+          <div class="my-works__works-slider-desc">
+            <h2 class="my-works__works-name">Сайт школы онлайн образования</h2>
+            <div class="my-works__works-tech"><span class="my-works__works-tech-item">Html,</span><span class="my-works__works-tech-item">Css,</span><span class="my-works__works-tech-item">Javascript</span></div><a class="my-works__works-link" href="#">Посмотреть сайт</a>
+          </div>
+          <div class="my-works__works-slider-vertical">
+            <div class="my-works__works-slider-vertical left"></div>
+            <div class="my-works__works-slider-vertical right"></div>
           </div>
         </div>
-        <div class="section section-about">
-          <div class="section-about__cont">
-            <h2 class="section-about__title">Что обо мне говорят</h2>
+        <div class="section my-works__about">
+          <div class="my-works__about-title">
+            <h2 class="my-works__about-title-item">Что обо мне говорят</h2>
           </div>
-          <div class="section-about__quote-icon">icon will be here</div>
-          <div class="section-about__comment">
-            <p class="section-about__text">
+          <div class="my-works__about-quote-icon">icon will be here</div>
+          <div class="my-works__about-comment">
+            <p class="my-works__about-text">
               Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытанийи бессонных ночей!</p>
-            <div class="section-about__who">
-              <div class="section-about-avatar"></div>
-              <div class="section-about-name">Ковальчук Дмитрий</div>
-              <div class="section-about-desc">основатель Loftschool</div>
+            <div class="my-works__about-who"><img class="my-works__about-avatar first" src="../../img/comments/dima.jpg" alt="avatar">
+              <div class="my-works__about-name">Ковальчук Дмитрий</div>
+              <div class="my-works__about-desc">основатель Loftschool</div>
             </div>
-          </div>
-          <div class="section-about__quote-icon">
-            <p class="section-about__text">
+            <div class="my-works__about-quote-icon">icon will be here</div>
+            <p class="my-works__about-text">
               Этот код выдержит любые испытания. Только пожалуйста, не загружается сайтна слишком старых браузерах!</p>
-            <div class="section-about__who">
-              <div class="section-about-avatar"></div>
-              <div class="section-about-name">Зар Захаров</div>
-              <div class="section-about-desc">преподаватель</div>
+            <div class="my-works__about-who"><img class="my-works__about-avatar second" src="../../img/comments/vova.jpg" alt="avatar">
+              <div class="my-works__about-name">Зар Захаров</div>
+              <div class="my-works__about-desc">преподаватель</div>
             </div>
           </div>
+        </div>
+        <div class="section my-works__contacts-bg">
+          <form class="my-works__contacts-form">
+            <fieldset class="my-works__contacts-form-fieldset">
+              <div class="my-works__contacts-form-title">
+                <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
+              </div>
+              <input class="my-works__contacts-form-login" type="text" name="login" id="login" placeholder="Логин">
+              <input class="my-works__contacts-form-pw" type="password" id="password" name="password" placeholder="Пароль">
+              <textarea class="my-works__contacts-form-text" id="contacts-form-text" name="comment" placeholder="Ваше сообщение"></textarea>
+              <div class="my-works__contacts-buttons">
+                <div class="my-works__contacts-buttons--left">
+                  <button class="my-works__contacts-submit" type="submit">Отправить</button>
+                </div>
+                <div class="my-works__contacts-buttons--right">
+                  <button class="my-works__contacts-submit" type="clear">Очистить</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <div class="my-works__contacts-arrow">svg will be here</div>
+        </div>
+        <div class="footer-big__container">
+          <footer class="footer-big">
+            <div class="footer-big__nav">
+              <ul class="footer-big__nav-list">
+                <li class="footer-big__nav-list-item"><a class="footer-big__nav-list-item-link" href="#">Мои работы</a></li>
+                <li class="footer-big__nav-list-item"><a class="footer-big__nav-list-item-link" href="#">Обо мне</a></li>
+                <li class="footer-big__nav-list-item"><a class="footer-big__nav-list-item-link" href="#">Блог</a></li>
+                <li class="footer-big__nav-list-item"><a class="footer-big__nav-list-item-link" href="#">Авторизация</a></li>
+              </ul>
+              <div class="footer-big__socials">
+                <ul class="footer-big__socials-list">
+                  <li class="footer-big__socials-list-item vk"><a class="footer-big__socials-list-item-link" href="#">icon</a></li>
+                  <li class="footer-big__socials-list-item vk"><a class="footer-big__socials-list-item-link" href="#">icon</a></li>
+                  <li class="footer-big__socials-list-item vk"><a class="footer-big__socials-list-item-link" href="#">icon</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-big__copyright">
+              <div class="footer-big__copyright-text">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
+              <div class="footer-big__copyright-text">© Владимир Астахов | создано с любовью</div>в LoftSchool | 2016
+            </div>
+          </footer>
         </div>
       </div>
     </div>

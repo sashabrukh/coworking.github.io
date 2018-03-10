@@ -1,0 +1,145 @@
+@import "../misc/variables.scss";
+@import "../misc/functions.scss";
+@import "../misc/mixins.scss";
+@import "../misc/media.scss";
+
+.my-works__contacts {
+  &-bg {
+    position: relative;
+    width: 100%;
+    background-image: url('../img/back/sea.png');
+    background-repeat: no-repeat;
+    background-position: 0 -350px;
+
+  }
+  &-form {
+    position: absolute;
+    margin: 0 auto;
+    width: 90%;
+    background-image: url('../img/back/blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: rem(20px);
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &-form-fieldset {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: rem(60px);
+  }
+  &-form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-form-title-item {
+    position: relative;
+    font-family: $bern;
+    font-size: $fz35;
+    max-width: 60%;
+    text-align: center;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      left: rem(-50px);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      right: rem(-50px)
+    }
+  }
+  &-form-login {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: 7.3%;
+    border-radius: rem(10px);
+    border: none;
+    padding: rem(10px) rem(20px);
+    margin-bottom: rem(20px);
+  }
+  &-form-pw {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: 7.3%;
+    border-radius: rem(10px);
+    border: none;
+    padding: rem(10px) rem(20px);
+    margin-bottom: rem(20px);
+  }
+  &-form-text {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    min-height: rem(240px);
+    border: none;
+    padding: rem(20px);
+    margin-bottom: 20.11%;
+    border-radius: rem(10px);
+    resize: none;
+  }
+  &-form-fieldset {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: rem(10px);
+  }
+  &-buttons {
+    position: absolute;
+    bottom: 0;
+    background-color: $green;
+    width: 100%;
+    height: 11.11%;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: rem(10px);
+    border-bottom-right-radius: rem(10px);
+    &--left {
+      width: 50%;
+      height: 100%;
+      border-right: 2px solid $lgray;
+    }
+    &--right {
+      width: 50%;
+      height: 100%;
+    }
+  }
+  &-submit {
+    color: $white;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+  &-arrow {
+    color: $white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

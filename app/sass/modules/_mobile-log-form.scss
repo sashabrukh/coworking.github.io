@@ -13,7 +13,7 @@
 
   &__container {
     width: 99%;
-    height: 71.302%;
+    height: rem(505px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,20 +35,22 @@
     display: flex;
     justify-content:center;
     align-items:center;
-    flex-wrap: wrap-reverse;
+  }
+  &__title-item {
     position: relative;
-    font-size: $fz30;
-    font-family: $bern;
-    color: $gray;
-    margin: rem(40px) 0;
+    font-family:$bern;
+    font-size:$fz35;
+    max-width:60%;
+    text-align: center;
+    margin:rem(30px);
     &:before {
       position: absolute;
       content: '';
       background-color: $lgray;
       width: rem(30px);
       height: rem(7px);
-      top: rem(30px);
-      right: rem(30px);
+      top: 50%;
+      left: rem(-50px);
     }
     &:after {
       position: absolute;
@@ -56,8 +58,8 @@
       background-color: $lgray;
       width: rem(30px);
       height: rem(7px);
-      top: rem(30px);
-      left: rem(30px);
+      top: 50%;
+      right: rem(-50px)
     }
   }
   &__label-cont {
@@ -99,8 +101,10 @@
     border-bottom-right-radius: rem(10px);
     border: none;
     padding:rem(10px) rem(20px);
+
   }
   &__captcha-cont {
+    margin-top: rem(40px);
     margin-bottom: rem(30px);
   }
   &__captcha-question {
@@ -160,6 +164,10 @@
   justify-content: center;
 }
 
+.log-form__label {
+  margin-left:rem(30px);
+}
+
 .log-form__captcha-cont .log-form__captcha {
   display: none;
 }
@@ -172,9 +180,9 @@
   width: rem(25px);
   background-color: $white;
   outline: 1px solid $lgray;
-  top: 0;
+  top: rem(3px);
   right: 50%;
-  transform: translate(-200%);
+  transform: translate(-190%);
 }
 
 .log-form__captcha:checked + .log-form__label:after {
@@ -190,10 +198,20 @@
   display: flex;
   position: relative;
   justify-content:center;
+  width: 100%;
+}
+
+.log-form__radio-wrap {
+  position: relative;
+  width:50%;
+}
+
+.log-form__radio-text.yes {
+  margin-left: rem(50px);
 }
 
 .log-form__radio-text.no {
-  margin-left:rem(80px);
+
 }
 .log-form__radio {
   display: none;
@@ -213,11 +231,11 @@
 }
 .log-form__label-radio.yes {
   left: 50%;
-  transform: translate(-420%);
+  transform: translate(-100%);
 }
 .log-form__label-radio.no {
   left: 50%;
-  transform: translate(-80%);
+  transform: translate(-300%);
 }
 
 .log-form__radio:checked + .log-form__label-radio:before {
