@@ -21,11 +21,14 @@
     display: flex;
     justify-content:center;
     align-items:center;
+    color: $white;
   }
   &__nav-list-item {
     display: inline-block;
-    color: $white;
     margin-right:rem(10px);
+  }
+  &__nav-list-item-link {
+    color: $white;
   }
   &__socials {
     width: 100%;
@@ -40,6 +43,9 @@
   &__socials-list-item {
     color: $lgray2;
     margin-right:rem(15px);
+  }
+  &__socials-list-item-link {
+    color: $white;
   }
   &__copyright {
     padding: rem(20px) rem(10px);

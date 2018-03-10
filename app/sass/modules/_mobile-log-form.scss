@@ -35,20 +35,21 @@
     display: flex;
     justify-content:center;
     align-items:center;
+  }
+  &__title-item {
     position: relative;
-    font-size: $fz30;
-    font-family: $bern;
-    color: $gray;
-    margin: rem(40px) 0;
+    font-family:$bern;
+    font-size:$fz35;
+    max-width:60%;
+    text-align: center;
     &:before {
       position: absolute;
       content: '';
       background-color: $lgray;
       width: rem(30px);
       height: rem(7px);
-      left: 50%;
       top: 50%;
-      transform: translateX(-550%);
+      left: rem(-50px);
     }
     &:after {
       position: absolute;
@@ -56,9 +57,8 @@
       background-color: $lgray;
       width: rem(30px);
       height: rem(7px);
-      left: 50%;
       top: 50%;
-      transform: translateX(450%);
+      right: rem(-50px)
     }
   }
   &__label-cont {

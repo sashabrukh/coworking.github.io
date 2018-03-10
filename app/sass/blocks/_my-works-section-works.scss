@@ -43,9 +43,8 @@
       background-color: $lgray;
       width: rem(30px);
       height: rem(7px);
-      left: 50%;
       top: 50%;
-      transform: translateX(-450%);
+      left: rem(-50px);
     }
     &:after {
       position: absolute;
@@ -53,9 +52,8 @@
       background-color: $lgray;
       width: rem(30px);
       height: rem(7px);
-      left: 50%;
       top: 50%;
-      transform: translateX(350%);
+      right: rem(-50px)
     }
   }
   &-slider-horizontal {
@@ -81,7 +79,7 @@
   &-name {
     text-align: center;
     font-family: $bern;
-    font-size: $fz21;
+    font-size: $fz25;
     max-width:50%;
   }
   &-tech {
@@ -92,7 +90,6 @@
     border-bottom: 1px solid $green;
     margin-bottom: rem(20px);
     &-item {
-      font-size: $fz14;
       text-transform: uppercase;
       color: $green;
       margin-right: rem(5px);
@@ -100,7 +97,6 @@
   }
   &-link {
     color: $white;
-    font-size: $fz14;
     padding: rem(14px) rem(20px);
     background-color: $green;
     border-radius: rem(5px);
