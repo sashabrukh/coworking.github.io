@@ -1,0 +1,51 @@
+@import "../misc/variables";
+@import "../misc/functions";
+@import "../misc/mixins";
+@import "../misc/media";
+
+.footer-big {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  &__container {
+    background-color: $footer;
+  }
+  &__nav {
+    width: 100%;
+    margin-top:rem(30px);
+    border-bottom: 1px solid $lgray2;
+  }
+  &__nav-list {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  &__nav-list-item {
+    display: inline-block;
+    color: $white;
+    margin-right:rem(10px);
+  }
+  &__socials {
+    width: 100%;
+    margin-top:rem(20px);
+    margin-bottom: rem(20px);
+  }
+  &__socials-list {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  &__socials-list-item {
+    color: $lgray2;
+    margin-right:rem(15px);
+  }
+  &__copyright {
+    padding: rem(20px) rem(10px);
+    color: $lgray2;
+  }
+  &__copyright-text:first-of-type {
+    margin-bottom: rem(20px);
+  }
+}

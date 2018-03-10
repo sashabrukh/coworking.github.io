@@ -4,29 +4,35 @@
 @import "../misc/media.scss";
 
 .my-works__contacts {
+
   &-bg {
-    width: 99%;
-    height:100%;
+    position: relative;
+    width: 100%;
     background-image: url('../img/back/sea.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0 -350px;
+
   }
   &-form {
+    position: absolute;
+    margin: 0 auto;
     width: 90%;
-    height:90%;
-    margin:0 auto;
     background-image: url('../img/back/blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: rem(20px);
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
 
   }
   &-form-fieldset {
     position: relative;
-    height:100%;
     width: 100%;
     outline:none;
     border: none;
+    margin-top:rem(60px);
   }
   &-form-title {
     position: relative;
@@ -80,10 +86,12 @@
     margin: 0 auto;
     position: relative;
     width: 90%;
-    height:33%;
+    min-height:rem(240px);
     border: none;
     padding:rem(20px);
-    margin-bottom:rem(20px);
+    margin-bottom: 20.11%;
+    border-radius: rem(10px);
+    resize: none;
   }
   &-form-fieldset {
     position: relative;
@@ -127,5 +135,12 @@
     &:hover {
       background-color: darken($green, 10%);
     }
+  }
+  &-arrow {
+    color: $white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
