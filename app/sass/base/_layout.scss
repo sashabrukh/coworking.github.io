@@ -38,10 +38,11 @@ body {
 
 .container {
   position: relative;
-  height: 100%;
+  height:100%;
   // min-width: rem(940px) + rem(20px);
   // min-height: 100%;
   margin: 0 auto;
+
   @include desktop {
     max-width: $desktop;
   }

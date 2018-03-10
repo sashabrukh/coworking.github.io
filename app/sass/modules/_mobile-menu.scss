@@ -76,19 +76,14 @@
   &__container--active {
     height: 100%;
   }
-  &__list {
-    transition: .5s;
-    list-style: none;
-    padding-left: 0;
-    margin-top: rem(-40px);
-    @include phones {
-      margin-top: 2vh;
-    }
-  }
   &__item {
     font-size: $fz35;
     padding-bottom: rem(24px);
     margin-bottom: rem(128px);
+  }
+
+  &__list {
+    margin-top:10vh;
   }
   &__link {
     position: relative;
