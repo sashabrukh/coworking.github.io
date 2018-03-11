@@ -6,9 +6,11 @@ html(lang = 'ru-RU')
   body
     .wrapper
       .container
-        .welcome__bg
+        .welcome-form__wrapper
           a(href='pages/login.html').welcome__link Авторизоваться
-          include modules/welcome-form
+          .welcome-form__container
+            include modules/welcome-form
+            include modules/login-form
           include blocks/footer
   include layout/index-scripts
 

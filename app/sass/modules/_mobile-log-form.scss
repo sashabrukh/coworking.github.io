@@ -4,33 +4,6 @@
 @import "../misc/media.scss";
 
 .log-form {
-  margin: 0 auto;
-  width: 90%;
-  height: 100%;
-  text-align: center;
-  outline:none;
-  border: none;
-
-  &__container {
-    width: 99%;
-    height: rem(505px);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__fieldset {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $whiteOp;
-    border-radius: rem(10px);
-  }
   &__title {
     display: flex;
     justify-content:center;
@@ -64,7 +37,7 @@
   }
   &__label-cont {
     width: 100%;
-    height: 10%;
+    height: rem(45px);
     display: flex;
     align-items:center;
     justify-content:center;
@@ -112,6 +85,7 @@
   }
   &__buttons {
     position: absolute;
+    left: 0;
     bottom: 0;
     background-color: $green;
     width: 100%;
@@ -256,9 +230,6 @@
   color: $green;
 }
 
-.log-form__label-radio {
-
-}
 
 
 

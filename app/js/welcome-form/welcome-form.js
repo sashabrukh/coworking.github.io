@@ -1,0 +1,29 @@
+;'use strict';
+
+(function () {
+
+  let welcome = $('.welcome-form');
+  let link = $('.welcome__link');
+  let anim = 'run-index-animation';
+  let backf = 'back';
+
+  link.click(function(e){
+    e.preventDefault();
+    welcome.each(function () {
+      if($(this).hasClass(anim)) {
+        $(this).removeClass(anim);
+      }
+      if($(this).hasClass(backf)) {
+        $(this).removeClass(backf);
+      }
+      else {
+        $(this).addClass(backf);
+        $(this).addClass(anim);
+      }
+    });
+    // $('.welcome__link').hide();
+  });
+
+})();
+
+

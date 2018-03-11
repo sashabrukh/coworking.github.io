@@ -249,8 +249,8 @@ gulp.task('sprite:svg', function (callback) {
     .pipe(svgstore({inlineSvg: true}))
     .pipe(cheerio({
       run: function ($) {
-        // $('path').removeAttr('fill');
-        // $('g').removeAttr('fill');
+        $('path').removeAttr('fill');
+        $('g').removeAttr('fill');
         $('svg').attr('style', 'display:none');
       },
       parserOptions: {
