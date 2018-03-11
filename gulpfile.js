@@ -62,7 +62,7 @@ const src = {
     'node_modules/normalize.css/normalize.css'
   ],
   jsLibsTake: [
-    'node_modules/jquery/dist/jquery.slim.min.js'
+    'node_modules/jquery/dist/jquery.js'
   ],
 
   svgPut: 'app/img/sprites/',

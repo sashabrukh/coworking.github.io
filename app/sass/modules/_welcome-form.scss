@@ -11,12 +11,21 @@
   &__my-name {
     font-weight:600;
     color: $gray;
+    margin-top:rem(15px);
     margin-bottom:0;
   }
   &__title {
     color: $gray;
-    margin-bottom:rem(20px);
-    margin-top:0;
+    margin:0;
+    @include phones {
+      margin-bottom:rem(10px);
+    }
+    @include tablets {
+      margin-bottom:rem(20px);
+    }
+    @include laptop {
+      margin-bottom:rem(10px);
+    }
   }
   &__social {
     display: flex;

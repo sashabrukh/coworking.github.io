@@ -7,18 +7,39 @@
   display: flex;
   align-items:center;
   flex-direction:column;
-  height:100%;
+
+  @include phones {
+    min-height:180%;
+  }
+  @include tablets {
+    min-height:140%;
+  }
+  @include laptop {
+
+  }
+  @include desktop {
+
+  }
   width: 100%;
-  &-title {
-    width:100%;
-    background-image: url('../img/parts/about-header.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url('../../img/back/sea.png');
+  background-position: center bottom;
+  background-size: cover;
+  @include laptop {
     background-position: center center;
-    min-height: 15.3%;
+  }
+  &-title {
+    min-height: 7.7%;
+    width: 100%;
     display: flex;
     justify-content:center;
     align-items:center;
+    position: relative;
+    margin-top:rem(40px);
+  }
+  &-svg-arrow-down {
+    position: absolute;
+    fill: $grayOp;
+    z-index: 0;
   }
   &-title-item {
     position: relative;
@@ -26,6 +47,7 @@
     font-size:$fz35;
     max-width:40%;
     text-align: center;
+    margin-bottom:0;
     &:before {
       position: absolute;
       content: '';
@@ -48,6 +70,10 @@
   &-avatar {
     float: left;
     margin-right:rem(20px);
+    border-radius: 50%;
+    &.second {
+      margin-bottom:rem(40px);
+    }
   }
   &-name {
     color: darken($green, 10%);
@@ -55,15 +81,64 @@
   &-desc {
     color: $green;
   }
-  &-quote-icon {
-    margin:rem(60px) auto;
-    text-align: center;
-    background: transparent;
-  }
   &-comment {
     padding: 0 rem(20px);
+    @include tablets {
+      display: flex;
+      max-width:800px;
+      margin-bottom:rem(30px);
+    }
+  }
+  &-comment-item {
+
+  }
+  &-comment-item.first {
+    @include tablets {
+      margin-right: rem(160px);
+    }
   }
   &-avatar.first {
 
+  }
+  &-quote {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:0;
+    margin-bottom: rem(40px);
+    color: $lgray;
+    font-size: rem(80px);
+    @include tablets {
+      justify-content:flex-start;
+    }
+  }
+  &-quote-item {
+    fill: $green;
+    width:rem(50px);
+    height:rem(50px);
+  }
+  &-svg-arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50% 0);
+    width:rem(50px);
+    height:rem(50px);
+    margin-right:rem(30px);
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    &:hover > .my-works__about-svg-arrow-down {
+      fill: $white;
+    }
+  }
+  &-svg-arrow-down {
+    fill: $whiteOp;
+    width:rem(50px);
+    height:rem(50px);
+  }
+  &-svg-header {
+    position: absolute;
+    fill: $grayOp;
   }
 }

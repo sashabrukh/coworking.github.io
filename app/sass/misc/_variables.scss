@@ -1,4 +1,4 @@
-$desktop: 1200px;
+$desktop: 1800px;
 $laptop: 1200px;
 $tablets: 801px;
 $phones: 320px;
@@ -19,10 +19,11 @@ sans-serif;
 $bern: 'BERNIER',
 Helvetica,
 sans-serif;
-
+$softwhite3: rgba(240, 239, 233, 1);
 $softwhite2: rgba(239, 235, 224, 1);
 $softwhite: rgba(250, 248, 240, 1);
 $gray: rgba(69, 90, 100, 1);
+$grayOp: rgba(69, 90, 100, .1);
 $lgray: rgba(208, 209, 209, 1);
 $lgray2: rgba(125, 134, 137, 1);
 $whiteOp: rgba(255, 255, 255, .8);
