@@ -4,46 +4,58 @@
 @import "../misc/_media";
 
 .welcome-form {
-  position: relative;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $whiteOp;
-  border-radius: rem(10px);
-  &__container {
-    margin: 0 auto;
-    width: 90%;
-    height: 100%;
-    text-align: center;
-  }
-  &__wrapper {
-    width: 99%;
-    height: 71.302%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   &__my-photo {
     border-radius: 50%;
-    margin-top:rem(40px);
-    margin-bottom:rem(30px);
+    margin-top:rem(30px);
   }
   &__my-name {
     font-weight:600;
-    margin-bottom:rem(10px);
     color: $gray;
+    margin-top:rem(15px);
+    margin-bottom:0;
   }
   &__title {
     color: $gray;
-    margin-bottom:rem(40px);
+    margin:0;
+    @include phones {
+      margin-bottom:rem(10px);
+    }
+    @include tablets {
+      margin-bottom:rem(20px);
+    }
+    @include laptop {
+      margin-bottom:rem(10px);
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  &__social-link {
+    width:rem(50px);
+    height:rem(50px);
+    margin-right:rem(30px);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    &:last-of-type {
+      margin-top:rem(-7px);
+    }
+    &:hover > .welcome-form__social-icon {
+      fill: darken($green, 10%);
+    }
+  }
+  &__social-icon {
+    fill: $greenOp;
+    width: 80%;
+    height:80%;
   }
   &__buttons {
     position: absolute;
     bottom: 0;
+    left: 0;
     background-color: $green;
     width: 100%;
     height: 11.11%;
@@ -56,7 +68,6 @@
       flex: 3;
       height: 100%;
       border-right: 2px solid $lgray;
-
     }
     &--middle {
       height: 100%;

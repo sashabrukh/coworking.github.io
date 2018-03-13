@@ -19,9 +19,7 @@ body {
 
 body {
   font-size: rem(16px);
-  @include phones {
-  font-size: rem(20px);
-  }
+
   line-height: 1.62;
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -38,25 +36,11 @@ body {
 
 .container {
   position: relative;
-  height:100%;
+  min-height:100%;
   // min-width: rem(940px) + rem(20px);
   // min-height: 100%;
   margin: 0 auto;
-
-  @include desktop {
-    max-width: $desktop;
-  }
-  @include laptop {
-    max-width: $desktop;
-  }
-  @include tablets {
-    max-width: $laptop;
-  }
-  @include phones {
-    max-width: $tablets;
-  }
-  &__mobile {
-  }
+  width: 100%;
 }
 
 .section {
@@ -64,6 +48,12 @@ body {
   min-height: 650px;
   height:100%;
   position: relative;
+}
+
+.clearfix {
+  content:'';
+  display: table;
+  clear: both;
 }
 
 // tag styles reset

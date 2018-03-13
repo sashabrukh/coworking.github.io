@@ -1,13 +1,23 @@
 
 <div class="section blog__header">
   <div class="blog__header-bg">
+    <div class="blog__header-bg-min"></div>
     <div class="header__wrapper">
       <div class="header__container">
         <header class="header">
           <ul class="header__socials-list">
-            <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
-            <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
-            <li class="header__socials-list-item"><a class="header__socials-list-item-link">icon</a></li>
+            <li class="header__socials-list-item"><a class="header__socials-list-item-link">
+                <svg class="header__social-icon vk">
+                  <use xlink:href="../../img/sprites/sprite-svg.svg#vk"></use>
+                </svg></a></li>
+            <li class="header__socials-list-item"><a class="header__socials-list-item-link">
+                <svg class="header__social-icon git">
+                  <use xlink:href="../../img/sprites/sprite-svg.svg#github"></use>
+                </svg></a></li>
+            <li class="header__socials-list-item"><a class="header__socials-list-item-link">
+                <svg class="header__social-icon in">
+                  <use xlink:href="../../img/sprites/sprite-svg.svg#in"></use>
+                </svg></a></li>
           </ul>
           <nav class="mobile-menu">
             <input class="mobile-menu__checkbox" type="checkbox" id="mobile-checkbox"/>
@@ -26,6 +36,10 @@
     </div><img class="blog__header-img" src="../../img/my-photo.jpg"/>
     <div class="blog__header-my-name">Блог</div>
     <div class="blog__header-title">Статьи, которые я написал</div>
-    <div class="blog__header-arrow-down">svg will be here</div>
+    <div class="blog__header-svg-arrow">
+      <svg class="blog__header-svg-arrow-down">
+        <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
+      </svg>
+    </div>
   </div>
 </div>

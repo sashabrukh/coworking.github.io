@@ -6,21 +6,35 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   &__container {
     padding: rem(10px);
   }
   &__wrapper {
     width: 100%;
+    z-index: 999;
   }
   &__socials-list {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
   }
-  &__socials-list-item {
-    margin-right:rem(20px);
-    color: $white;
+  &__socials-list-item-link {
+    width: rem(50px);
+    height: rem(50px);
+    margin-right: rem(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover > .header__social-icon {
+      fill: $white;
+    }
+  }
+  &__social-icon {
+    fill: $whiteOp;
+    width: 80%;
+    height: 80%;
   }
 }
 

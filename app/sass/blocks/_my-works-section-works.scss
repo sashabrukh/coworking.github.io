@@ -5,32 +5,17 @@
 
 .my-works__works {
   display: flex;
-  justify-content:center;
   align-items:center;
   flex-direction:column;
-  width: 100%;
-  height:100%;
-  &-bg{
-    position: absolute;
-    z-index: 999;
-    height: rem(40px);
-    top: rem(-39px);
-    width: 100%;
-    background-image: url('../img/parts/bg-decorate.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-color: $softwhite;
   &-title {
-    width:100%;
-    background-color: $softwhite;
-    background-image: url('../img/parts/works-header.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
     min-height: 15.3%;
+    width: 100%;
     display: flex;
     justify-content:center;
     align-items:center;
+    position: relative;
+    background-color: $softwhite2;
   }
   &-title-item {
     position: relative;
@@ -57,15 +42,21 @@
     }
   }
   &-slider-horizontal {
-    padding: rem(25px);
-    min-height:39.5%;
-    width: 100%;
-    background-color: $softwhite2;
-    background-image: url('../img/parts/sliderH.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 9999;
+    display: flex;
+    justify-content:center;
+    background-color: $softwhite;
+    margin-top:rem(60px);
+    @include laptop {
+      width: 50%;
+      height:56.6666%;
+      position: absolute;
+      right:0;
+      bottom:0;
+      margin-top:0;
+    }
+  }
+  &-slider-horizontal-item {
+    width: 80%;
   }
   &-slider-desc {
     min-height: 33.69%;
@@ -74,13 +65,40 @@
     flex-direction:column;
     justify-content: center;
     align-items:center;
-    background-color: $softwhite;
+    background-color: $softwhite3;
+    @include laptop {
+      width: 50%;
+      position: absolute;
+      left:0;
+      bottom:0;
+      height:85%;
+
+    }
   }
   &-name {
     text-align: center;
     font-family: $bern;
     font-size: $fz25;
     max-width:50%;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      left: rem(-50px);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      right: rem(-50px)
+    }
   }
   &-tech {
     text-align: center;
@@ -104,25 +122,46 @@
   &-slider-vertical {
     display: flex;
     justify-content:center;
-    height: 14.46%;
+    align-items:center;
     width: 100%;
+    height:20%;
+    @include laptop {
+      width: 50%;
+      position: absolute;
+      right:0;
+      bottom: 54%;
+    }
     &.right {
       width: 50%;
       height:100%;
-      background-color: $softwhite2;
-      background-image: url('../img/parts/sliderV.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+      position: relative;
     }
     &.left {
       width: 50%;
       height:100%;
-      background-color: $softwhite2;
-      background-image: url('../img/parts/sliderV.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+      position: relative;
     }
+  }
+  &-svg-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    &:hover {
+
+    }
+  }
+  &-svg-arrow {
+    fill: $green;
+    width:rem(50px);
+    height:rem(50px);
+  }
+  &-svg-header {
+    position: absolute;
+    fill: $grayOp;
   }
 }
