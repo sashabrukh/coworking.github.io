@@ -62,7 +62,8 @@ const src = {
     'node_modules/normalize.css/normalize.css'
   ],
   jsLibsTake: [
-    'node_modules/jquery/dist/jquery.js'
+    'node_modules/jquery/dist/jquery.js',
+    'app/libs/jslibs/jquery.easytabs.js'
   ],
 
   svgPut: 'app/img/sprites/',

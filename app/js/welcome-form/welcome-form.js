@@ -1,6 +1,6 @@
 ;'use strict';
 
-(function () {
+(function welcomeForm() {
 
   let welcome = $('.welcome-form');
   let link = $('.welcome__link');
