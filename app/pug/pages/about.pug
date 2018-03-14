@@ -2,13 +2,17 @@ doctype html
 html(lang = 'ru-RU')
   head
     include ../layout/pages-prop
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU", type="text/javascript")
     title My works
   body
     .wrapper
-      .container.ss
+      .container
         include ../blocks/my-works-section-header
-        include ../blocks/about-section-about
-        include ../blocks/about-section-my-skills
+        .flex-container
+          .flex-container-item
+            include ../blocks/about-section-about
+          .flex-container-item
+            include ../blocks/about-section-my-skills
         include ../blocks/about-section-contacts
         include ../blocks/footer-big
   include ../layout/pages-scripts

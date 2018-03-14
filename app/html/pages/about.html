@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/libs.min.css">
     <link rel="icon" type="image/png" href="">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>My works</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="container ss">
+      <div class="container">
         <div class="section my-works__header">
           <div class="my-works__header-bg">
             <div class="my-works__header-bg-min"></div>
@@ -56,94 +57,106 @@
             </div>
           </div>
         </div>
-        <div class="section about">
-          <div class="about__title">
-            <h2 class="about__title-item">Кто я</h2>
-          </div>
-          <div class="about__my-photo"><img class="about__my-photo-item" src="../../img/my-photo-big.jpg" alt=""></div>
-          <div class="about__my-story-cont">
-            <div class="about__title">
-              <h2 class="about__title-item">Обо мне</h2>
-            </div>
-            <p class="about__my-story-text">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
-            <p class="about__my-story-text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
-          </div>
-        </div>
-        <div class="section my-skills">
-          <div class="my-skills__title">
-            <h2 class="my-skills__title-item">Чем я могу быть вам полезен</h2>
-          </div>
-          <div class="my-skills__text">
-            <p class="my-skills__text-item">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
-          </div>
-          <div class="my-skills__desc">
-            <h2 class="my-skills__desc-title">Frontend</h2>
-            <div class="my-skills__desc-circles-cont">
-              <div class="item"><span class="item__title">HTML5</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-55" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">CSS3</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-30" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">CSS3</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-30" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
+        <div class="flex-container">
+          <div class="flex-container-item">
+            <div class="section about">
+              <div class="about__wrapper">
+                <div class="about__wrapper-title">
+                  <div class="about__title">
+                    <h2 class="about__title-item">Обо мне</h2>
+                  </div>
+                </div>
+                <div class="about__my-story-cont">
+                  <div class="about__my-photo"><img class="about__my-photo-item" src="../../img/my-photo-big.jpg" alt=""></div>
+                  <div class="about__title">
+                    <h2 class="about__title-item">Кто я</h2>
+                  </div>
+                  <p class="about__my-story-text">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+                  <p class="about__my-story-text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
+                </div>
               </div>
             </div>
-            <h2 class="my-skills__desc-title">Backend</h2>
-            <div class="my-skills__desc-circles-cont">
-              <div class="item"><span class="item__title">PHP</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">mySQL</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">Node.js & npm</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-45" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">Mongo.db</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-            </div>
-            <h2 class="my-skills__desc-title">Workflow</h2>
-            <div class="my-skills__desc-circles-cont">
-              <div class="item"><span class="item__title">Git</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">Gulp</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
-              </div>
-              <div class="item"><span class="item__title">Yarn</span>
-                <svg class="circles" viewbox="0 0 110 110">
-                  <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                  <circle class="circle__second circle-35" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                </svg>
+          </div>
+          <div class="flex-container-item">
+            <div class="section my-skills">
+              <div class="my-skills__wrapper">
+                <div class="my-skills__title">
+                  <h2 class="my-skills__title-item">Чем я могу быть вам полезен</h2>
+                </div>
+                <div class="my-skills__text">
+                  <p class="my-skills__text-item">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+                </div>
+                <div class="my-skills__desc">
+                  <h2 class="my-skills__desc-title">Frontend</h2>
+                  <div class="my-skills__desc-circles-cont">
+                    <div class="item"><span class="item__title">HTML5</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-55" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">CSS3</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-30" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">CSS3</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-30" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 class="my-skills__desc-title">Backend</h2>
+                  <div class="my-skills__desc-circles-cont">
+                    <div class="item"><span class="item__title">PHP</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">mySQL</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">Node.js & npm</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-45" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">Mongo.db</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 class="my-skills__desc-title">Workflow</h2>
+                  <div class="my-skills__desc-circles-cont">
+                    <div class="item"><span class="item__title">Git</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">Gulp</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">Yarn</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-35" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -154,13 +167,25 @@
               <h2 class="contacts__title-item">Контакты</h2>
             </div>
             <ul class="contacts__list">
-              <li class="contacts__item">skype</li>
-              <li class="contacts__item">mail</li>
-              <li class="contacts__item">8921312313</li>
-              <li class="contacts__item">Russia, Spb</li>
+              <li class="contacts__list-item">sashabrukh<a class="contacts__icon-link">
+                  <svg class="contacts__icon" height: 25px; width: 25px;>
+                    <use xlink:href="../../img/sprites/sprite-svg.svg#skype"></use>
+                  </svg></a></li>
+              <li class="contacts__list-item">mail<a class="contacts__icon-link">
+                  <svg class="contacts__icon" height: 25px; width: 25px;>
+                    <use xlink:href="../../img/sprites/sprite-svg.svg#envelope"></use>
+                  </svg></a></li>
+              <li class="contacts__list-item">8921312313<a class="contacts__icon-link">
+                  <svg class="contacts__icon" height: 25px; width: 25px;>
+                    <use xlink:href="../../img/sprites/sprite-svg.svg#phone"></use>
+                  </svg></a></li>
+              <li class="contacts__list-item">Russia, Spb<a class="contacts__icon-link">
+                  <svg class="contacts__icon" height: 25px; width: 25px;>
+                    <use xlink:href="../../img/sprites/sprite-svg.svg#map_marker"></use>
+                  </svg></a></li>
             </ul>
           </div>
-          <div class="contacts__map-cont">MAP WILL BE HERE</div>
+          <div class="contacts__map-cont" id="map"></div>
         </div>
         <div class="footer-big__container">
           <footer class="footer-big">

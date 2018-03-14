@@ -3,9 +3,22 @@
     .contacts__title
       h2.contacts__title-item Контакты
     ul.contacts__list
-      li.contacts__item skype
-      li.contacts__item mail
-      li.contacts__item 8921312313
-      li.contacts__item Russia, Spb
-  .contacts__map-cont MAP WILL BE HERE
+      li.contacts__list-item sashabrukh
+        a.contacts__icon-link
+          svg.contacts__icon('height: 25px;', 'width: 25px;')
+            use(xlink:href='../../img/sprites/sprite-svg.svg#skype')
+      li.contacts__list-item mail
+        a.contacts__icon-link
+          svg.contacts__icon('height: 25px;', 'width: 25px;')
+            use(xlink:href='../../img/sprites/sprite-svg.svg#envelope')
+      li.contacts__list-item 8921312313
+        a.contacts__icon-link
+          svg.contacts__icon('height: 25px;', 'width: 25px;')
+            use(xlink:href='../../img/sprites/sprite-svg.svg#phone')
+      li.contacts__list-item Russia, Spb
+        a.contacts__icon-link
+          svg.contacts__icon('height: 25px;', 'width: 25px;')
+            use(xlink:href='../../img/sprites/sprite-svg.svg#map_marker')
+  #map.contacts__map-cont
+
 

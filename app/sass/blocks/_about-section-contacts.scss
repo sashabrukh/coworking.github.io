@@ -1,0 +1,83 @@
+@import "../misc/variables";
+@import "../misc/functions";
+@import "../misc/mixins";
+@import "../misc/media";
+
+.contacts {
+  color: $gray;
+  &__cont {
+    display: flex;
+    flex-direction:column;
+    padding:rem(20px);
+    min-height: 100%;
+    @include phones {
+      position: absolute;
+      min-width: rem(349px);
+      min-height:rem(285px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background-color: $whiteOp;
+      border-radius: rem(10px);
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content:center;
+  }
+  &__title-item {
+    position: relative;
+    font-family: $bern;
+    font-size: $fz35;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      left: rem(-50px);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      right: rem(-50px)
+    }
+  }
+  &__list {
+    text-align: left;
+    &-item {
+      position: relative;
+      margin-bottom:rem(20px);
+      margin-left: rem(30px);
+      @include tablets {
+        display: flex;
+        justify-content:center;
+      }
+    }
+  }
+  &__icon-link {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    @include tablets {
+      left: rem(20px);
+    }
+  }
+  &__icon {
+    width: rem(25px);
+    height:rem(25px);
+    fill: $green;
+  }
+  &__map-cont {
+    min-height: 650px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+}
