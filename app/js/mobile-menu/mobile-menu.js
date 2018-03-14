@@ -20,6 +20,14 @@
         mobileMenuBtn.classList.remove('mobile-menu__btn--active');
       }
     });
+    
+    if (mobileMenuCont) {
+      mobileMenuCont.addEventListener('click', function (e) {
+        mobileMenuCont.classList.remove('mobile-menu__container--active');
+        document.body.style.overflow = 'auto';
+        mobileMenuBtn.classList.remove('mobile-menu__btn--active');
+      })
+    }
 
     for (let i = 0; i < mobileMenuLink.length; i++) {
       mobileMenuLink[i].addEventListener('click', function () {
@@ -30,10 +38,6 @@
     }
   }
 
-  mobileMenuCont.addEventListener('click', function (e) {
-      mobileMenuCont.classList.remove('mobile-menu__container--active');
-      document.body.style.overflow = 'auto';
-      mobileMenuBtn.classList.remove('mobile-menu__btn--active');
-  })
+
 
 })();
