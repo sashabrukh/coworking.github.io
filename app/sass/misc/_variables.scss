@@ -1,6 +1,6 @@
 $desktop: 1800px;
 $laptop: 1200px;
-$tablets: 801px;
+$tablets: 768px;
 $phones: 320px;
 
 
@@ -26,6 +26,7 @@ $gray: rgba(69, 90, 100, 1);
 $grayOp: rgba(69, 90, 100, .1);
 $lgray: rgba(208, 209, 209, 1);
 $lgray2: rgba(125, 134, 137, 1);
+$whiteOp2: rgba(255, 255, 255, .9);
 $whiteOp: rgba(255, 255, 255, .8);
 $white: rgba(255, 255, 255, 1);
 $green: rgba(12, 179, 160, 1);
@@ -40,6 +41,7 @@ $fz21: rem(21px);
 $fz25: rem(25px);
 $fz35: rem(35px);
 $fz30: rem(40px);
+$fz59: rem(59px);
 
 $lhmin: 1.15;
 
