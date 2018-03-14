@@ -18,6 +18,12 @@
         mobileMenuCont.classList.remove('mobile-menu__container--active');
         document.body.style.overflow = 'auto';
         mobileMenuBtn.classList.remove('mobile-menu__btn--active');
+
+        mobileMenuCont.addEventListener('click', function (e) {
+          mobileMenuCont.classList.remove('mobile-menu__container--active');
+          document.body.style.overflow = 'auto';
+          mobileMenuBtn.classList.remove('mobile-menu__btn--active');
+        })
       }
     });
 
@@ -30,10 +36,5 @@
     }
   }
 
-  mobileMenuCont.addEventListener('click', function (e) {
-      mobileMenuCont.classList.remove('mobile-menu__container--active');
-      document.body.style.overflow = 'auto';
-      mobileMenuBtn.classList.remove('mobile-menu__btn--active');
-  })
 
 })();
