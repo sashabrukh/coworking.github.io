@@ -1,6 +1,10 @@
 ;'use strict';
 
-ymaps.ready(init);
+const map = document.querySelector('#map');
+
+if (map) {
+
+  ymaps.ready(init);
 
 // let placemarks = [{
 //     latitude: 59.97,
@@ -38,36 +42,40 @@ ymaps.ready(init);
 //   ],
 //   geoObjects = [];
 
-function init() {
-  const map = new ymaps.Map('map', {
-    center: [59.94, 30.32],
-    zoom: 12,
-    controls: ['zoomControl'],
-    behaviors: []
-  });
+  function init() {
+    const map = new ymaps.Map('map', {
+      center: [59.94, 30.32],
+      zoom: 12,
+      controls: ['zoomControl'],
+      behaviors: []
+    });
 
-  // for (let i = 0; i < placemarks.length; i++) {
-  //   geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude], {
-  //     hintContent: placemarks[i].hintContent,
-  //     balloonContent: placemarks[i].balloonContent.join('')
-  //   }, {
-  //     iconLayout: 'default#image',
-  //     iconImageHref: 'img/sprites/map-marker.svg',
-  //     iconImageSize: [46, 57],
-  //     iconImageOffset: [-23, -57]
-  //   });
-  // }
+    // for (let i = 0; i < placemarks.length; i++) {
+    //   geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude], {
+    //     hintContent: placemarks[i].hintContent,
+    //     balloonContent: placemarks[i].balloonContent.join('')
+    //   }, {
+    //     iconLayout: 'default#image',
+    //     iconImageHref: 'img/sprites/map-marker.svg',
+    //     iconImageSize: [46, 57],
+    //     iconImageOffset: [-23, -57]
+    //   });
+    // }
 
-  // const clusterer = new ymaps.Clusterer({
-  //   clusterIcons: [{
-  //     href: 'img/burger-promo.png',
-  //     size: [100, 100],
-  //     offset: [-50, -50]
-  //   }],
-  //   clusterIconContentLayout: null
-  // });
-  //
-  // map.geoObjects.add(clusterer);
-  // clusterer.add(geoObjects);
+    // const clusterer = new ymaps.Clusterer({
+    //   clusterIcons: [{
+    //     href: 'img/burger-promo.png',
+    //     size: [100, 100],
+    //     offset: [-50, -50]
+    //   }],
+    //   clusterIconContentLayout: null
+    // });
+    //
+    // map.geoObjects.add(clusterer);
+    // clusterer.add(geoObjects);
+  }
+
+
+
 }
 
