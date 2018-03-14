@@ -1,0 +1,53 @@
+@import "../misc/variables";
+@import "../misc/functions";
+@import "../misc/mixins";
+@import "../misc/media";
+
+.about {
+  background-color: $softwhite2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title-item {
+    position: relative;
+    font-family: $bern;
+    font-size: $fz35;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      left: rem(-50px);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $lgray;
+      width: rem(30px);
+      height: rem(7px);
+      top: 50%;
+      right: rem(-50px)
+    }
+  }
+  &__my-story-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:rem(20px);
+
+  }
+  &__my-story-title {
+    font-family: $bern;
+    font-size: $fz35;
+    position: relative;
+  }
+  &__my-photo {
+    width: 100%;
+  }
+  &__my-photo-item {
+    width: 100%;
+  }
+}
+
