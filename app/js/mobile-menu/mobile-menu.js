@@ -20,7 +20,7 @@
         mobileMenuBtn.classList.remove('mobile-menu__btn--active');
       }
     });
-    
+
     if (mobileMenuCont) {
       mobileMenuCont.addEventListener('click', function (e) {
         mobileMenuCont.classList.remove('mobile-menu__container--active');
@@ -37,7 +37,5 @@
       })
     }
   }
-
-
 
 })();
