@@ -12,7 +12,7 @@
   &__title-item {
     position: relative;
     font-family:$bern;
-    font-size:$fz35;
+    font-size: $fz35;
     max-width:60%;
     text-align: center;
     margin:rem(30px);
@@ -49,6 +49,7 @@
     background-color: $softwhite2;
     border-bottom-left-radius: rem(10px);
     border-top-left-radius: rem(10px);
+    position: relative;
   }
   &__label-login {
     width: 17.3%;
@@ -56,6 +57,7 @@
     background-color: $softwhite2;
     border-bottom-left-radius: rem(10px);
     border-top-left-radius: rem(10px);
+    position: relative;
   }
   &__login {
     position: relative;
@@ -75,6 +77,17 @@
     border: none;
     padding:rem(10px) rem(20px);
 
+  }
+  &__label-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    fill: $lgray;
+    width: 15px;
+    height: 15px;
   }
   &__captcha-cont {
     margin-top: rem(40px);
@@ -114,6 +127,7 @@
     display: flex;
     justify-content:center;
     align-items:center;
+    border-bottom-left-radius: rem(10px);
     &:hover {
       background-color: darken($green, 10%);
     }
@@ -125,6 +139,7 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border-bottom-right-radius: rem(10px);
     &:hover {
       background-color: darken($green, 10%);
     }

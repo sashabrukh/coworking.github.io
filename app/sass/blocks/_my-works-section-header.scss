@@ -8,7 +8,7 @@
   width: 100%;
   background-color: $softwhite2;
   &-img {
-  margin-top: rem(160px);
+  margin-top: rem(60px);
   border-radius: 50%;
   margin-bottom:rem(60px);
   }
@@ -40,11 +40,13 @@
     text-align: center;
     color: $white;
     margin-bottom:rem(10px);
-    font-size:$fz35;
+    font-size: $fz63;
     font-weight:600;
   }
   &-title {
     color: $whiteOp;
+    font-size:$fz35;
+    text-align: center;
   }
   &-svg-arrow {
     position: absolute;

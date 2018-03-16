@@ -26,7 +26,7 @@
   &__title-item {
     position: relative;
     font-family: $bern;
-    font-size: $fz35;
+    font-size: $fz63;
     text-align: center;
     max-width:80%;
     &:before {
@@ -61,7 +61,7 @@
   }
   &__desc-title {
     font-weight:bold;
-    font-size: $fz21;
+    font-size: $fz35;
   }
   &__desc-circles-cont {
     display: flex;

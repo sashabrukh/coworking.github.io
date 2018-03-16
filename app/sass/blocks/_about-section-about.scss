@@ -33,7 +33,7 @@
   &__title-item {
     position: relative;
     font-family: $bern;
-    font-size: $fz35;
+    font-size: $fz63;
     @include tablets {
       font-size:$fz59;
     }
@@ -71,7 +71,7 @@
   }
   &__my-story-title {
     font-family: $bern;
-    font-size: $fz35;
+    font-size: $fz63;
     position: relative;
   }
   &__my-photo {

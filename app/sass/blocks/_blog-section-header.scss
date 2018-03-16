@@ -7,7 +7,7 @@
   height: 100%;
   width: 100%;
   &-img {
-    margin-top: rem(160px);
+    margin-top: rem(60px);
     border-radius: 50%;
     margin-bottom: rem(60px);
   }
@@ -40,13 +40,15 @@
   &-my-name {
     color: $white;
     margin-bottom: rem(10px);
-    font-size: $fz35;
+    font-size: $fz63;
     font-weight: 600;
     text-transform: uppercase;
     font-family: $bern;
   }
   &-title {
     color: $whiteOp;
+    font-size:$fz35;
+    text-align: center;
   }
   &-svg-arrow {
     position: absolute;
