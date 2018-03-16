@@ -4,12 +4,15 @@
 @import "../misc/media.scss";
 
 .my-works__contacts {
+
   &-container {
     width: 90%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:rem(200px);
+
   }
   &-form {
     @include phones {
@@ -27,7 +30,6 @@
     border-radius: rem(10px);
     text-align: center;
     background-color: $whiteOp;
-
   }
   &-form-fieldset {
     width: 100%;

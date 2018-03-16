@@ -14,7 +14,7 @@
     width: rem(35px);
     height: rem(30px);
     cursor: pointer;
-    z-index: 10000;
+    z-index: 999;
   }
   &__btn {
     position: absolute;
@@ -65,19 +65,19 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    margin: auto;
     background-color: darken($greenOp, 10%);
-    height: 0;
-    z-index: 99;
+    width: 0;
     opacity: 1;
     transition-delay: .5s;
     overflow: hidden;
     transition: all 0.25s;
   }
   &__container--active {
-    height: 100%;
+    width: 100%;
   }
   &__item {
-    font-size: $fz35;
     margin-bottom: rem(60px);
 
   }

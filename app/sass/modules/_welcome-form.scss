@@ -45,6 +45,7 @@
     }
     &:hover > .welcome-form__social-icon {
       fill: darken($green, 10%);
+
     }
   }
   &__social-icon {
@@ -68,6 +69,7 @@
       flex: 3;
       height: 100%;
       border-right: 2px solid $lgray;
+
     }
     &--middle {
       height: 100%;
@@ -77,6 +79,7 @@
     &--right {
       flex: 1;
       height: 100%;
+
     }
   }
   &__btn {
@@ -91,6 +94,12 @@
     &:hover {
       background-color: darken($green, 10%);
     }
+  }
+  &__portfolio {
+    border-bottom-left-radius: rem(10px);
+  }
+  &__blog {
+    border-bottom-right-radius: rem(10px);
   }
 }
 

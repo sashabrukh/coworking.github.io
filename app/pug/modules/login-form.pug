@@ -3,10 +3,14 @@ form.welcome-form
     .log-form__title
       h2.log-form__title-item Авторизуйтесь
     .log-form__label-cont
-      label.log-form__label-login(for='login') icon
+      label.log-form__label-login(for='login')
+        svg.log-form__label-icon
+          use(xlink:href='../img/sprites/sprite-svg.svg#login')
       input.log-form__login(type='text', name='login', id='login', placeholder="Логин")
     .log-form__label-cont
-      label.log-form__label-pw(for='password') icon
+      label.log-form__label-pw(for='password')
+        svg.log-form__label-icon
+          use(xlink:href='../img/sprites/sprite-svg.svg#password')
       input.log-form__pw(type='password', id='password', name='password', placeholder="Пароль")
     .log-form__captcha-cont
       input.log-form__captcha(type="checkbox", id='log-form__captcha', name="captcha" value='captcha')
@@ -23,6 +27,6 @@ form.welcome-form
         span.log-form__radio-text.no Не уверен
     .log-form__buttons
       .log-form__buttons--left
-        a.log-form__to-main(href='../index.html') На главную
+        a.log-form__to-main(href='index.html') На главную
       .log-form__buttons--right
         button.log-form__submit(type="submit") Войти
