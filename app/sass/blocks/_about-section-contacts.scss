@@ -29,7 +29,8 @@
   &__title-item {
     position: relative;
     font-family: $bern;
-    font-size: $fz63;
+    font-size: $fz35;
+    margin-top:0;
     &:before {
       position: absolute;
       content: '';
@@ -79,6 +80,6 @@
     min-height: 650px;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    filter: grayscale(100%);
   }
 }

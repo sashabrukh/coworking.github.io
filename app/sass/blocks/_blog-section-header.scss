@@ -26,15 +26,19 @@
     clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 90%);
   }
   &-bg-min {
+    display: none;
     position: absolute;
-
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
     @include laptop {
-      background-image: url('../img/sprites/sprite-png.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0 -348px;
+      display: block;
     }
-    z-index: 10000;
 
   }
   &-my-name {
@@ -49,6 +53,7 @@
     color: $whiteOp;
     font-size:$fz35;
     text-align: center;
+    padding: 0 rem(10px);
   }
   &-svg-arrow {
     position: absolute;
