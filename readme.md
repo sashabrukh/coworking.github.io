@@ -9,9 +9,8 @@
 Что я использовал в этом проекте
 ---
 
-* HTML
-* CSS/SCSS
-* SVG/PNG sprites
+* PUG
+* SCSS
 * NPM
 * Gulp
 * Webpack
