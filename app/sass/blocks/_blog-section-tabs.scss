@@ -9,6 +9,19 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  &__theme {
+    position: relative;
+    margin-top: rem(40px);
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: rem(-30px);
+      left: 0;
+      width: 30%;
+      height: 3px;
+      background-color: $grayOp;
+    }
+  }
   &__content {
     padding: rem(30px);
     min-height: 100%;
@@ -128,13 +141,15 @@
     background-color: $softwhite2;
     text-align: center;
   }
-  &__code--item {
-    white-space:nowrap;
+  &__code-item {
     width: 90%;
+    &-cont {
+      margin: 0;
+    }
   }
   &__code-example {
     display: flex;
-    min-height:rem(128px);
+    min-height: rem(128px);
     overflow: hidden;
     background-color: $softwhite;
   }
