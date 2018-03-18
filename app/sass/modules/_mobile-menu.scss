@@ -94,26 +94,26 @@
     font-size: $fz35;
     color: $white;
     &:hover {
-      text-decoration: underline;
+      &:before {
+        position: absolute;
+        content: '';
+        background-color: $lgray;
+        width: rem(30px);
+        height: rem(7px);
+        left: rem(-60px);
+        top: rem(25px);
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: $lgray;
+        width: rem(30px);
+        height: rem(7px);
+        right: rem(-60px);
+        top: rem(25px);
+      }
     }
-    &:before {
-      position: absolute;
-      content: '';
-      background-color: $lgray;
-      width: rem(30px);
-      height: rem(7px);
-      left: rem(-60px);
-      top: rem(25px);
-    }
-    &:after {
-      position: absolute;
-      content: '';
-      background-color: $lgray;
-      width: rem(30px);
-      height: rem(7px);
-      right: rem(-60px);
-      top: rem(25px);
-    }
+
   }
   &__checkbox {
     display: none;

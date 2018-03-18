@@ -28,6 +28,7 @@
   }
   &__title-date {
     color: $greenOp;
+    display: block;
     margin-bottom: rem(20px);
   }
   &__content-tab-wrap {
@@ -121,6 +122,21 @@
     @include laptop {
       display: none;
     }
+  }
+  &__code-list {
+    width: 5%;
+    background-color: $softwhite2;
+    text-align: center;
+  }
+  &__code--item {
+    white-space:nowrap;
+    width: 90%;
+  }
+  &__code-example {
+    display: flex;
+    min-height:rem(128px);
+    overflow: hidden;
+    background-color: $softwhite;
   }
 }
 
