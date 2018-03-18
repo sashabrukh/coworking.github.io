@@ -11,7 +11,7 @@
   margin: 0 auto;
   &__theme {
     position: relative;
-    margin-top: rem(40px);
+    margin-bottom: rem(60px);
     &:after {
       content: '';
       position: absolute;
@@ -23,7 +23,6 @@
     }
   }
   &__content {
-    padding: rem(30px);
     min-height: 100%;
     width: 100%;
     display: flex;
@@ -46,6 +45,8 @@
   }
   &__content-tab-wrap {
     position: relative;
+    width: 100%;
+    padding: rem(30px);
     @include laptop {
       display: flex;
       margin-top: rem(60px);
@@ -69,6 +70,7 @@
     }
   }
   &__content-tab-cont {
+    position: relative;
     @include laptop {
       position: relative;
       width: 20%;
@@ -98,6 +100,9 @@
     @include tablets {
 
     }
+  }
+  &__content-tab-cont-fixed {
+
   }
   &__content-tab-panel {
     @include laptop {
