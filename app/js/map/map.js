@@ -2,7 +2,7 @@
 
 const map = document.querySelector('#map');
 
-if (map) {
+if (map.length) {
 
   ymaps.ready(init);
 
