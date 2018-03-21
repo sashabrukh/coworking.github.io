@@ -5,8 +5,13 @@
       use(xlink:href='../../img/sprites/sprite-svg.svg#works_header')
   .my-works__works-sliders-cont
     .my-works__works-slider-single
-      img.my-works__works-slider-single-image(src='../../img/slider1.jpg')
-    .my-works__works-slider-desc-cont
+      ul.my-works__works-slider-single-list
+        li.my-works__works-slider-single-item.right.active 1
+        li.my-works__works-slider-single-item.right 2
+        li.my-works__works-slider-single-item.right 3
+        li.my-works__works-slider-single-item.right 4
+        li.my-works__works-slider-single-item.right 5
+    .my-works__works-slider-desc-cont.js-slider-desc
       .my-works__works-slider-desc
         h2.my-works__works-name Сайт школы онлайн образования
         .my-works__works-tech
@@ -15,11 +20,25 @@
           span.my-works__works-tech-item Javascript
         a(href='#').my-works__works-link Посмотреть сайт
     .my-works__works-slider-double
-      .my-works__works-slider-double.left
-        svg.my-works__works-svg-arrow.down
+      .my-works__works-slider-double.left.slider-js.slider-js-left
+        .js-slider-display
+          ul.my-works__works-slider-double-list.js-slider-list
+            li.my-works__works-slider-double-item.left.js-slider-item.active 1
+            li.my-works__works-slider-double-item.left.js-slider-item 2
+            li.my-works__works-slider-double-item.left.js-slider-item 3
+            li.my-works__works-slider-double-item.left.js-slider-item 4
+            li.my-works__works-slider-double-item.left.js-slider-item 5
+        svg.my-works__works-svg-arrow.down.js-slider-up
           use(xlink:href='../../img/sprites/sprite-svg.svg#portf_arrow_up')
-      .my-works__works-slider-double.right
-        svg.my-works__works-svg-arrow.up
+      .my-works__works-slider-double.right.slider-js.slider-js-right
+        .js-slider-display
+          ul.my-works__works-slider-double-list.slider-js-right
+            li.my-works__works-slider-double-item.right.js-slider-item.active 1
+            li.my-works__works-slider-double-item.right.js-slider-item 2
+            li.my-works__works-slider-double-item.right.js-slider-item 3
+            li.my-works__works-slider-double-item.right.js-slider-item 4
+            li.my-works__works-slider-double-item.right.js-slider-item 5
+        svg.my-works__works-svg-arrow.up.js-slider-down
           use(xlink:href='../../img/sprites/sprite-svg.svg#portf_arrow_down')
 
 
