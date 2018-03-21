@@ -173,14 +173,14 @@ gulp.task('watch', gulp.series(['css-libs', 'jslibs', 'browser-sync']), function
 
 gulp.task('img', function () {
   return gulp.src(src.imgTake)
-  // .pipe(cache(imagemin({ // С кешированием
-    .pipe(imagemin({
+  .pipe(cache(imagemin({ // С кешированием
+    // .pipe(imagemin({
       interlaced: true,
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest(src.baseDist + '/img'));
+    .pipe(gulp.dest(src.baseDist + '/img')))
 });
 
 // BUILD
