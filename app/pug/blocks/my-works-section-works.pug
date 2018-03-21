@@ -4,20 +4,19 @@
     svg.my-works__works-svg-header
       use(xlink:href='../../img/sprites/sprite-svg.svg#works_header')
   .my-works__works-sliders-cont
-    .my-works__works-slider-single
-      ul.my-works__works-slider-single-list
-        li.my-works__works-slider-single-item.right.active 1
-        li.my-works__works-slider-single-item.right 2
-        li.my-works__works-slider-single-item.right 3
-        li.my-works__works-slider-single-item.right 4
-        li.my-works__works-slider-single-item.right 5
+    .my-works__works-slider-single.js-slider-main
+      .js-slider-main-display
+        ul.my-works__works-slider-single-list.js-main-slider-list
+          li.my-works__works-slider-single-item.right.js-slider-item.active 1
+          li.my-works__works-slider-single-item.right.js-slider-item 2
+          li.my-works__works-slider-single-item.right.js-slider-item 3
+          li.my-works__works-slider-single-item.right.js-slider-item 4
+          li.my-works__works-slider-single-item.right.js-slider-item 5
     .my-works__works-slider-desc-cont.js-slider-desc
       .my-works__works-slider-desc
         h2.my-works__works-name Сайт школы онлайн образования
         .my-works__works-tech
-          span.my-works__works-tech-item Html,
-          span.my-works__works-tech-item Css,
-          span.my-works__works-tech-item Javascript
+          p.my-works__works-tech-item Html, Css, Javascript
         a(href='#').my-works__works-link Посмотреть сайт
     .my-works__works-slider-double
       .my-works__works-slider-double.left.slider-js.slider-js-left
