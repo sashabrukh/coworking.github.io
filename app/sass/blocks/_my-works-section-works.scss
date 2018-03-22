@@ -108,7 +108,6 @@
     }
   }
   &-tech {
-    text-align: center;
     width: 100%;
     padding:rem(10px);
     border-top: 1px solid $green;
@@ -117,7 +116,6 @@
     &-item {
       text-transform: uppercase;
       color: $green;
-      margin-right: rem(5px);
     }
   }
   &-link {
@@ -228,12 +226,7 @@
 }
 
 .js-slider-list {
-  position: absolute;
-  top: 0;
-  left:0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
+  display: inline-block;
 }
 .js-slider-item {
   width: 100%;
