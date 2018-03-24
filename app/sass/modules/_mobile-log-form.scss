@@ -16,6 +16,7 @@
     max-width:60%;
     text-align: center;
     margin:rem(30px);
+    transition: all .45s;
     &:before {
       position: absolute;
       content: '';

@@ -22,7 +22,21 @@
   min-height:650px;
   height:100%;
   width: 100%;
-  perspective: 1200;
+  perspective: 1000;
+}
+
+.welcome-form__container {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+
+}
+
+.welcome-form.login {
+  transform: rotateY(180deg);
 }
 
 .welcome__link {
@@ -49,13 +63,7 @@
   }
 }
 
-.welcome-form__container {
-  width: 90%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .welcome-form {
   @include phones {
@@ -81,11 +89,15 @@
   }
 }
 .run-index-animation {
-  animation: turn 3s forwards;
+  animation: turn 1s forwards;
 }
 
-.back{
-  z-index: 2;
+.run-index-animation-back {
+  animation: turnback 1s forwards;
+}
+
+.back {
   backface-visibility: hidden;
+  z-index: 2;
 }
 
