@@ -9,7 +9,7 @@
   bottom: -400px;
   left: -500px;
   @include desktop {
-    bottom: -500px;
+    bottom: -250px;
   }
 }
 
@@ -37,6 +37,7 @@
   display: none;
   @include laptop {
     display: initial;
+
   }
   &__layer {
     position: absolute;

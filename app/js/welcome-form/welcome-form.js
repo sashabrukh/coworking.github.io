@@ -2,7 +2,7 @@
 
 let welcome = $('.js-welcome-form');
 
-if (welcome.length) {
+if (welcome) {
 
   var indexAnimate = (function() {
 

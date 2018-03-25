@@ -63,7 +63,7 @@ const src = {
   ],
   jsLibsTake: [
     'node_modules/jquery/dist/jquery.js',
-    'app/libs/jslibs/jquery.easytabs.js'
+    'app/libs/jslibs/jquery.waypoints.js'
   ],
 
   svgPut: 'app/img/sprites/',
