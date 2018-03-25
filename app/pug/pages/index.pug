@@ -1,0 +1,18 @@
+doctype html
+html(lang = 'ru-RU')
+  head
+    include ../layout/pages-prop
+    title Portfolio
+  body
+    .wrapper.index
+      include ../modules/parallax
+      .container
+        .welcome-form__wrapper
+          a(href='#').welcome__link.js-welcome-link Авторизоваться
+          .welcome-form__container.js-welcome-form
+            include ../modules/welcome-form
+            include ../modules/login-form
+        include ../blocks/footer
+  include ../layout/pages-scripts
+
+
