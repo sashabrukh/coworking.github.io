@@ -35,10 +35,7 @@ const
 const src = {
   baseApp: 'app/',
   baseDist: 'dist/',
-  htmlTake: [
-    'app/html/index.html',
-    'app/html/pages/*.html'
-  ],
+  htmlTake: 'app/html/pages/*.html',
   pugTake: 'app/pug/**/*.pug',
   scssTake: 'app/sass/**/*.scss',
   jsTake: [
@@ -83,7 +80,7 @@ const src = {
 gulp.task('html', function () {
   return gulp.src(src.htmlTake)
     // .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(src.baseDist + 'html'));
+    .pipe(gulp.dest(src.baseDist + 'html/pages'));
 });
 
 // PUG
