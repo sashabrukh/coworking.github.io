@@ -3,5 +3,5 @@ import mobMenu from './mobile-menu/mobile-menu'
 import welcomeForm from './welcome-form/welcome-form'
 import tabsMenuCircle from './tabs-menu-circle/tabs-menu-circle'
 import map from './map/map'
-import slider from './slider/slider'
-test();
+// import slider from './slider/slider'
+import parallax from './parallax/parallax'

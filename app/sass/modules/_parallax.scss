@@ -1,0 +1,57 @@
+@import "../misc/variables.scss";
+@import "../misc/functions.scss";
+@import "../misc/mixins.scss";
+@import "../misc/media.scss";
+
+#parallax__image1 {
+  width: 150%;
+  height: 100%;
+  bottom: -400px;
+  left: -500px;
+  @include desktop {
+    bottom: -250px;
+  }
+}
+
+#parallax__image2 {
+  bottom: 2%;
+  left: 2%;
+  @include desktop {
+    bottom: 10%;
+    left: 5%;
+  }
+
+}
+
+#parallax__image3 {
+  top: 2%;
+  right: 2%;
+  @include desktop {
+    top: 10%;
+    right: 5%;
+  }
+}
+
+.parallax {
+  z-index: -1;
+  display: none;
+  @include laptop {
+    display: initial;
+
+  }
+  &__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__image {
+    position: absolute;
+  }
+}
+
+
+
+
+

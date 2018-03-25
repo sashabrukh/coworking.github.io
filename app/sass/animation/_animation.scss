@@ -5,6 +5,15 @@
 
 @keyframes turn {
   to {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes turnback {
+  from {
+    transform: rotateY(180deg)
+  }
+  to {
+    transform: rotateY(0);
   }
 }

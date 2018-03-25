@@ -19,7 +19,6 @@ body {
 
 body {
   font-size: rem(16px);
-
   line-height: 1.62;
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -48,6 +47,7 @@ body {
   min-height: 650px;
   height:100%;
   position: relative;
+  overflow: hidden;
 }
 
 .clearfix {

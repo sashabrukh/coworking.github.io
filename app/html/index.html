@@ -11,9 +11,15 @@
   </head>
   <body>
     <div class="wrapper index">
+      <div class="parallax" id="parallax">
+        <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-0.png" id="parallax__image0"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-1.png" id="parallax__image1"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-2.png" id="parallax__image2"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-3.png" id="parallax__image3"></div>
+      </div>
       <div class="container">
-        <div class="welcome-form__wrapper"><a class="welcome__link" href="pages/login.html">Авторизоваться</a>
-          <div class="welcome-form__container">
+        <div class="welcome-form__wrapper"><a class="welcome__link js-welcome-link" href="pages/login.html">Авторизоваться</a>
+          <div class="welcome-form__container js-welcome-form">
             <form class="welcome-form back">
               <fieldset class="welcome-form__fieldset"><img class="welcome-form__my-photo" src="../img/my-photo.jpg">
                 <h2 class="welcome-form__my-name">Александр Брюханов</h2>
@@ -35,7 +41,7 @@
                 </div>
               </fieldset>
             </form>
-            <form class="welcome-form">
+            <form class="welcome-form login back">
               <fieldset class="welcome-form__fieldset">
                 <div class="log-form__title">
                   <h2 class="log-form__title-item">Авторизуйтесь</h2>

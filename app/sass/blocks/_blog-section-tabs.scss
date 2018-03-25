@@ -3,6 +3,13 @@
 @import "../misc/mixins.scss";
 @import "../misc/media.scss";
 
+.js-fixed-menu {
+  position: fixed;
+  top: 65px;
+  left: 100px;
+  width: 190px;
+}
+
 .blog {
   color: $gray;
   position: relative;
@@ -100,6 +107,10 @@
     @include tablets {
 
     }
+  }
+  &__content-tab-item {
+    display: block;
+    margin-bottom: rem(30px);
   }
   &__content-tab-cont-fixed {
 
