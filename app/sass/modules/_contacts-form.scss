@@ -4,7 +4,6 @@
 @import "../misc/media.scss";
 
 .my-works__contacts {
-
   &-container {
     width: 90%;
     position: relative;
@@ -32,7 +31,9 @@
     background: url('../../img/back/sea.png') center no-repeat;
     background-size: 1338px;
     background-position: -477px -520px;
-    filter: blur(5px);
+    &-wrapper {
+      filter: blur(5px);
+    }
   }
   &-form-fieldset {
     width: 100%;

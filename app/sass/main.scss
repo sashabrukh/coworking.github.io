@@ -1,7 +1,7 @@
-@import "misc/variables.scss";
-@import "misc/functions.scss";
-@import "misc/mixins.scss";
-@import "misc/media.scss";
+@import "misc/variables";
+@import "misc/functions";
+@import "misc/mixins";
+@import "misc/media";
 @import "base/fonts";
 @import "base/layout";
 @import "animation/animation";
@@ -24,8 +24,9 @@
 @import "modules/logo";
 @import "modules/buttons";
 @import "modules/welcome-form";
-@import "modules/contacts-form.scss";
-@import "modules/mobile-menu.scss";
+@import "modules/contacts-form";
+@import "modules/mobile-menu";
+@import "modules/preloader";
 @import "blocks/footer";
 @import "blocks/footer-big";
 
