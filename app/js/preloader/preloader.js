@@ -5,7 +5,6 @@ const preloader = (function () {
   const svg = $('.preloader-icon');
   return {
     set: function () {
-      var svg = $('.preloader-icon');
       svg.animate({
         strokeDashoffset: '0',
         strokeDasharray: '1000'
