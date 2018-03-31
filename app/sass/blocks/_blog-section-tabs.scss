@@ -3,6 +3,11 @@
 @import "../misc/mixins.scss";
 @import "../misc/media.scss";
 
+.js-tab-item-link {
+  color: $green!important;
+  border-right: 2px solid $green;
+}
+
 .js-fixed-menu {
   position: fixed;
   top: 65px;

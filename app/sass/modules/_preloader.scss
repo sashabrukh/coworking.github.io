@@ -1,0 +1,28 @@
+@import "../misc/variables.scss";
+@import "../misc/functions.scss";
+@import "../misc/mixins.scss";
+@import "../misc/media.scss";
+
+.preloader-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../../img/preloader/bg.jpg') center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.preloader-icon {
+  fill: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}

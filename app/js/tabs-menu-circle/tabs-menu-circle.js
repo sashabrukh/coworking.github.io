@@ -1,86 +1,109 @@
 ;'use strict';
 
 
-const tracked = $('.blog__theme');
-const navPoints = $('.blog__content-tab-item');
-
-tracked.waypoint(function () {
-  const hash = $(this).attr('id');
-  alert(hash);
-  $.each(navPoints, function () {
-    if ($(this).children('a').attr('href').slice(1) === hash) {
-      alert('ssss');
-    }
-  })
-});
-
-const menu = $('.blog__content-tab-cont');
-
-if (menu) {
+const tabsMenu = (function () {
 
   const circleMenuLinks = $('.blog__content-tab-item-link');
-
-  const scrollMenu = $(function () {
-    $(circleMenuLinks).click(function (e) {
-      const destination = $(this).attr('href');
-      const offsetTop = $(destination).offset().top;
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: offsetTop
-      }, 500);
-    });
-  });
-
+  const menu = $('.blog__content-tab-cont');
+  const themes = $('.blog__theme');
+  const circle = $('.blog__content-tab-circle');
+  var isMenuShow = false;
   const windowWidth = $(window).width();
-  if (windowWidth > 1200) {
-    window.onscroll = function () {
-      const wScroll = window.pageYOffset;
-      const fixedMenu = $('.blog__content-tab-cont-fixed');
-      if (wScroll >= 700) {
-        fixedMenu.addClass('js-fixed-menu');
+  const fixedElem = $('.blog__content-tab-cont-fixed');
+  const fixedClass = 'js-fixed-menu';
+  const waypLinks = $('.blog__content-tab-item-link');
+
+  function changeMenuWidth(width) {
+    menu.css('width', width + 'px');
+  }
+
+
+  return {
+
+    wayp: function () {
+      themes.waypoint({
+
+        handler: function () {
+          const hash = this.element.id;
+          const activeClass = 'js-tab-item-link';
+          waypLinks.removeClass(activeClass);
+
+          $.each(waypLinks, function () {
+            if ($(this).attr('href').slice(1) === hash) {
+              $(this).addClass(activeClass);
+            }
+          })
+
+        },
+        offset: '45'
+      })
+
+    },
+
+    scrollMenu: function () {
+      $(circleMenuLinks).click(function (e) {
+        const destination = $(this).attr('href');
+        const offsetTop = $(destination).offset().top - 25;
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: offsetTop
+        }, 500);
+      })
+    },
+
+    animateCircleMenu: function () {
+
+      circle.click(function () {
+        switch (isMenuShow) {
+          case false:
+            changeMenuWidth(350);
+            isMenuShow = true;
+            break;
+          case true:
+            changeMenuWidth(0);
+            isMenuShow = false;
+            break;
+        }
+      });
+
+      $(document).click(function (e) { // событие клика по веб-документу;
+        if (!menu.is(e.target) // если клик был не по нашему блоку
+          && menu.has(e.target).length === 0 && isMenuShow) { // и не по его дочерним элементам
+          changeMenuWidth(0);
+          isMenuShow = false;
+        }
+      })
+    },
+
+    fixedMenu: function () {
+      if (fixedElem.hasClass(fixedClass)) {
+        fixedElem.removeClass(fixedClass)
       }
-      else {
-        fixedMenu.removeClass('js-fixed-menu');
+      if (windowWidth > 1200) {
+        $(window).scroll(function () {
+          const wScroll = window.pageYOffset;
+          if (wScroll >= 700) {
+            fixedElem.addClass('js-fixed-menu');
+          }
+          if (wScroll < 700) {
+            fixedElem.removeClass('js-fixed-menu');
+          }
+        })
       }
     }
   }
+})();
 
-  const animateCircleMenu = (function tabMenuCircle() {
-    const circle = $('.blog__content-tab-circle');
-    var isMenuShow = false;
+tabsMenu.fixedMenu();
+tabsMenu.animateCircleMenu();
+tabsMenu.scrollMenu();
+tabsMenu.wayp();
 
-    function changeMenuWidth(width) {
-      menu.css('width', width + 'px');
-    }
-
-    if (isMenuShow) {
-      circle.click(function () {
-        changeMenuWidth(0);
-        isMenuShow = false;
-        console.log(isMenuShow);
-      })
-    }
-    if (!isMenuShow) {
-      circle.click(function () {
-        changeMenuWidth(350);
-        isMenuShow = true;
-        console.log(isMenuShow);
-      });
-    }
-
-    $(document).click(function (e) { // событие клика по веб-документу;
-      if (!menu.is(e.target) // если клик был не по нашему блоку
-        && menu.has(e.target).length === 0 && isMenuShow) { // и не по его дочерним элементам
-        changeMenuWidth(0);
-        isMenuShow = false;
-        console.log(isMenuShow);
-      }
-    });
-  })();
-}
-
-
-const animateScroll = (function () {
-  var wScroll = window.pageYOffset;
-  console.log(wScroll);
-});
+// const animateScroll = (function () {
+//
+//   $(window).scroll(function () {
+//     var wScroll = window.pageYOffset;
+//     console.log(wScroll);
+//   })
+// });
+// animateScroll();
