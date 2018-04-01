@@ -35,7 +35,7 @@ const mobMenu = (function mobileMenu() {
           mobileMenuLink[index].style.opacity = 1;
           setTimeout(function () {
             resolve();
-          }, 500);
+          }, 150);
         });
         return promise;
       }
@@ -50,7 +50,7 @@ const mobMenu = (function mobileMenu() {
           }).then(function () {
             return animateText(3)
           })
-        }, 500);
+        }, 200);
       });
     }
   }
