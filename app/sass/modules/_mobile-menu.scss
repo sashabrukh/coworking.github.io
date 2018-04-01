@@ -89,10 +89,11 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.25s;
+    transition: all 0.4s;
     font-family:$bern;
     font-size: $fz35;
     color: $white;
+    opacity: 0;
     &:hover {
       &:before {
         position: absolute;

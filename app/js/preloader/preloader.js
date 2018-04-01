@@ -3,7 +3,7 @@
 const preloader = (function () {
   const preloadCont = $('.preloader-container');
   const svg = $('.preloader-icon');
-  var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+  const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
   return {
     set: function () {
       svg.animate({
