@@ -16,7 +16,7 @@
       margin: 0 auto;
     }
     @include laptop {
-      width: 90%;
+      width: 100%;
     }
 
   }
@@ -53,6 +53,7 @@
     display: flex;
     flex-direction:column;
     align-items:center;
+    width: 100%;
     @include tablets {
       margin-bottom:rem(30px);
     }
@@ -68,7 +69,7 @@
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-
+    width: 100%;
   }
 }
 
@@ -88,8 +89,8 @@
 .item {
   position: relative;
   display: inline-block;
-  width: rem(130px);
-  height: rem(130px);
+  width: rem(150px);
+  height: rem(150px);
 }
 
 .item__title {
