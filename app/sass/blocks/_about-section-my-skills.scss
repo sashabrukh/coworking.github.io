@@ -88,10 +88,8 @@
 .item {
   position: relative;
   display: inline-block;
-  width: 150px;
-  height: 150px;
-
-
+  width: rem(130px);
+  height: rem(130px);
 }
 
 .item__title {

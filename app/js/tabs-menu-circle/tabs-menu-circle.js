@@ -17,7 +17,6 @@ const tabsMenu = (function () {
     menu.css('width', width + 'px');
   }
 
-
   return {
 
     wayp: function () {

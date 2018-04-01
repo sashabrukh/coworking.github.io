@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <div class="section my-works__header">
+        <div class="section my-works__header" id="my-works-up">
           <div class="my-works__header-bg">
             <div class="parallax" id="parallax">
               <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-0.png" id="parallax__image0"></div>
@@ -48,14 +48,13 @@
             </div><img class="my-works__header-img" src="../../img/my-photo.jpg">
             <div class="my-works__header-my-name">Александр Брюханов</div>
             <div class="my-works__header-title">Личный сайт веб разработчика</div>
-            <div class="my-works__header-svg-arrow">
-              <svg class="my-works__header-svg-arrow-down">
-                <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
-              </svg>
-            </div>
+            <div class="my-works__header-svg-arrow"><a class="my-works__header-down-link" href="#my-works">
+                <svg class="my-works__header-svg-arrow-down">
+                  <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
+                </svg></a></div>
           </div>
         </div>
-        <div class="section my-works__works">
+        <div class="section my-works__works" id="my-works">
           <div class="my-works__works-title">
             <h2 class="my-works__works-title-item">Мои работы</h2>
             <svg class="my-works__works-svg-header">
@@ -164,11 +163,10 @@
               </form>
             </div>
           </div>
-          <div class="my-works__about-svg-arrow">
-            <svg class="my-works__about-svg-arrow-down">
-              <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>
-            </svg>
-          </div>
+          <div class="my-works__about-svg-arrow"><a class="my-works__about-up-link" href="#my-works-up">
+              <svg class="my-works__about-svg-arrow-up">
+                <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>
+              </svg></a></div>
         </div>
         <div class="footer-big__container">
           <footer class="footer-big">
