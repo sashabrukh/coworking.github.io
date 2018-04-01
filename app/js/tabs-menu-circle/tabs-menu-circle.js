@@ -1,5 +1,5 @@
 ;'use strict';
-
+const windowWidth = $(window).width();
 
 const tabsMenu = (function () {
 
@@ -8,7 +8,6 @@ const tabsMenu = (function () {
   const themes = $('.blog__theme');
   const circle = $('.blog__content-tab-circle');
   var isMenuShow = false;
-  const windowWidth = $(window).width();
   const fixedElem = $('.blog__content-tab-cont-fixed');
   const fixedClass = 'js-fixed-menu';
   const waypLinks = $('.blog__content-tab-item-link');
@@ -96,7 +95,11 @@ const tabsMenu = (function () {
 tabsMenu.fixedMenu();
 tabsMenu.animateCircleMenu();
 tabsMenu.scrollMenu();
-tabsMenu.wayp();
+if(windowWidth > 1200) {
+  tabsMenu.wayp();
+}
+
+
 
 // const animateScroll = (function () {
 //
