@@ -90,7 +90,7 @@ const mainSlider = (function () {
 
   return {
     handlers: function () {
-
+      fillSlider();
       upBtn.addEventListener('click', function () {
         currentSlide = slideLimiter(currentSlide + 1);
         fillSlider();
