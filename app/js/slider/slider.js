@@ -65,7 +65,7 @@ const mainSlider = (function () {
     function sliderAddImg(cont, val) {
       var img = document.createElement('img');
       if (cont.childNodes.length >= 1) {
-       cont.removeChild(cont.firstChild);
+        cont.removeChild(cont.firstChild);
       }
       img.setAttribute('src', slides[val].image);
       img.classList.add('js-images');
@@ -76,6 +76,7 @@ const mainSlider = (function () {
       titleCont.innerText = slides[val].title;
       descCont.innerText = slides[val].description;
     }
+
     sliderAddDesc(descTitle, descText, currentSlide);
     sliderAddImg(mainImgLeft, prev);
     sliderAddImg(mainImgCenter, currentSlide);
@@ -102,9 +103,10 @@ const mainSlider = (function () {
       });
     }
   }
-})
-();
+})();
 
 mainSlider.handlers();
+
+
 
 
