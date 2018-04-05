@@ -10,9 +10,9 @@
 
 .js-fixed-menu {
   position: fixed;
-  top: 65px;
-  left: 100px;
-  width: 190px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-245%);
 }
 
 .blog {

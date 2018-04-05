@@ -2,15 +2,18 @@
 const windowWidth = $(window).width();
 
 const tabsMenu = (function () {
-
+  const tabMainCont = $('.tab-container');
   const circleMenuLinks = $('.blog__content-tab-item-link');
   const menu = $('.blog__content-tab-cont');
   const themes = $('.blog__theme');
   const circle = $('.blog__content-tab-circle');
-  var isMenuShow = false;
+  let isMenuShow = false;
   const fixedElem = $('.blog__content-tab-cont-fixed');
   const fixedClass = 'js-fixed-menu';
   const waypLinks = $('.blog__content-tab-item-link');
+  const fixedMenuWidth = tabMainCont.innerWidth() * 0.20;
+
+
 
   function changeMenuWidth(width) {
     menu.css('width', width + 'px');
@@ -26,14 +29,14 @@ const tabsMenu = (function () {
           const activeClass = 'js-tab-item-link';
           waypLinks.removeClass(activeClass);
 
-          $.each(waypLinks, function () {
+          $.each(waypLinks, function (direction) {
             if ($(this).attr('href').slice(1) === hash) {
               $(this).addClass(activeClass);
             }
           })
 
         },
-        offset: '45'
+        offset: '1'
       })
 
     },
@@ -41,7 +44,7 @@ const tabsMenu = (function () {
     scrollMenu: function () {
       $(circleMenuLinks).click(function (e) {
         const destination = $(this).attr('href');
-        const offsetTop = $(destination).offset().top - 25;
+        const offsetTop = $(destination).offset().top;
         e.preventDefault();
         $('html, body').animate({
           scrollTop: offsetTop
@@ -82,6 +85,8 @@ const tabsMenu = (function () {
           const wScroll = window.pageYOffset;
           if (wScroll >= 700) {
             fixedElem.addClass('js-fixed-menu');
+            fixedElem.width(fixedMenuWidth);
+
           }
           if (wScroll < 700) {
             fixedElem.removeClass('js-fixed-menu');
@@ -92,12 +97,14 @@ const tabsMenu = (function () {
   }
 })();
 
-tabsMenu.fixedMenu();
+
 tabsMenu.animateCircleMenu();
 tabsMenu.scrollMenu();
 if(windowWidth > 1200) {
   tabsMenu.wayp();
 }
+  tabsMenu.fixedMenu();
+
 
 
 
