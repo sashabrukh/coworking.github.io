@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Gotha;
+    src: url("../../fonts/gothaprolig.woff") format('woff');
+    src: url("../../fonts/gothaprolig.woff2") format('woff2');
+    font-display: optional;
+}
+
+@font-face {
+    font-family: GothaBld;
+    src: url("../../fonts/gothaprobol.woff") format('woff');
+    src: url("../../fonts/gothaprobol.woff2") format('woff2');
+    font-display: optional;
+}
+
+@font-face {
+    font-family: GothaIt;
+    src: url("../../fonts/gothaproligita.woff") format('woff');
+    src: url("../../fonts/gothaproligita.woff2") format('woff2');
+    font-display: optional;
+}

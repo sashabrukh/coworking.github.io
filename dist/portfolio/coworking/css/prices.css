@@ -1,0 +1,11 @@
+@import url(reset-styles/reset-styles.css);
+@import url(reset-styles/normalize.css);
+@import url(fonts/fonts.css);
+@import url(common-blocks/main-container.css);
+@import url(common-blocks/main-header.css);
+@import url(common-blocks/main-nav.css);
+@import url(common-blocks/breadcrumbs.css);
+@import url(common-blocks/footer.css);
+@import url(PRICES-PAGE/main-nav--prices.css);
+@import url(PRICES-PAGE/prices.css);
+@import url(PRICES-PAGE/our-partners.css);
