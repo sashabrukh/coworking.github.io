@@ -6,6 +6,6 @@
 @import url(common-blocks/main-nav.css);
 @import url(common-blocks/breadcrumbs.css);
 @import url(common-blocks/footer.css);
-@import url(PRICES-PAGE/main-nav--prices.css);
-@import url(PRICES-PAGE/prices.css);
-@import url(PRICES-PAGE/our-partners.css);
+@import url(prices-page/main-nav-prices.css);
+@import url(prices-page/prices.css);
+@import url(prices-page/our-partners.css);
