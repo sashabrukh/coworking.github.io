@@ -11,7 +11,7 @@ const tabsMenu = (function () {
   const fixedElem = $('.blog__content-tab-cont-fixed');
   const fixedClass = 'js-fixed-menu';
   const waypLinks = $('.blog__content-tab-item-link');
-  const fixedMenuWidth = tabMainCont.innerWidth() * 0.20;
+  const fixedMenuWidth = tabMainCont.innerWidth() * 0.15;
 
 
 

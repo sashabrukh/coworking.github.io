@@ -14,7 +14,8 @@
     width: rem(35px);
     height: rem(30px);
     cursor: pointer;
-    z-index: 999;
+    z-index: 9999;
+
   }
   &__btn {
     position: absolute;
@@ -73,6 +74,7 @@
     transition-delay: .5s;
     overflow: hidden;
     transition: all 0.25s;
+    z-index: 999;
   }
   &__container--active {
     width: 100%;

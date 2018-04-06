@@ -1,0 +1,104 @@
+.prices {
+    float: right;
+    width: 900px;
+    height: 100%;
+}
+
+.prices__list-item,
+.prices__list-child-item {
+    display: inline-block;
+}
+
+.prices__header {
+    font-size: 49px;
+    color: #221f1f;
+    font-family: GothaBld, Arial, sans-serif;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+.prices__list-item {
+    width: 30%;
+    margin-top: 10px;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.prices__list-item:not(:nth-of-type(3n+1)) {
+    margin-left: 30px;
+}
+
+/*PRICES BLOCK TEXT STYLES*/
+
+.prices__list-item,
+.prices__list-child-item,
+.prices__list-child-title,
+.prices__list-child-desc {
+    text-align: center;
+}
+
+.prices__list-child-plan-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: GothaBld, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #5dd1f8;
+}
+
+.prices__list-child-plan-name--VIP {
+    color: #ec1e79;
+}
+
+.prices__list-child-title {
+    font-size: 18px;
+    font-family: GothaBld, Arial, sans-serif;
+}
+
+.prices__list-child-desc {
+    font-size: 14px;
+}
+
+.prices__list-child-title {
+    margin-bottom: 15px;
+}
+
+/*PRICES BG IMAGES*/
+
+.prices__list-child-image {
+    position: relative;
+    width: 250px;
+    height: 153px;
+    margin-bottom: 26px;
+    border-radius: 5px;
+    background-size: cover;
+    opacity: 1;
+}
+
+.prices__list-child-image--1 {
+    background: url(../../images/prices/1.jpg) no-repeat;
+}
+
+.prices__list-child-image--3 {
+    background: url(../../images/prices/2.jpg) no-repeat;
+}
+
+.prices__list-child-image--10x10 {
+    background: url(../../images/prices/3.jpg) no-repeat;
+}
+
+.prices__list-child-image--vip1 {
+    background: url(../../images/prices/4.jpg) no-repeat;
+}
+
+.prices__list-child-image--vip2 {
+    background: url(../../images/prices/5.jpg) no-repeat;
+}
+
+.prices__list-child-image--negotiations {
+    background: url(../../images/prices/6.jpg) no-repeat;
+}
