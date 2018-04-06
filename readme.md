@@ -11,14 +11,13 @@
 
 * PUG
 * SCSS
+* BEM
+* JS / jQuery
+* Mobile first
+* Flexbox / CSS Grid
 * NPM
+* Yarn
 * Gulp
 * Webpack
-* JS / jQuery
-* Flexbox / CSS Grid
-* Yarn
-* BEM
-* Vue.js 
-* Node.js
-* PHP
-* AJAX 
+
+
