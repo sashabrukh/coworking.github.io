@@ -13,7 +13,9 @@
     margin-bottom:rem(200px);
   }
   &-form {
-    filter: blur(5px);
+    background: url('../../img/back/sea.png') center no-repeat;
+    background-size: 1346px;
+    background-position: -472px -525px;
     @include phones {
       width: 300px;
       height: 417px;
@@ -28,11 +30,8 @@
     }
     border-radius: rem(10px);
     text-align: center;
-    background: url('../../img/back/sea.png') center no-repeat;
-    background-size: 1338px;
-    background-position: -477px -520px;
     &-wrapper {
-
+      filter: blur(5px);
     }
   }
   &-form-fieldset {

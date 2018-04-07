@@ -59,7 +59,7 @@
     text-align: center;
     color: $white;
     margin-bottom:rem(10px);
-    font-size: $fz63;
+    font-size: $fz45;
     font-weight:600;
   }
   &-title {
@@ -84,14 +84,15 @@
     justify-content:center;
     align-items:center;
     cursor: pointer;
-    &:hover > .my-works__header-svg-arrow-down {
-      fill: $white;
-    }
+
   }
   &-svg-arrow-down {
     fill: $whiteOp;
     width:rem(50px);
     height:rem(50px);
+    &:hover {
+      fill: $whiteOp2;
+    }
   }
 }
 

@@ -35,13 +35,12 @@
   &__social-link {
     width:rem(50px);
     height:rem(50px);
-    margin-right:rem(30px);
     display: flex;
     justify-content:center;
     align-items:center;
     cursor: pointer;
-    &:last-of-type {
-      margin-top:rem(-7px);
+    &:first-of-type {
+      margin-right:rem(30px);
     }
     &:hover > .welcome-form__social-icon {
       fill: darken($green, 10%);

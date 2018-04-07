@@ -8,29 +8,22 @@ if (myWorks) {
       {
         title: 'Burgers Landing',
         image: '../../img/portfolio/burgers.jpg',
-        description: 'SCSS, Javascript, jQuery, Adaptive design',
-        url: 'https://sashabrukh.github.io/dist/portfolio/burgers/index.html'
+        description: 'SCSS, BEM, Javascript, jQuery, Gulp, Adaptive design',
+        link: 'https://sashabrukh.github.io/dist/portfolio/burgers/index.html'
       },
 
       {
         title: 'Coworking',
         image: '../../img/portfolio/coworking.jpg',
         description: 'Статичный сайт из 4х страниц',
-        url: 'https://sashabrukh.github.io/dist/portfolio/coworking/index.html'
+        link: 'https://sashabrukh.github.io/dist/portfolio/coworking/index.html'
       },
 
       {
-        title: 'Lending 3',
-        image: 'https://veterinargid.ru/wp-content/uploads/2016/02/perhot-u-sobaki-prichiny.jpg',
-        description: 'Описание 3',
-        url: 'https://sashabrukh.github.io/dist/portfolio/burgers/index.html'
-      },
-
-      {
-        title: 'Lending 4',
-        image: 'http://wexplain.ru/wp-content/uploads/2014/01/120913192533.jpg',
-        description: 'Описание 4',
-        url: 'https://sashabrukh.github.io/dist/portfolio/burgers/index.html'
+        title: 'Сайт в разработке',
+        image: '../../img/portfolio/healday.jpg',
+        description: 'VUE, Javascript, SCSS, Pug, Webpack',
+        link: '#'
       }
     ];
 
@@ -51,7 +44,7 @@ if (myWorks) {
       downBtn = slider.querySelector('.js-slider-down'),
       slidesLength = slides.length;
     let currentSlide = 0;
-    console.log(worksLink);
+
 
 
     function slideLimiter(value) {
@@ -78,13 +71,14 @@ if (myWorks) {
         cont.appendChild(img);
       }
 
-      function sliderAddDesc(titleCont, descCont, val, link) {
+      function sliderAddDesc(titleCont, descCont, val) {
         titleCont.innerText = slides[val].title;
         descCont.innerText = slides[val].description;
-        link.setAttribute('href', slides[val].url);
+        worksLink.setAttribute('href', slides[val].link);
+        worksLink.setAttribute('target', '_blank');
       }
 
-      sliderAddDesc(descTitle, descText, currentSlide, worksLink);
+      sliderAddDesc(descTitle, descText, currentSlide);
       sliderAddImg(mainImgLeft, prev);
       sliderAddImg(mainImgCenter, currentSlide);
       sliderAddImg(mainImgRight, next);
