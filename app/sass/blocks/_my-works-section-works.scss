@@ -155,7 +155,7 @@
   &-title-item {
     position: relative;
     font-family:$bern;
-    font-size: $fz63;
+    font-size: $fz45;
     text-align: center;
     &:before {
       position: absolute;
@@ -177,6 +177,7 @@
     }
   }
   &-name {
+    display: inline-block;
     text-align: center;
     font-family: $bern;
     font-size: $fz25;

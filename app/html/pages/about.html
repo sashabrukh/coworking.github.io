@@ -44,14 +44,14 @@
                         <svg class="header__social-icon vk">
                           <use xlink:href="../../img/sprites/sprite-svg.svg#vk"></use>
                         </svg></a></li>
-                    <li class="header__socials-list-item"><a class="header__socials-list-item-link" href="#">
-                        <svg class="header__social-icon git">
-                          <use xlink:href="../../img/sprites/sprite-svg.svg#github" target="_blank"></use>
-                        </svg></a></li>
                     <li class="header__socials-list-item"><a class="header__socials-list-item-link" href="https://github.com/sashabrukh" target="_blank">
-                        <svg class="header__social-icon in">
-                          <use xlink:href="../../img/sprites/sprite-svg.svg#in"></use>
+                        <svg class="header__social-icon git">
+                          <use xlink:href="../../img/sprites/sprite-svg.svg#github"></use>
                         </svg></a></li>
+                    <!--li.header__socials-list-item-->
+                    <!--  a.header__socials-list-item-link(href='https://github.com/sashabrukh', target='_blank')-->
+                    <!--    svg.header__social-icon.in-->
+                    <!--      use(xlink:href='../../img/sprites/sprite-svg.svg#in')-->
                   </ul>
                 </header>
               </div>
@@ -70,7 +70,7 @@
               <div class="about__wrapper">
                 <div class="about__wrapper-title">
                   <div class="about__title">
-                    <h2 class="about__title-item">Обо мне</h2>
+                    <h2 class="about__title-item">Кратко обо мне</h2>
                   </div>
                 </div>
                 <div class="about__my-story-cont">
@@ -78,8 +78,8 @@
                   <div class="about__title">
                     <h2 class="about__title-item">Кто я</h2>
                   </div>
-                  <p class="about__my-story-text">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
-                  <p class="about__my-story-text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
+                  <p class="about__my-story-text">Я начинающий веб разработчик из Санкт - Петербурга. Мне нравится делать интересные и современные проекты, изучать новые технологии и как эти технологии правильно применять.</p>
+                  <p class="about__my-story-text">Веду активный образ жизни, люблю путешествовать, общаться с интересными людьми. Регулярно занимаюсь спортом. Всегда открыт для новых знакомств и предложений!</p>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@
                   <h2 class="my-skills__title-item">Чем я могу быть вам полезен</h2>
                 </div>
                 <div class="my-skills__text">
-                  <p class="my-skills__text-item">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+                  <p class="my-skills__text-item">Больше всего меня привлекет Frontend разработка, но я также уделяю часть времени для знакомства с Backend. Давайте по порядку.</p>
                 </div>
                 <div class="my-skills__desc">
                   <h2 class="my-skills__desc-title js-skill-title">Frontend</h2>
@@ -99,67 +99,80 @@
                     <div class="item"><span class="item__title">HTML5</span>
                       <svg class="circles" viewbox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
                       </svg>
                     </div>
                     <div class="item"><span class="item__title">CSS3</span>
                       <svg class="circles" viewbox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
                       </svg>
                     </div>
                     <div class="item"><span class="item__title">JS</span>
                       <svg class="circles" viewbox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        <circle class="circle__second circle-50" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">jQuery</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">Vue</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
                       </svg>
                     </div>
                   </div>
-                  <h2 class="my-skills__desc-title js-skill-title">Backend</h2>
-                  <div class="my-skills__desc-circles-cont">
-                    <div class="item"><span class="item__title">PHP</span>
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                    </div>
-                    <div class="item"><span class="item__title">mySQL</span>
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                    </div>
-                    <div class="item"><span class="item__title">Node.js & npm</span>
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                    </div>
-                    <div class="item"><span class="item__title">Mongo.db</span>
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                    </div>
-                  </div>
+                  <!--h2.my-skills__desc-title.js-skill-title Backend-->
+                  <!--.my-skills__desc-circles-cont-->
+                  <!--  .item-->
+                  <!--    span.item__title PHP-->
+                  <!--    svg.circles(viewbox='0 0 110 110')-->
+                  <!--      circle.circle__first(r='45', cx='50%', cy='50%', fill='none')-->
+                  <!--      circle.circle__second(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')-->
+                  <!--  .item-->
+                  <!--    span.item__title mySQL-->
+                  <!--    svg.circles(viewbox='0 0 110 110')-->
+                  <!--      circle.circle__first(r='45', cx='50%', cy='50%', fill='none')-->
+                  <!--      circle.circle__second(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')-->
+                  <!--  .item-->
+                  <!--    span.item__title Node.js & npm-->
+                  <!--    svg.circles(viewbox='0 0 110 110')-->
+                  <!--      circle.circle__first(r='45', cx='50%', cy='50%', fill='none')-->
+                  <!--      circle.circle__second(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')-->
+                  <!--  .item-->
+                  <!--    span.item__title Mongo.db-->
+                  <!--    svg.circles(viewbox='0 0 110 110')-->
+                  <!--      circle.circle__first(r='45', cx='50%', cy='50%', fill='none')-->
+                  <!--      circle.circle__second(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')-->
                   <h2 class="my-skills__desc-title js-skill-title">Workflow</h2>
                   <div class="my-skills__desc-circles-cont">
                     <div class="item"><span class="item__title">Git</span>
                       <svg class="circles" viewbox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        <circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
                       </svg>
                     </div>
                     <div class="item"><span class="item__title">Gulp</span>
                       <svg class="circles" viewbox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
                       </svg>
                     </div>
                     <div class="item"><span class="item__title">Yarn</span>
                       <svg class="circles" viewbox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        <circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg>
+                    </div>
+                    <div class="item"><span class="item__title">Webpack</span>
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-45" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
                       </svg>
                     </div>
                   </div>
@@ -174,19 +187,19 @@
               <h2 class="contacts__title-item">Контакты</h2>
             </div>
             <ul class="contacts__list">
-              <li class="contacts__list-item">sashabrukh<a class="contacts__icon-link">
+              <li class="contacts__list-item"><a class="contacts__list-item-skype contacts__list-link" href="skype:sashabrukh">sashabrukh</a><a class="contacts__icon-link">
                   <svg class="contacts__icon" height: 25px; width: 25px;>
                     <use xlink:href="../../img/sprites/sprite-svg.svg#skype"></use>
                   </svg></a></li>
-              <li class="contacts__list-item">mail<a class="contacts__icon-link">
+              <li class="contacts__list-item"><a class="contacts__list-item-mail contacts__list-link" href="mailto:bryukhanovspb@gmail.com">bryukhanovspb@gmail.com</a><a class="contacts__icon-link">
                   <svg class="contacts__icon" height: 25px; width: 25px;>
                     <use xlink:href="../../img/sprites/sprite-svg.svg#envelope"></use>
                   </svg></a></li>
-              <li class="contacts__list-item">8921312313<a class="contacts__icon-link">
+              <li class="contacts__list-item"><a class="contacts__list-item-phone contacts__list-link" href="tel:+79817554101">+7 981 755 41 01</a><a class="contacts__icon-link">
                   <svg class="contacts__icon" height: 25px; width: 25px;>
                     <use xlink:href="../../img/sprites/sprite-svg.svg#phone"></use>
                   </svg></a></li>
-              <li class="contacts__list-item">г.Новосибирск, ул. Инская, д. 5<a class="contacts__icon-link">
+              <li class="contacts__list-item">Санкт - Петербург<a class="contacts__icon-link">
                   <svg class="contacts__icon" height: 25px; width: 25px;>
                     <use xlink:href="../../img/sprites/sprite-svg.svg#map_marker"></use>
                   </svg></a></li>
@@ -215,16 +228,16 @@
                       <svg class="footer-big__svg-arrow-down">
                         <use xlink:href="../../img/sprites/sprite-svg.svg#github_round"></use>
                       </svg></a></li>
-                  <li class="footer-big__socials-list-item in"><a class="footer-big__socials-list-item-link" href="#">
-                      <svg class="footer-big__svg-arrow-down">
-                        <use xlink:href="../../img/sprites/sprite-svg.svg#in_round"></use>
-                      </svg></a></li>
+                  <!--li.footer-big__socials-list-item.in-->
+                  <!--  a.footer-big__socials-list-item-link(href='#')-->
+                  <!--    svg.footer-big__svg-arrow-down-->
+                  <!--      use(xlink:href='../../img/sprites/sprite-svg.svg#in_round')-->
                 </ul>
               </div>
             </div>
             <div class="footer-big__copyright">
-              <div class="footer-big__copyright-text left">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
-              <div class="footer-big__copyright-text right">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+              <div class="footer-big__copyright-text left">Вы можете связаться со мной в соц сетях или заполнить форму на сайте</div>
+              <div class="footer-big__copyright-text right">Санкт - Петербург 2018</div>
             </div>
           </footer>
         </div>

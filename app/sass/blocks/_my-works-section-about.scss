@@ -7,23 +7,17 @@
   display: flex;
   align-items:center;
   flex-direction:column;
-  @include phones {
-
-  }
-  @include tablets {
-
-  }
-  @include laptop {
-
-  }
-  @include desktop {
-
-  }
   width: 100%;
-  background: url('../img/back/sea.png') center no-repeat;
-  background-size: cover;
-  @include laptop {
-    background-position: center center;
+  position: relative;
+  &-blur {
+    background: url('../img/back/sea.png') center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
   }
   &-title {
     min-height: 7.7%;
@@ -42,7 +36,7 @@
   &-title-item {
     position: relative;
     font-family:$bern;
-    font-size: $fz63;
+    font-size: $fz45;
     max-width:40%;
     text-align: center;
     margin-bottom:0;
@@ -134,6 +128,9 @@
     fill: $whiteOp;
     width:rem(50px);
     height:rem(50px);
+    &:hover {
+      fill: $whiteOp2;
+    }
   }
   &-svg-header {
     position: absolute;

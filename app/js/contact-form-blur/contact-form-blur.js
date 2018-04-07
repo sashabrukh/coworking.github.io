@@ -1,14 +1,15 @@
 ;'use strict';
-var wrapper = document.querySelector('.my-works__contacts-form-wrapper');
+const wrapper = document.querySelector('.my-works__about');
 
 if (wrapper) {
-  var blur = (function () {
+  const blur = (function () {
 
-    var form = document.querySelector('.my-works__contacts-form');
+    const wrapper = document.querySelector('.my-works__contacts-form-wrapper');
+    const form = document.querySelector('.my-works__contacts-form');
 
     return {
       set: function () {
-        var imgWidth = document.querySelector('.my-works__contacts-container').offsetWidth,
+        var imgWidth = document.querySelector('.my-works__about-blur').offsetWidth,
           posLeft = -wrapper.offsetLeft,
           posTop = -wrapper.offsetTop,
           blurCss = form.style;
