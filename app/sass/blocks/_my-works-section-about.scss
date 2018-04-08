@@ -3,13 +3,17 @@
 @import "../misc/mixins";
 @import "../misc/media";
 
+
 .my-works__about {
+  position: relative;
   display: flex;
   align-items:center;
   flex-direction:column;
   width: 100%;
   background: url('../../img/back/sea.png') center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+
+
 
   &-title {
     width: 100%;

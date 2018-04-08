@@ -22,7 +22,7 @@ if (parallaxCont) {
   }
 
   window.addEventListener('mousemove', moveLayers);
-//parallax scroll
+
   const parallax = (function () {
     const user = document.querySelector('.my-works__header-img-cont');
     const title = document.querySelector('.my-works__header-my-name');
@@ -32,12 +32,11 @@ if (parallaxCont) {
       move: function (block, windowScroll, strafeAmount) {
         const strafe = windowScroll / -strafeAmount + '%';
         var style = block.style;
-        style.top = strafe;
-        console.log(style)
+        style.transform = 'translateY(' + strafe + ')';
       },
 
       init: function (wScroll) {
-        this.move(user, wScroll, 45);
+        this.move(user, wScroll, -45);
       }
     }
   })();
@@ -46,8 +45,6 @@ if (parallaxCont) {
     const wScroll = window.pageYOffset;
     parallax.init(wScroll);
   }
-
-
 
 }
 

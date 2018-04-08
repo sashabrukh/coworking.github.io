@@ -73,12 +73,14 @@
     margin-bottom:rem(10px);
     font-size: $fz45;
     font-weight:600;
+    z-index: 1;
   }
   &-title {
     color: $whiteOp;
     font-size:$fz35;
     text-align: center;
     padding: 0 rem(10px);
+    z-index: 1;
   }
   &-link {
     width: 100%;

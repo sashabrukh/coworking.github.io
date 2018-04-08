@@ -5,18 +5,19 @@ if (wrapperMain) {
   const blur = (function () {
 
     const wrapper = document.querySelector('.blur');
-    const form = document.querySelector('.my-works__contacts-form');
+    const form = document.querySelector('.my-works__contacts-form-wrapper');
 
     return {
       set: function () {
 
         var imgWidth = document.querySelector('.my-works__about').offsetWidth,
+          imgHeight = document.querySelector('.my-works__about').offsetHeight,
           posLeft = -form.offsetLeft,
           posTop = -form.offsetTop,
           blurCss = wrapper.style;
         
-        blurCss.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
-        blurCss.backgroundPosition = posLeft + 'px' + posTop + 'px';
+        blurCss.backgroundSize = imgWidth + 'px' + ' ' + imgHeight + 'px';
+        blurCss.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';
       }
     }
   })();
