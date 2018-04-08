@@ -36,7 +36,7 @@ const tabsMenu = (function () {
           })
 
         },
-        offset: '1'
+        offset: '0'
       })
 
     },
@@ -103,7 +103,7 @@ tabsMenu.scrollMenu();
 if(windowWidth > 1200) {
   tabsMenu.wayp();
 }
-  tabsMenu.fixedMenu();
+tabsMenu.fixedMenu();
 
 
 

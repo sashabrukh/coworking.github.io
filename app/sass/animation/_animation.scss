@@ -17,3 +17,13 @@
     transform: rotateY(0);
   }
 }
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+

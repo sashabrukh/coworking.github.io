@@ -2,7 +2,8 @@
 =================
 
     Адаптивный сайт, состоящий из четырёх
-    страниц и админки.
+    страниц и админки. Выполняется на третьей части курса 'Веб разработчик'. 
+    Еще в разработке.
 
 
 Что я использовал в этом проекте
@@ -10,13 +11,14 @@
 
 * PUG
 * SCSS
-* BEM
-* JS / jQuery
-* Mobile first
-* Flexbox / CSS Grid
 * NPM
-* Yarn
 * Gulp
 * Webpack
-
-
+* JS / jQuery
+* Flexbox / CSS Grid
+* Yarn
+* BEM
+* Vue.js 
+* Node.js
+* PHP
+* AJAX 

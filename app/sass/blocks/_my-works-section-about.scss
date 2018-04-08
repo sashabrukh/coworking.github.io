@@ -8,19 +8,10 @@
   align-items:center;
   flex-direction:column;
   width: 100%;
-  position: relative;
-  &-blur {
-    background: url('../img/back/sea.png') center no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  }
+  background: url('../../img/back/sea.png') center no-repeat;
+  background-size: cover;
+
   &-title {
-    min-height: 7.7%;
     width: 100%;
     display: flex;
     justify-content:center;

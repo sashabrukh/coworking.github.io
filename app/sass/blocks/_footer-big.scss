@@ -84,11 +84,13 @@
   &__socials-list-item-link {
     width: rem(50px);
     height: rem(50px);
-    margin-right: rem(30px);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    &:first-of-type{
+
+    }
     &:hover > .footer-big__svg-arrow-down {
       fill: $white;
     }

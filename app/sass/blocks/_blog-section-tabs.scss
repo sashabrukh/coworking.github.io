@@ -82,14 +82,14 @@
     }
   }
   &__content-tab-cont {
-    position: relative;
     @include laptop {
       position: relative;
       width: 20%;
       margin-right: 5%;
-      margin-top: rem(10px);
+      margin-top: .625rem;
+      -ms-flex-align: start;
       align-items: flex-start;
-      background-color: $white;
+      background-color: #fff;
       text-align: left;
     }
     @include phones {
@@ -175,4 +175,3 @@
     background-color: $softwhite;
   }
 }
-

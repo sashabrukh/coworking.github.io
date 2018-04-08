@@ -1,19 +1,20 @@
 ;'use strict';
-const wrapper = document.querySelector('.my-works__about');
+const wrapperMain = document.querySelector('.my-works__about');
 
-if (wrapper) {
+if (wrapperMain) {
   const blur = (function () {
 
-    const wrapper = document.querySelector('.my-works__contacts-form-wrapper');
+    const wrapper = document.querySelector('.blur');
     const form = document.querySelector('.my-works__contacts-form');
 
     return {
       set: function () {
-        var imgWidth = document.querySelector('.my-works__about-blur').offsetWidth,
-          posLeft = -wrapper.offsetLeft,
-          posTop = -wrapper.offsetTop,
-          blurCss = form.style;
 
+        var imgWidth = document.querySelector('.my-works__about').offsetWidth,
+          posLeft = -form.offsetLeft,
+          posTop = -form.offsetTop,
+          blurCss = wrapper.style;
+        
         blurCss.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
         blurCss.backgroundPosition = posLeft + 'px' + posTop + 'px';
       }

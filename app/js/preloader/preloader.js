@@ -1,22 +1,45 @@
 ;'use strict';
 
 const preloader = (function () {
-  const preloadCont = $('.preloader-container');
-  const svg = $('.preloader-icon');
-  const imgLength = $('img').length;
-  const percent = 100 / imgLength;
-  console.log(percent);
+  const body = document.body;
+  const preloadCont = document.querySelector('.preloader-container');
+  const preloaderText = document.querySelector('.preloader-text');
+  const img = document.querySelectorAll('img');
+  let progress = 0;
+  const imgArr = [];
+
+  for (let i = 0; i < img.length; i++) {
+      imgArr.push(img[i]);
+  }
+
+
+  const allImg = 100 / imgArr.length + 2;
+
+  console.log(imgArr.length)
 
   return {
     set: function () {
-        svg.animate({
-          strokeDashoffset: '0'
-        }, 1000);
-        document.body.style.overflow = 'hidden';
-
-      $(window).on('load', function () {
-        document.body.style.overflow = 'auto';
-        preloadCont.fadeOut();
+      return new Promise(function (resolve, reject) {
+        body.style.overflow = 'hidden';
+        for (let j = 0; j < img.length; j++) {
+          imgArr[j].onload = function () {
+            console.log(progress)
+            progress += allImg;
+            if (progress < 100) {
+              preloaderText.innerText = Math.ceil(progress) + '%';
+            } else {
+              progress = 100;
+              preloaderText.innerText = Math.ceil(progress) + '%';
+            }
+            console.log(progress)
+            if (Math.ceil(progress) === 100) {
+              resolve();
+            }
+          };
+        }
+      }).then(function () {
+        preloadCont.style.display = 'none';
+        body.style.overflow = 'auto';
       })
     }
   }

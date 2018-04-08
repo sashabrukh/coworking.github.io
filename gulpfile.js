@@ -105,7 +105,7 @@ gulp.task('scss', function () {
       .pipe(scss())
       .pipe(groupMediaQueries())
       .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
       .pipe(cssnano())
       .pipe(gulp.dest(src.cssPut))
       .pipe(browserSync.stream());
@@ -170,14 +170,14 @@ gulp.task('watch', gulp.series(['css-libs', 'jslibs', 'browser-sync']), function
 
 gulp.task('img', function () {
   return gulp.src(src.imgTake)
-  .pipe(cache(imagemin({ // С кешированием
-    // .pipe(imagemin({
+    .pipe(cache(imagemin({ // С кешированием
+      // .pipe(imagemin({
       interlaced: true,
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
+      svgoPlugins: [{ removeViewBox: false }],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest(src.baseDist + '/img')))
+      .pipe(gulp.dest(src.baseDist + '/img')))
 });
 
 // BUILD
@@ -244,7 +244,7 @@ gulp.task('sprite:svg', function (callback) {
         }]
       }
     }))
-    .pipe(svgstore({inlineSvg: true}))
+    .pipe(svgstore({ inlineSvg: true }))
     .pipe(cheerio({
       run: function ($) {
         $('path').removeAttr('fill');
