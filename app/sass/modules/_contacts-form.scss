@@ -3,6 +3,17 @@
 @import "../misc/mixins.scss";
 @import "../misc/media.scss";
 
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('../../img/back/sea.png');
+
+  // filter: blur(5px);
+}
+
 .my-works__contacts {
   &-container {
     width: 90%;
@@ -13,9 +24,7 @@
     margin-bottom:rem(200px);
   }
   &-form {
-    background: url('../../img/back/sea.png') center no-repeat;
-    background-size: 1346px;
-    background-position: -472px -525px;
+    position: relative;
     @include phones {
       width: 300px;
       height: 417px;
@@ -31,7 +40,7 @@
     border-radius: rem(10px);
     text-align: center;
     &-wrapper {
-      filter: blur(5px);
+      position: relative;
     }
   }
   &-form-fieldset {
@@ -53,8 +62,9 @@
     position: relative;
     font-family: $bern;
     font-size: $fz35;
-    max-width: 70%;
+
     text-align: center;
+    display: inline-block;
     &:before {
       position: absolute;
       content: '';
@@ -83,7 +93,7 @@
     padding: rem(10px) rem(20px);
     margin-bottom: rem(20px);
   }
-  &-form-pw {
+  &-form-email {
     margin: 0 auto;
     position: relative;
     width: 90%;

@@ -15,14 +15,39 @@
   background-size: cover;
   overflow: hidden;
   z-index: 99999;
+  transition: all 0.3s;
+}
+
+.preloader-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.preloader {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .preloader-icon {
   fill: $white;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+}
+
+.preloader-active {
+  animation: circle 1s linear infinite;
+}
+
+.preloader-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
+  color: $white;
+  font-size: $fz35;
 }

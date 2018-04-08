@@ -4,6 +4,7 @@
 node_modules
 package-lock.json
 yarn-error.log
+app/vue/node_modules
 
 
 

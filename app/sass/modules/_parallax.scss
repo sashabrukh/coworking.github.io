@@ -4,54 +4,72 @@
 @import "../misc/media.scss";
 
 #parallax__image0 {
-  display: none;
+
 }
 
 #parallax__image1 {
-  width: 150%;
-  height: 100%;
-  bottom: -400px;
-  left: -500px;
-  @include desktop {
-    bottom: -250px;
-  }
+
 }
 
 #parallax__image2 {
-  bottom: 2%;
-  left: 2%;
-  @include desktop {
-    bottom: 10%;
-    left: 5%;
-  }
 
 }
 
 #parallax__image3 {
-  top: 2%;
-  right: 2%;
-  @include desktop {
-    top: 10%;
-    right: 5%;
-  }
+  transform: translateX(-60%);
+
+}
+
+#parallax__image4 {
+
+}
+
+#parallax__image5 {
+  transform: translate(-55%, 10%);
+
+}
+
+#parallax__image6 {
+  transform: translateX(-10%);
+}
+
+
+#parallax__image7 {
+transform: translate(-70%, 10%);
+}
+
+#parallax__image8 {
+transform: translate(-47%, -5%);
+
+}
+
+#parallax__image9 {
+     transform: translateX(-70%);
+
 }
 
 .parallax {
-  z-index: -1;
   display: none;
+  position: absolute; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
   @include laptop {
     display: initial;
-
   }
   &__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  position: absolute; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   }
   &__image {
-    position: absolute;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
   }
 }
 
