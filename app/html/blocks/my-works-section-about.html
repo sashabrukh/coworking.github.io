@@ -26,28 +26,26 @@
       </div>
     </div>
   </div>
-  <div class="my-works__contacts-container">
-    <div class="my-works__contacts-form-wrapper">
-      <div class="blur"></div>
-      <form class="my-works__contacts-form">
-        <fieldset class="my-works__contacts-form-fieldset">
-          <div class="my-works__contacts-form-title">
-            <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
+  <div class="my-works__contacts-form-wrapper">
+    <div class="blur"></div>
+    <form class="my-works__contacts-form" action="../../server.php" method="post" id="submit-form">
+      <fieldset class="my-works__contacts-form-fieldset">
+        <div class="my-works__contacts-form-title">
+          <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
+        </div>
+        <input class="my-works__contacts-form-login" type="text" name="login" id="name" placeholder="Имя"/>
+        <input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email"/>
+        <textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+        <div class="my-works__contacts-buttons">
+          <div class="my-works__contacts-buttons--left">
+            <button class="my-works__contacts-submit" type="submit">Отправить</button>
           </div>
-          <input class="my-works__contacts-form-login" type="text" name="login" id="login" placeholder="Имя"/>
-          <input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email"/>
-          <textarea class="my-works__contacts-form-text" id="contacts-form-text" name="comment" placeholder="Ваше сообщение"></textarea>
-          <div class="my-works__contacts-buttons">
-            <div class="my-works__contacts-buttons--left">
-              <button class="my-works__contacts-submit" type="submit">Отправить</button>
-            </div>
-            <div class="my-works__contacts-buttons--right">
-              <input class="my-works__contacts-clear" type="reset" value="Очистить"/>
-            </div>
+          <div class="my-works__contacts-buttons--right">
+            <input class="my-works__contacts-clear" type="reset" value="Очистить"/>
           </div>
-        </fieldset>
-      </form>
-    </div>
+        </div>
+      </fieldset>
+    </form>
   </div>
   <div class="my-works__about-svg-arrow"><a class="my-works__about-up-link" href="#my-works-up">
       <svg class="my-works__about-svg-arrow-up">

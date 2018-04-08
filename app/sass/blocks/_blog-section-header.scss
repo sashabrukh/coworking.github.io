@@ -10,6 +10,7 @@
     margin-top: rem(60px);
     border-radius: 50%;
     margin-bottom: rem(60px);
+    z-index: 1;
   }
   &-bg {
     position: relative;
@@ -48,12 +49,14 @@
     font-weight: 600;
     text-transform: uppercase;
     font-family: $bern;
+    z-index: 1;
   }
   &-title {
     color: $whiteOp;
     font-size:$fz35;
     text-align: center;
     padding: 0 rem(10px);
+    z-index: 1;
   }
   &-svg-arrow {
     position: absolute;

@@ -13,9 +13,8 @@ const preloader = (function () {
   }
 
 
-  const allImg = 100 / imgArr.length + 2;
+  const allImg = 100 / imgArr.length + 1;
 
-  console.log(imgArr.length)
 
   return {
     set: function () {
@@ -23,7 +22,7 @@ const preloader = (function () {
         body.style.overflow = 'hidden';
         for (let j = 0; j < img.length; j++) {
           imgArr[j].onload = function () {
-            console.log(progress)
+
             progress += allImg;
             if (progress < 100) {
               preloaderText.innerText = Math.ceil(progress) + '%';
@@ -31,7 +30,6 @@ const preloader = (function () {
               progress = 100;
               preloaderText.innerText = Math.ceil(progress) + '%';
             }
-            console.log(progress)
             if (Math.ceil(progress) === 100) {
               resolve();
             }
@@ -45,6 +43,10 @@ const preloader = (function () {
   }
 })();
 
-preloader.set();
+document.addEventListener("DOMContentLoaded", function () {
+  preloader.set();
+})
+
+
 
 
