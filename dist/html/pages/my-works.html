@@ -6,20 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/libs.min.css">
-    <link rel="icon" type="image/png" href="">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>My works</title>
   </head>
   <body>
+    <div class="preloader-container">
+      <div class="preloader-wrapper">
+        <div class="preloader">
+          <svg class="preloader-icon preloader-active">
+            <use xlink:href="../../img/sprites/sprite-svg.svg#preloader_round"></use>
+          </svg>
+          <div class="preloader-text"> </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="container">
-        <div class="section my-works__header">
+        <div class="section my-works__header" id="my-works-up">
           <div class="my-works__header-bg">
-            <div class="parallax" id="parallax">
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-0.png" id="parallax__image0"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-1.png" id="parallax__image1"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-2.png" id="parallax__image2"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-3.png" id="parallax__image3"></div>
-            </div>
             <div class="my-works__header-bg-min">
               <svg class="my-works__header-bg-min-icon">
                 <use xlink:href="../../img/sprites/sprite-svg.svg#portfolio_header"></use>
@@ -33,28 +37,27 @@
                         <svg class="header__social-icon vk">
                           <use xlink:href="../../img/sprites/sprite-svg.svg#vk"></use>
                         </svg></a></li>
-                    <li class="header__socials-list-item"><a class="header__socials-list-item-link" href="#">
-                        <svg class="header__social-icon git">
-                          <use xlink:href="../../img/sprites/sprite-svg.svg#github" target="_blank"></use>
-                        </svg></a></li>
                     <li class="header__socials-list-item"><a class="header__socials-list-item-link" href="https://github.com/sashabrukh" target="_blank">
-                        <svg class="header__social-icon in">
-                          <use xlink:href="../../img/sprites/sprite-svg.svg#in"></use>
+                        <svg class="header__social-icon git">
+                          <use xlink:href="../../img/sprites/sprite-svg.svg#github"></use>
                         </svg></a></li>
+                    <!--li.header__socials-list-item-->
+                    <!--  a.header__socials-list-item-link(href='https://github.com/sashabrukh', target='_blank')-->
+                    <!--    svg.header__social-icon.in-->
+                    <!--      use(xlink:href='../../img/sprites/sprite-svg.svg#in')-->
                   </ul>
                 </header>
               </div>
             </div><img class="my-works__header-img" src="../../img/my-photo.jpg">
             <div class="my-works__header-my-name">Александр Брюханов</div>
             <div class="my-works__header-title">Личный сайт веб разработчика</div>
-            <div class="my-works__header-svg-arrow">
-              <svg class="my-works__header-svg-arrow-down">
-                <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
-              </svg>
-            </div>
+            <div class="my-works__header-svg-arrow"><a class="my-works__header-down-link" href="#my-works">
+                <svg class="my-works__header-svg-arrow-down">
+                  <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
+                </svg></a></div>
           </div>
         </div>
-        <div class="section my-works__works">
+        <div class="section my-works__works" id="my-works">
           <div class="my-works__works-title">
             <h2 class="my-works__works-title-item">Мои работы</h2>
             <svg class="my-works__works-svg-header">
@@ -62,54 +65,45 @@
             </svg>
           </div>
           <div class="my-works__works-sliders-cont js-slider">
-            <div class="my-works__works-slider-single js-slider-main">
-              <div class="js-slider-main-display">
-                <ul class="my-works__works-slider-single-list js-main-slider-list">
-                  <li class="my-works__works-slider-single-item right js-slider-item active">1</li>
-                  <li class="my-works__works-slider-single-item right js-slider-item">2</li>
-                  <li class="my-works__works-slider-single-item right js-slider-item">3</li>
-                  <li class="my-works__works-slider-single-item right js-slider-item">4</li>
-                  <li class="my-works__works-slider-single-item right js-slider-item">5</li>
-                </ul>
+            <div class="my-works__works-slider-single">
+              <div class="my-works__works-main-slider">
+                <div class="slider-img left js-main-img-left"></div>
+                <div class="slider-img center js-main-img-center"></div>
+                <div class="slider-img right js-main-img-right"></div>
               </div>
             </div>
-            <div class="my-works__works-slider-desc-cont js-slider-desc">
-              <div class="my-works__works-slider-desc">
-                <h2 class="my-works__works-name">Сайт школы онлайн образования</h2>
+            <div class="my-works__works-slider-desc-cont">
+              <div class="my-works__works-slider-desc js-slider-desc">
+                <h2 class="my-works__works-name"></h2>
                 <div class="my-works__works-tech">
-                  <p class="my-works__works-tech-item">Html, Css, Javascript</p>
-                </div>
-                <div class="my-works__image js-slider-img"></div><a class="my-works__works-link" href="#">Посмотреть сайт</a>
+                  <p class="my-works__works-tech-item"></p>
+                </div><a class="my-works__works-link" href="#">Посмотреть сайт</a>
               </div>
             </div>
             <div class="my-works__works-slider-double">
-              <div class="my-works__works-slider-double left slider-js slider-js-left">
-                <div class="js-slider-display">
-                  <ul class="my-works__works-slider-double-list js-slider-list">
-                    <li class="my-works__works-slider-double-item left js-slider-item active">1</li>
-                    <li class="my-works__works-slider-double-item left js-slider-item">2</li>
-                    <li class="my-works__works-slider-double-item left js-slider-item">3</li>
-                    <li class="my-works__works-slider-double-item left js-slider-item">4</li>
-                    <li class="my-works__works-slider-double-item left js-slider-item">5</li>
-                  </ul>
+              <div class="my-works__works-slider-double left">
+                <div class="slider-js-left">
+                  <div class="slider-img left js-left-img-left"></div>
+                  <div class="slider-img center js-left-img-center"></div>
+                  <div class="slider-img right js-left-img-right"></div>
                 </div>
-                <svg class="my-works__works-svg-arrow down js-slider-up">
-                  <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>
-                </svg>
+                <div class="my-works__works-svg-cont js-slider-up">
+                  <svg class="my-works__works-svg-arrow down">
+                    <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>
+                  </svg>
+                </div>
               </div>
-              <div class="my-works__works-slider-double right slider-js slider-js-right">
-                <div class="js-slider-display">
-                  <ul class="my-works__works-slider-double-list slider-js-right">
-                    <li class="my-works__works-slider-double-item right js-slider-item active">1</li>
-                    <li class="my-works__works-slider-double-item right js-slider-item">2</li>
-                    <li class="my-works__works-slider-double-item right js-slider-item">3</li>
-                    <li class="my-works__works-slider-double-item right js-slider-item">4</li>
-                    <li class="my-works__works-slider-double-item right js-slider-item">5</li>
-                  </ul>
+              <div class="my-works__works-slider-double right">
+                <div class="slider-js-right">
+                  <div class="slider-img left js-right-img-left"></div>
+                  <div class="slider-img center js-right-img-center"></div>
+                  <div class="slider-img right js-right-img-right"></div>
                 </div>
-                <svg class="my-works__works-svg-arrow up js-slider-down">
-                  <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_down"></use>
-                </svg>
+                <div class="my-works__works-svg-cont js-slider-down">
+                  <svg class="my-works__works-svg-arrow down">
+                    <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_down"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -134,38 +128,38 @@
             <div class="my-works__about-comment-item second">
               <div class="my-works__about-quote"><span class="my-works__about-quote-item">&#10077;</span></div>
               <p class="my-works__about-text">
-                Этот код выдержит любые испытания. Только пожалуйста, не загружается сайтна слишком старых браузерах!</p>
+                Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайтна слишком старых браузерах!</p>
               <div class="my-works__about-who"><img class="my-works__about-avatar second" src="../../img/comments/vova.jpg" alt="avatar">
                 <div class="my-works__about-name">Зар Захаров</div>
                 <div class="my-works__about-desc">преподаватель</div>
               </div>
             </div>
           </div>
-          <div class="my-works__contacts-container">
-            <form class="my-works__contacts-form">
+          <div class="my-works__contacts-form-wrapper">
+            <div class="blur"></div>
+            <form class="my-works__contacts-form" action="../../server.php" method="post" id="submit-form">
               <fieldset class="my-works__contacts-form-fieldset">
                 <div class="my-works__contacts-form-title">
                   <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
                 </div>
-                <input class="my-works__contacts-form-login" type="text" name="login" id="login" placeholder="Логин">
-                <input class="my-works__contacts-form-pw" type="password" id="password" name="password" placeholder="Пароль">
-                <textarea class="my-works__contacts-form-text" id="contacts-form-text" name="comment" placeholder="Ваше сообщение"></textarea>
+                <input class="my-works__contacts-form-login" type="text" name="login" id="name" placeholder="Имя" required>
+                <input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email" required>
+                <textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение" required></textarea>
                 <div class="my-works__contacts-buttons">
                   <div class="my-works__contacts-buttons--left">
                     <button class="my-works__contacts-submit" type="submit">Отправить</button>
                   </div>
                   <div class="my-works__contacts-buttons--right">
-                    <button class="my-works__contacts-clear" type="clear">Очистить</button>
+                    <input class="my-works__contacts-clear" type="reset" value="Очистить">
                   </div>
                 </div>
               </fieldset>
             </form>
           </div>
-          <div class="my-works__about-svg-arrow">
-            <svg class="my-works__about-svg-arrow-down">
-              <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>
-            </svg>
-          </div>
+          <div class="my-works__about-svg-arrow"><a class="my-works__about-up-link" href="#my-works-up">
+              <svg class="my-works__about-svg-arrow-up">
+                <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>
+              </svg></a></div>
         </div>
         <div class="footer-big__container">
           <footer class="footer-big">
@@ -188,16 +182,16 @@
                       <svg class="footer-big__svg-arrow-down">
                         <use xlink:href="../../img/sprites/sprite-svg.svg#github_round"></use>
                       </svg></a></li>
-                  <li class="footer-big__socials-list-item in"><a class="footer-big__socials-list-item-link" href="#">
-                      <svg class="footer-big__svg-arrow-down">
-                        <use xlink:href="../../img/sprites/sprite-svg.svg#in_round"></use>
-                      </svg></a></li>
+                  <!--li.footer-big__socials-list-item.in-->
+                  <!--  a.footer-big__socials-list-item-link(href='#')-->
+                  <!--    svg.footer-big__svg-arrow-down-->
+                  <!--      use(xlink:href='../../img/sprites/sprite-svg.svg#in_round')-->
                 </ul>
               </div>
             </div>
             <div class="footer-big__copyright">
-              <div class="footer-big__copyright-text left">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
-              <div class="footer-big__copyright-text right">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+              <div class="footer-big__copyright-text left">Вы можете связаться со мной в соц сетях или заполнить форму на сайте</div>
+              <div class="footer-big__copyright-text right">Санкт - Петербург 2018</div>
             </div>
           </footer>
         </div>

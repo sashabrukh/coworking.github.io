@@ -1,13 +1,19 @@
 .list {
   display: flex;
-  background: #ccc;
+  background-color: #f0efe9;
 }
 
 .item {
   border-right: 2px solid #fff;
 }
 
-.link {
+.tabs {
   padding: 20px;
   display: block;
+  color: gray;
+  background-color: #f0efe9;
+}
+
+.router-link-exact-active {
+  background-color: white;
 }

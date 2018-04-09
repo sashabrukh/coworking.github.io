@@ -1,6 +1,6 @@
 <template lang="pug">
   .about-section
-    h1 Страница "Обо мне"
+    h1.sss Страница "Обо мне"
     skills-list(
       v-for="skillType in skillsTypes"
       :key="skillType"
@@ -32,3 +32,8 @@ export default {
   }
 };
 </script>
+
+
+<style lang="scss" scoped>
+
+</style>

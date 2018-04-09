@@ -1,19 +1,19 @@
 <template lang="pug">
-  .tabs
+  .tabs-cont
     ul.list
       li.item(v-for="tab in tabs")
         router-link(
           :to="tab.href"
-          
-        ).link {{tab.name}}
+        ).tabs {{tab.name}}
 </template>
 <script>
 export default {
   data() {
     return {
       tabs: [
-        {name: 'Таб 1', href: "/"},
-        {name: 'Таб 2', href: "/pages/20"}
+        {name: 'TAB 1', href: "/"},
+        {name: 'TAB 2', href: "/blog"},
+        {name: 'TAB 3', href: "/works"},
       ]
     }
   }
