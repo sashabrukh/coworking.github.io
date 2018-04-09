@@ -87,8 +87,8 @@
       width: 20%;
       margin-right: 5%;
       margin-top: .625rem;
-      -ms-flex-align: start;
       align-items: flex-start;
+      justify-content: flex-start;
       background-color: #fff;
       text-align: left;
     }
@@ -118,7 +118,7 @@
     margin-bottom: rem(30px);
   }
   &__content-tab-cont-fixed {
-
+    
   }
   &__content-tab-panel {
     @include laptop {
@@ -175,3 +175,4 @@
     background-color: $softwhite;
   }
 }
+
