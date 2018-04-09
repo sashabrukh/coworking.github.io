@@ -36,7 +36,7 @@ const tabsMenu = (function () {
           })
 
         },
-        offset: '0'
+        offset: '5'
       })
 
     },
