@@ -81,14 +81,15 @@ const tabsMenu = (function () {
         fixedElem.removeClass(fixedClass)
       }
       if (windowWidth > 1200) {
+
         $(window).scroll(function () {
           const wScroll = window.pageYOffset;
-          if (wScroll >= 700) {
+          if (wScroll >= 600) {
             fixedElem.addClass('js-fixed-menu');
             fixedElem.width(fixedMenuWidth);
 
           }
-          if (wScroll < 700) {
+          if (wScroll < 600) {
             fixedElem.removeClass('js-fixed-menu');
           }
         })

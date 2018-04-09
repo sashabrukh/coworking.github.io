@@ -14,7 +14,12 @@ const preloader = (function () {
       imgArr.push(img[i]);
   }
 
-  console.log('count of images: ' + imgArr.length)
+  for (var k = 0; k < imgArr.length; k++) {
+    
+  }
+
+  console.log('count of images: ' + imgArr.length);
+
 
   const allImg = 100 / imgArr.length;
 
@@ -24,11 +29,13 @@ const preloader = (function () {
       return new Promise(function (resolve, reject) {
         body.style.overflow = 'hidden';
         preloadCont.style.display = 'block';
+        console.log(imgArr);
         for (let j = 0; j < imgArr.length; j++) {
           imgArr[j].onload = function () {
+
             progress += allImg;
             loadedImg += 1;
-            console.log('progress = ' + progress)
+            console.log(Math.ceil(progress))
             console.log( imgArr[j] + ' ' + loadedImg +  ' image is load');
             if (progress < 100) {
               preloaderText.innerText = Math.ceil(progress) + '%';
@@ -36,10 +43,10 @@ const preloader = (function () {
               progress = 100;
               preloaderText.innerText = Math.ceil(progress) + '%';
             }
-            if (loadedImg === imgArr.length || progress === 100) {
+            if (loadedImg === imgArr.length || Math.ceil(progress) === 100) {
               resolve();
             }
-          };
+          }
         }
       }).then(function () {
         preloadCont.style.display = 'none';
@@ -49,9 +56,7 @@ const preloader = (function () {
   }
 })();
 
-document.addEventListener("DOMContentLoaded", function() {
-  preloader.set();
-});
+preloader.set();
 
 
 
