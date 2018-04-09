@@ -16,6 +16,7 @@
   margin-top: rem(60px);
   border-radius: 50%;
   margin-bottom:rem(60px);
+  position: relative;
 
   }
   &-img-cont {
@@ -74,6 +75,7 @@
     font-size: $fz45;
     font-weight:600;
     z-index: 1;
+    position: relative;
   }
   &-title {
     color: $whiteOp;
@@ -81,6 +83,7 @@
     text-align: center;
     padding: 0 rem(10px);
     z-index: 1;
+    position: relative;
   }
   &-link {
     width: 100%;

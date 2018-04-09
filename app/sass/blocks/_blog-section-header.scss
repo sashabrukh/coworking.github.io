@@ -11,6 +11,7 @@
     border-radius: 50%;
     margin-bottom: rem(60px);
     z-index: 1;
+    position: relative;
   }
   &-bg {
     position: relative;
@@ -43,6 +44,7 @@
 
   }
   &-my-name {
+    position: relative;
     color: $white;
     margin-bottom: rem(10px);
     font-size: $fz45;
