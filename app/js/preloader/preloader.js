@@ -13,7 +13,7 @@ const preloader = (function () {
   }
 
 
-  const allImg = 100 / imgArr.length + 1;
+  const allImg = 100 / imgArr.length;
 
 
   return {
