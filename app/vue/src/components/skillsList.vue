@@ -11,8 +11,7 @@
     skill-input(
       :type="convertSkillStringToNum(skillType)"
     )
-    br
-    hr
+
 </template>
 <script>
 import skillsItem from "./skillsItem";
@@ -38,3 +37,6 @@ export default {
   }
 };
 </script>
+
+
+

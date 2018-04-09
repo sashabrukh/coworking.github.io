@@ -6,20 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/libs.min.css">
-    <link rel="icon" type="image/png" href="">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Blog</title>
   </head>
   <body>
+    <div class="preloader-container">
+      <div class="preloader-wrapper">
+        <div class="preloader">
+          <svg class="preloader-icon preloader-active">
+            <use xlink:href="../../img/sprites/sprite-svg.svg#preloader_round"></use>
+          </svg>
+          <div class="preloader-text"> </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="container">
         <div class="section blog__header">
           <div class="blog__header-bg">
-            <div class="parallax" id="parallax">
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-0.png" id="parallax__image0"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-1.png" id="parallax__image1"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-2.png" id="parallax__image2"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/layer-3.png" id="parallax__image3"></div>
-            </div>
             <div class="blog__header-bg-min">
               <svg class="my-works__header-bg-min-icon">
                 <use xlink:href="../../img/sprites/sprite-svg.svg#blog_header"></use>
@@ -33,32 +37,31 @@
                         <svg class="header__social-icon vk">
                           <use xlink:href="../../img/sprites/sprite-svg.svg#vk"></use>
                         </svg></a></li>
-                    <li class="header__socials-list-item"><a class="header__socials-list-item-link" href="#">
-                        <svg class="header__social-icon git">
-                          <use xlink:href="../../img/sprites/sprite-svg.svg#github" target="_blank"></use>
-                        </svg></a></li>
                     <li class="header__socials-list-item"><a class="header__socials-list-item-link" href="https://github.com/sashabrukh" target="_blank">
-                        <svg class="header__social-icon in">
-                          <use xlink:href="../../img/sprites/sprite-svg.svg#in"></use>
+                        <svg class="header__social-icon git">
+                          <use xlink:href="../../img/sprites/sprite-svg.svg#github"></use>
                         </svg></a></li>
+                    <!--li.header__socials-list-item-->
+                    <!--  a.header__socials-list-item-link(href='https://github.com/sashabrukh', target='_blank')-->
+                    <!--    svg.header__social-icon.in-->
+                    <!--      use(xlink:href='../../img/sprites/sprite-svg.svg#in')-->
                   </ul>
                 </header>
               </div>
             </div><img class="blog__header-img" src="../../img/my-photo.jpg">
             <div class="blog__header-my-name">Блог</div>
-            <div class="blog__header-title">Статьи, которые я написал</div>
-            <div class="blog__header-svg-arrow">
-              <svg class="blog__header-svg-arrow-down">
-                <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
-              </svg>
-            </div>
+            <div class="blog__header-title">Интересные статьи и истории из жизни</div>
+            <div class="my-works__header-svg-arrow"><a class="my-works__header-down-link" href="#my-works">
+                <svg class="my-works__header-svg-arrow-down">
+                  <use xlink:href="../../img/sprites/sprite-svg.svg#arrow_down"></use>
+                </svg></a></div>
           </div>
         </div>
-        <div class="section blog">
+        <div class="section blog" id="my-works">
           <div class="blog__content">
             <div class="tab-container blog__content-tab-wrap" id="tab-full-container">
-              <div class="etabs blog__content-tab-cont blog__content-tab-active">
-                <div class="blog__content-tab-cont-fixed js-fixed-menu"><span class="blog__content-tab-item"><a class="blog__content-tab-item-link" href="#tabs-sass">Самое важное в SASS</a></span><span class="tab blog__content-tab-item" id="tab-2"><a class="blog__content-tab-item-link" href="#tabs2-html">Приёмы в вёрстке, без которых не обходится ни один сайт</a></span><span class="tab blog__content-tab-item" id="tab-3"><a class="blog__content-tab-item-link" href="#tabs3-gulp">Самый необходимый набор Gulp плагинов</a></span><span class="tab blog__content-tab-item" id="tab-4"><a class="blog__content-tab-item-link" href="#tabs4-jade">Почему я выбрал Jade</a></span>
+              <div class="etabs blog__content-tab-cont">
+                <div class="blog__content-tab-cont-fixed js-fixed-menu"><span class="tab blog__content-tab-item" id="tab-1"><a class="blog__content-tab-item-link" href="#tabs-sass">Самое важное в SASS</a></span><span class="tab blog__content-tab-item" id="tab-2"><a class="blog__content-tab-item-link" href="#tabs2-html">Приёмы в вёрстке, без которых не обходится ни один сайт</a></span><span class="tab blog__content-tab-item" id="tab-3"><a class="blog__content-tab-item-link" href="#tabs3-gulp">Самый необходимый набор Gulp плагинов</a></span><span class="tab blog__content-tab-item" id="tab-4"><a class="blog__content-tab-item-link" href="#tabs4-jade">Почему я выбрал Jade</a></span>
                   <div class="blog__content-tab-circle"></div>
                 </div>
               </div>
@@ -196,16 +199,16 @@
                       <svg class="footer-big__svg-arrow-down">
                         <use xlink:href="../../img/sprites/sprite-svg.svg#github_round"></use>
                       </svg></a></li>
-                  <li class="footer-big__socials-list-item in"><a class="footer-big__socials-list-item-link" href="#">
-                      <svg class="footer-big__svg-arrow-down">
-                        <use xlink:href="../../img/sprites/sprite-svg.svg#in_round"></use>
-                      </svg></a></li>
+                  <!--li.footer-big__socials-list-item.in-->
+                  <!--  a.footer-big__socials-list-item-link(href='#')-->
+                  <!--    svg.footer-big__svg-arrow-down-->
+                  <!--      use(xlink:href='../../img/sprites/sprite-svg.svg#in_round')-->
                 </ul>
               </div>
             </div>
             <div class="footer-big__copyright">
-              <div class="footer-big__copyright-text left">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
-              <div class="footer-big__copyright-text right">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+              <div class="footer-big__copyright-text left">Вы можете связаться со мной в соц сетях или заполнить форму на сайте</div>
+              <div class="footer-big__copyright-text right">Санкт - Петербург 2018</div>
             </div>
           </footer>
         </div>

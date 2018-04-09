@@ -1,26 +1,32 @@
 <?php
 
-    $name = $_POST['user-name'];
-    $email = $_POST['user-email'];
-    $pay = $_POST['pay-option'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $disturb = $_POST['dont-disturb']; // 1 или null
-    $disturb = isset($disturb) ? 'НЕТ' : 'ДА';
+    $name = htmlspecialchars($name);
+    $email = htmlspecialchars($email);
+
+    $name = urldecode($name);
+    $email = urldecode($email);
+
+    $name = trim($fio);
+    $email = trim($email);
+
+    echo $name;
+    echo $email;
 
     $mail_message = '
     <html>
     <head>
-        <title>Заявка</title>
+        <title>Сообщение с сайта портфолио</title>
     </head>
     <body>
         <h2>Заказ</h2>
         <ul>
             <li>Имя:' . $name . '</li>
             <li>Email: ' . $email . '</li>
-            <li>Способ оплаты: ' . $pay . '</li>
-            <li>Комментарий к заказу: ' . $message . '</li>
-            <li>Нужно ли перезванивать клиенту: ' . $disturb . '</li>
+            <li>Сообщение: ' . $message . '</li>
         </ul>
     </body>
     </html>';
@@ -29,7 +35,7 @@
                 "MIME-Version: 1.0" . "\r\n" .
                 "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-    $mail = mail('bryukhanovspb@gmail.com', 'Заказ', $mail_message, $headers);
+    $mail = mail('bryukhanovspb@gmail.com', 'Сообщение', $mail_message, $headers);
 
     $data = [];
 

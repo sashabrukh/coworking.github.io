@@ -2,9 +2,9 @@
   tr
     td {{skill.name}}
     td
-      input(type="text" :value="skill.percents")
+      input.skills-input(type="text" :value="skill.percents")
     td
-      button(type="button" @click="removeExistedSkill(skill.id)") Удалить
+      button.skills-button(type="button" @click="removeExistedSkill(skill.id)") Удалить
 </template>
 
 <script>
@@ -21,4 +21,10 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+
+</style>
+
+
 

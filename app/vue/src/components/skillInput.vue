@@ -1,6 +1,6 @@
 <template lang="pug">
   .skill-input
-    input(
+    input.skills-input(
       type="text" 
       v-model="skillName"  
       @keydown.enter="addNewSkill"
@@ -52,5 +52,12 @@ export default {
     border: 1px solid red;
     outline: none;
   }
+  .skills-input {
+  width: 50px;
+  border-radius: 5px;
+  
+}
 </style>
+
+
 
