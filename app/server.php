@@ -4,6 +4,18 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
+    $name = htmlspecialchars($name);
+    $email = htmlspecialchars($email);
+
+    $name = urldecode($name);
+    $email = urldecode($email);
+
+    $name = trim($fio);
+    $email = trim($email);
+
+    echo $name;
+    echo $email;
+
     $mail_message = '
     <html>
     <head>

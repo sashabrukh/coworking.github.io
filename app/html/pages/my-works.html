@@ -10,22 +10,20 @@
     <title>My works</title>
   </head>
   <body>
+    <div class="preloader-container">
+      <div class="preloader-wrapper">
+        <div class="preloader">
+          <svg class="preloader-icon preloader-active">
+            <use xlink:href="../../img/sprites/sprite-svg.svg#preloader_round"></use>
+          </svg>
+          <div class="preloader-text"> </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="container">
         <div class="section my-works__header" id="my-works-up">
           <div class="my-works__header-bg">
-            <div class="parallax" id="parallax">
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/0.png" id="parallax__image0"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/1.png" id="parallax__image1"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/2.png" id="parallax__image2"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/3.png" id="parallax__image3"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/4.png" id="parallax__image4"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/5.png" id="parallax__image5"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/6.png" id="parallax__image6"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/7.png" id="parallax__image7"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/8.png" id="parallax__image8"></div>
-              <div class="parallax__layer"><img class="parallax__image" src="../../img/parallax/9.png" id="parallax__image9"></div>
-            </div>
             <div class="my-works__header-bg-min">
               <svg class="my-works__header-bg-min-icon">
                 <use xlink:href="../../img/sprites/sprite-svg.svg#portfolio_header"></use>
@@ -50,8 +48,7 @@
                   </ul>
                 </header>
               </div>
-            </div>
-            <div class="my-works__header-img-cont"><img class="my-works__header-img" src="../../img/my-photo.jpg"></div>
+            </div><img class="my-works__header-img" src="../../img/my-photo.jpg">
             <div class="my-works__header-my-name">Александр Брюханов</div>
             <div class="my-works__header-title">Личный сайт веб разработчика</div>
             <div class="my-works__header-svg-arrow"><a class="my-works__header-down-link" href="#my-works">
@@ -145,9 +142,9 @@
                 <div class="my-works__contacts-form-title">
                   <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
                 </div>
-                <input class="my-works__contacts-form-login" type="text" name="login" id="name" placeholder="Имя">
-                <input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email">
-                <textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                <input class="my-works__contacts-form-login" type="text" name="login" id="name" placeholder="Имя" required>
+                <input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email" required>
+                <textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение" required></textarea>
                 <div class="my-works__contacts-buttons">
                   <div class="my-works__contacts-buttons--left">
                     <button class="my-works__contacts-submit" type="submit">Отправить</button>

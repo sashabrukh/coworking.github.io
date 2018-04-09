@@ -13,16 +13,16 @@ const preloader = (function () {
   }
 
 
-  const allImg = 100 / imgArr.length + 1;
+  const allImg = 100 / imgArr.length;
 
 
   return {
     set: function () {
       return new Promise(function (resolve, reject) {
         body.style.overflow = 'hidden';
-        for (let j = 0; j < img.length; j++) {
+        for (let j = 0; j < imgArr.length; j++) {
           imgArr[j].onload = function () {
-
+            console.log(imgArr[j] + 'loaded')
             progress += allImg;
             if (progress < 100) {
               preloaderText.innerText = Math.ceil(progress) + '%';
@@ -43,9 +43,8 @@ const preloader = (function () {
   }
 })();
 
-document.addEventListener("DOMContentLoaded", function () {
-  preloader.set();
-})
+preloader.set();
+
 
 
 
