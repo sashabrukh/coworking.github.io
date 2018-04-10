@@ -101,9 +101,10 @@
 
 .main-back {
   backface-visibility: hidden;
-
+  z-index: -1;
 }
 
 .login-back {
   backface-visibility: hidden;
+  z-index: -1;
 }

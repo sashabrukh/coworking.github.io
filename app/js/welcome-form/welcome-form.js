@@ -28,6 +28,7 @@ const indexAnimate = (function () {
       });
 
       linkBack.click(function (e) {
+        console.log('sss')
         e.preventDefault();
         welcome.addClass(animback);
         $.when(link.show()).then(function () {
