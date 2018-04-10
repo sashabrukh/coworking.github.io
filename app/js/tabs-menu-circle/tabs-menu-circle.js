@@ -24,11 +24,10 @@ const tabsMenu = (function () {
     wayp: function () {
       themes.waypoint({
 
-        handler: function () {
+        handler: function (direction) {
           const hash = this.element.id;
           const activeClass = 'js-tab-item-link';
           waypLinks.removeClass(activeClass);
-
           $.each(waypLinks, function (direction) {
             if ($(this).attr('href').slice(1) === hash) {
               $(this).addClass(activeClass);
@@ -46,8 +45,11 @@ const tabsMenu = (function () {
         const destination = $(this).attr('href');
         const offsetTop = $(destination).offset().top;
         e.preventDefault();
+        $(window).bind('mousewheel', function(e) {
+          
+        })
         $('html, body').animate({
-          scrollTop: offsetTop
+          scrollTop: offsetTop 
         }, 500);
       })
     },
@@ -81,10 +83,9 @@ const tabsMenu = (function () {
         fixedElem.removeClass(fixedClass)
       }
       if (windowWidth > 1200) {
-
         $(window).scroll(function () {
           const wScroll = window.pageYOffset;
-          if (wScroll >= 600) {
+          if (wScroll >= 700) {
             fixedElem.addClass('js-fixed-menu');
             fixedElem.width(fixedMenuWidth);
 
