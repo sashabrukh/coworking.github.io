@@ -4,14 +4,20 @@
 @import "../misc/media.scss";
 
 .js-tab-item-link {
-  color: $green!important;
-  border-right: 2px solid $green;
+  @include phones {
+    text-decoration: underline;
+  }
+  @include laptop {
+    color: $green!important;
+    border-right: 2px solid $green;
+  }
+
 }
 
 .js-fixed-menu {
   position: fixed;
   top: 10%;
-  left: 50%;
+  left: 49.6%;
   transform: translateX(-325%);
 }
 
