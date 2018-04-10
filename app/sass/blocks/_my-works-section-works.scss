@@ -3,25 +3,65 @@
 @import "../misc/mixins";
 @import "../misc/media";
 
-.my-works__works-main-slider img {
-  width: rem(300px);
-  height:rem(200px);
+.slider-img {
+  object-fit: cover;
 }
 
-.js-left-img-center img,
-.js-right-img-center img {
-  filter: grayscale(0.8);
-  border: 5px solid $green;
+.js-main-img-center {
+  border: 2px solid $green;
+  border-radius: rem(5px);
+  width: rem(270px);
+  height: rem(175px);
+  @include laptop {
+  width: rem(373px);
+  height: rem(257px);
+  }
+  @include desktop {
+
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-.js-left-img-center img,
-.js-right-img-center img {
-
+.js-main-img-left,
+.js-main-img-right {
+  border-radius: rem(15px);
+  @include laptop {
+  width: rem(333px);
+  height: rem(223px);
+  }
+  & img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
 }
 
-.js-main-img-center img {
-  border: 5px solid $green;
+
+.js-left-img-center,
+.js-right-img-center {
+  border: 2px solid $green;
+  border-radius: rem(5px);
+  width: rem(180px);
+  height: rem(120px);
 }
+
+.js-left-img-left,
+.js-left-img-right {
+  width: rem(160px);
+  height: rem(107px);
+  border-radius: rem(5px);
+}
+
+.js-right-img-left,
+.js-right-img-right,{
+  width: rem(160px);
+  height: rem(107px);
+}
+
 
 
 .slider-img.left {
@@ -56,18 +96,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  object-fit: cover;
 }
 
 .slider-js-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   & img {
-    width: rem(150px);
-    height: rem(100px);
+  width: 100%;
+  height: 100%;
   }
 }
 
@@ -75,11 +114,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   & img {
-    width: rem(150px);
-    height: rem(100px);
+  width: 100%;
+  height: 100%;
   }
 }
 
@@ -117,7 +156,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    margin-top:rem(30px);
+    margin-top:rem(10px);
   }
   &-slider-single {
     grid-area: slider1;
@@ -230,19 +269,23 @@
   }
   &-slider-double {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-content:center;
     width: 100%;
     height: 100%;
     position: relative;
+    @include laptop {
+     justify-content: space-between;
+    }
 
     &.right {
-      width: 50%;
+      width: 48%;
       height:100%;
       position: relative;
+
     }
     &.left {
-      width: 50%;
+      width: 48%;
       height:100%;
       position: relative;
     }

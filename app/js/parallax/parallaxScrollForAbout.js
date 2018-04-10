@@ -15,7 +15,7 @@ if (sectionAbout) {
         style.transform = 'translateY(' + strafe + ')';
       },
       worksUser: function (wScroll) {
-        this.move(worksUser, wScroll, 1);
+        this.move(worksUser, wScroll, 3);
       },
       worksTitle: function (wScroll) {
         this.move(worksTitle, wScroll, 1);
