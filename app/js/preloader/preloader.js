@@ -21,7 +21,6 @@ const preloader = (function() {
     },
 
     show: function() {
-      preloadBlock.style.display = 'block';
       body.style.overflow = 'hidden';
 
       return new Promise((resolve, reject) => {
