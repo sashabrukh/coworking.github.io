@@ -1,3 +1,8 @@
+@import "../misc/variables";
+@import "../misc/functions";
+@import "../misc/mixins";
+@import "../misc/media";
+
 .my-works__about {
   position: relative;
   display: flex;
