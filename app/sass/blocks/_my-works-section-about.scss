@@ -58,6 +58,9 @@
     float: left;
     margin-right:rem(20px);
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
   }
   &-name {
     color: darken($green, 10%);
@@ -66,8 +69,10 @@
     color: $green;
   }
   &-comment {
+
     padding: 0 rem(20px);
     margin-bottom: rem(30px);
+    border-radius: rem(5px);
     @include tablets {
       display: flex;
       justify-content: space-between;
