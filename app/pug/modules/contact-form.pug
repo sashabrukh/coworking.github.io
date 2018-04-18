@@ -2,14 +2,18 @@
   .blur
   form.my-works__contacts-form(action='../../server.php', method='post', id='submit-form')
     fieldset.my-works__contacts-form-fieldset
+      .my-works__contacts-form-popup Ваше сообщение отправлено
       .my-works__contacts-form-title
         h2.my-works__contacts-form-title-item Связаться со мной
-      input.my-works__contacts-form-login(type='text', name='login', id='name', placeholder="Имя", required)
+      input.hidden-input(type='hidden', name='project_name', value='albru.ru')
+      input.hidden-input(type='hidden', name='admin_email', value='bryukhanovspb@gmail.com')
+      input.hidden-input(type='hidden', name='form_subject', value='Message from: ')
+      input.my-works__contacts-form-login(type='text', name='name', id='name', placeholder="Имя", required)
       input.my-works__contacts-form-email(type='email', id='email', name='email', placeholder="Email", required)
       textarea.my-works__contacts-form-text(id='message', name="message", placeholder='Ваше сообщение', required)
       .my-works__contacts-buttons
         .my-works__contacts-buttons--left
-          button.my-works__contacts-submit(type="submit") Отправить
+          button.my-works__contacts-submit(type="submit", id='btn-submit-form') Отправить
         .my-works__contacts-buttons--right
           input(type='reset', value="Очистить").my-works__contacts-clear
 

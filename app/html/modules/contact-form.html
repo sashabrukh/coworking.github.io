@@ -3,15 +3,19 @@
   <div class="blur"></div>
   <form class="my-works__contacts-form" action="../../server.php" method="post" id="submit-form">
     <fieldset class="my-works__contacts-form-fieldset">
+      <div class="my-works__contacts-form-popup">Ваше сообщение отправлено</div>
       <div class="my-works__contacts-form-title">
         <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
       </div>
-      <input class="my-works__contacts-form-login" type="text" name="login" id="name" placeholder="Имя" required="required"/>
+      <input class="hidden-input" type="hidden" name="project_name" value="albru.ru"/>
+      <input class="hidden-input" type="hidden" name="admin_email" value="bryukhanovspb@gmail.com"/>
+      <input class="hidden-input" type="hidden" name="form_subject" value="Message from: "/>
+      <input class="my-works__contacts-form-login" type="text" name="name" id="name" placeholder="Имя" required="required"/>
       <input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email" required="required"/>
       <textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение" required="required"></textarea>
       <div class="my-works__contacts-buttons">
         <div class="my-works__contacts-buttons--left">
-          <button class="my-works__contacts-submit" type="submit">Отправить</button>
+          <button class="my-works__contacts-submit" type="submit" id="btn-submit-form">Отправить</button>
         </div>
         <div class="my-works__contacts-buttons--right">
           <input class="my-works__contacts-clear" type="reset" value="Очистить"/>

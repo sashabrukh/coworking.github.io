@@ -58,6 +58,19 @@
     text-align: center;
     }
   }
+  &-form-popup {
+    position: absolute;
+    width: 70%;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $green;
+    font-weight: bold;
+    z-index: 10;
+    background-color: $white;
+    border-radius: rem(5px);
+
+  }
   &-form-fieldset {
     width: 100%;
     outline:none;
