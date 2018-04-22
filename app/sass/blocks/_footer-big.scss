@@ -116,16 +116,20 @@
     @include laptop {
       display: flex;
       align-items:center;
-      max-width:40%;
+      max-width:50%;
       margin-bottom:0;
     }
   }
   &__copyright-text.left {
+    margin-bottom: rem(20px);
     @include laptop {
       text-align: left;
     }
   }
-  &__copyright-text:first-of-type {
+  &__copyright-text.right {
     margin-bottom: rem(20px);
+    @include tablets {
+      margin-bottom: 0;
+    }
   }
 }

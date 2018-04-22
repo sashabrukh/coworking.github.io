@@ -23,9 +23,6 @@ if (wrapperMain) {
   })();
 
   blur.set();
-
-  window.onresize = function () {
-    blur.set();
-  };
+  window.onresize = blur.set;
 }
 

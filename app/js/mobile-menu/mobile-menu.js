@@ -35,7 +35,7 @@ const mobMenu = (function mobileMenu() {
           setTimeout(function () {
             mobileMenuLink[index].style.opacity = 1;
             resolve();
-          }, 150);
+          }, 200);
         });
         return promise;
       }
@@ -44,7 +44,7 @@ const mobMenu = (function mobileMenu() {
         const timerId = setTimeout(function () {
           animateText(0)
             .then(function () {
-              return animateText(1)
+            return animateText(1)
             }).then(function () {
             return animateText(2)
           }).then(function () {
@@ -58,8 +58,8 @@ const mobMenu = (function mobileMenu() {
 })();
 
 if (mobileMenuCont) {
-  mobMenu.init();
-  mobMenu.animate();
+  window.onload = mobMenu.init();
+  window.onload = mobMenu.animate();
 }
 
 

@@ -60,6 +60,5 @@ const preloader = (function() {
   };
 })();
 
-document.addEventListener("DOMContentLoaded", function() {
 preloader.show();
-});
+

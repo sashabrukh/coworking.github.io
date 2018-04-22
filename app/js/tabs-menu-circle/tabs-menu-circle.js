@@ -44,6 +44,8 @@ const tabsMenu = (function () {
       $(circleMenuLinks).click(function (e) {
         const destination = $(this).attr('href');
         const offsetTop = $(destination).offset().top;
+        changeMenuWidth(0);
+        isMenuShow = false;
         e.preventDefault();
         $(window).bind('mousewheel', function(e) {
           
@@ -59,7 +61,7 @@ const tabsMenu = (function () {
       circle.click(function () {
         switch (isMenuShow) {
           case false:
-            changeMenuWidth(350);
+            changeMenuWidth(300);
             isMenuShow = true;
             break;
           case true:

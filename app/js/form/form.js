@@ -2,18 +2,25 @@
 
 $(document).ready(function () {
   var popup = $('.my-works__contacts-form-popup');
-  popup.hide();
+  var popupFunc = function () {
+    popup.fadeTo("slow", 0, function () {
+      $(this).fadeTo('slow', 1).after(function () {
+        setTimeout(() => {
+          $(this).fadeTo('slow', 0)
+        }, 3000);
+      })
+    });
+  }
   //E-mail Ajax Send
   $("#submit-form").submit(function () { //Change
     var th = $(this);
     $.ajax({
       type: "POST",
-      url: "../../server.php", //Change
+      url: "server.php", //Change
       data: th.serialize()
     }).done(function () {
-      popup.show();
+      popupFunc();
       setTimeout(function () {
-        popup.hide();
         th.trigger("reset");
       }, 1000);
     });

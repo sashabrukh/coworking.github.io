@@ -89,6 +89,10 @@ p {
   padding: 0;
   margin: 0;
   margin-bottom: rem(35px);
+  font-size: rem(19px);
+  @include tablets {
+    font-size: rem(16px);
+  }
 }
 
 footer {

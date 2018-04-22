@@ -9,7 +9,7 @@ if ( $method === 'POST' ) {
   $project_name = trim($_POST["project_name"]);
   $admin_email  = trim($_POST["admin_email"]);
   $form_subject = trim($_POST["form_subject"]);
-  $customer_email = trim($_POST["email"]);
+  $client_email = trim($_POST["email"]);
  
   foreach ( $_POST as $key => $value ) {
     if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
@@ -47,7 +47,7 @@ function adopt($text) {
  
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: <'.$customer_email.'>' . PHP_EOL .
+'From: <'.$client_email.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
  
 mail($admin_email, adopt($form_subject), $message, $headers );

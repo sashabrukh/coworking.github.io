@@ -11,7 +11,7 @@ const indexAnimate = (function () {
 
   return {
 
-    start: (function () {
+    start: function () {
 
       link.click(function (e) {
         e.preventDefault();
@@ -28,7 +28,6 @@ const indexAnimate = (function () {
       });
 
       linkBack.click(function (e) {
-        console.log('sss')
         e.preventDefault();
         welcome.addClass(animback);
         $.when(link.show()).then(function () {
@@ -36,11 +35,11 @@ const indexAnimate = (function () {
         })
       });
 
-    })
+    }
   }
 
 })();
 
-indexAnimate.start();
+window.onload = indexAnimate.start();
 
 

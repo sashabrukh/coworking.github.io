@@ -1,0 +1,25 @@
+.main-nav__list-item .main-nav__link--comments {
+    color: #221f1f;
+}
+
+.main-nav__link--home::before {
+    background-position: 0 0;
+}
+
+.main-nav__link--comments::before {
+    background-position: -144px 0;
+}
+
+.main-nav__link--prices::before {
+    background-position: -193px 0;
+}
+
+/*MAIN NAV li ICONS HOVER*/
+
+.main-nav__link--prices:hover::before {
+    background-position: -242px 0;
+}
+
+.main-nav__link--home:hover::before {
+    background-position: -47px 0;
+}

@@ -1,8 +1,9 @@
 ; 'use strict';
 
 const sectionBlog = document.querySelector('.blog__content');
+const innerWidth = window.innerWidth;
 
-if (sectionBlog) {
+if (sectionBlog && innerWidth > 800) {
   const parallaxForSectionBlog = (function () {
     const blogUser = document.querySelector('.blog__header-img');
     const blogTitle = document.querySelector('.blog__header-my-name');

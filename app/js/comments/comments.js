@@ -8,17 +8,18 @@ if (wrapperMain) {
     const items = ['.my-works__about-comment-item.first', '.my-works__about-comment-item.second'];
     const randItems = Math.floor(Math.random() * 2);
     const commentItem = document.querySelector(items[randItems]);
-    console.log(windowWidth);
 
     return {
       start: function () {
+        if (windowWidth < 770) {
         commentItem.style.display = 'none';
+        }
       }
     }
   })()
   
-  if (windowWidth < 770) {
-    showAndHide.start();
+  
+  window.onload = showAndHide.start();
   }
 
-}
+

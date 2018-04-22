@@ -9,14 +9,14 @@ if (myWorks) {
         title: 'Burgers Landing',
         image: '../../img/portfolio/burgers.jpg',
         description: 'SCSS, BEM, Javascript, jQuery, Gulp, Adaptive design',
-        link: 'https://sashabrukh.github.io/dist/portfolio/burgers/index.html'
+        link: 'https://albru.ru/portfolio/burgers/index.html'
       },
 
       {
         title: 'Coworking',
         image: '../../img/portfolio/coworking.jpg',
         description: 'Статичный сайт из 4х страниц',
-        link: 'https://sashabrukh.github.io/dist/portfolio/coworking/index.html'
+        link: 'https://albru.ru/portfolio/coworking/index.html'
       },
 
       {
@@ -106,7 +106,7 @@ if (myWorks) {
     }
   })();
 
-  mainSlider.handlers();
+  window.onload = mainSlider.handlers();
 }
 
 
