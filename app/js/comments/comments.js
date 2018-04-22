@@ -1,6 +1,6 @@
 ;'use strict'
 const wrapperMain = document.querySelector('.my-works__about');
-const windowWidth = document.body.clientWidth;
+const windowWidth = window.innerWidth;
 
 if (wrapperMain) {
   const showAndHide = (function () {
@@ -18,8 +18,7 @@ if (wrapperMain) {
     }
   })()
   
-  
-  window.onload = showAndHide.start();
+  showAndHide.start();
   }
 
 

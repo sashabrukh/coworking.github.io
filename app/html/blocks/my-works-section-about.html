@@ -1,5 +1,5 @@
 
-<div class="section my-works__about">
+<div class="section my-works__about" style="background-image: url(../../img/back/sea.png)">
   <div class="my-works__about-title">
     <h2 class="my-works__about-title-item">Что обо мне говорят</h2>
     <svg class="my-works__about-svg-header">
@@ -27,31 +27,32 @@
         <div class="my-works__about-desc">Предприниматель</div>
       </div>
     </div>
-  </div><div class="my-works__contacts-form-wrapper">
-<div class="blur"></div>
-<form class="my-works__contacts-form" action="server.php" method="post" id="submit-form">
-<fieldset class="my-works__contacts-form-fieldset">
-<div class="my-works__contacts-form-popup">Ваше сообщение отправлено</div>
-<div class="my-works__contacts-form-title">
-<h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
-</div>
-<input class="hidden-input" type="hidden" name="project_name" value="albru.ru"/>
-<input class="hidden-input" type="hidden" name="admin_email" value="admin@albru.ru"/>
-<input class="hidden-input" type="hidden" name="form_subject" value="Message from albru.ru"/>
-<input class="my-works__contacts-form-login" type="text" name="name" id="name" placeholder="Имя" required="required"/>
-<input class="my-works__contacts-form-email" type="email" id="email" name="email" placeholder="Email" required="required"/>
-<textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение" required="required"></textarea>
-<div class="my-works__contacts-buttons">
-<div class="my-works__contacts-buttons--left">
-<button class="my-works__contacts-submit" type="submit" id="btn-submit-form">Отправить</button>
-</div>
-<div class="my-works__contacts-buttons--right">
-<input class="my-works__contacts-clear" type="reset" value="Очистить"/>
-</div>
-</div>
-</fieldset>
-</form>
-</div>
+  </div>
+  <div class="my-works__contacts-form-wrapper">
+    <div class="blur" style="background-image: url(../../img/back/sea.png)"></div>
+    <form class="my-works__contacts-form" id="submit-form" action="server.php" method="post">
+      <fieldset class="my-works__contacts-form-fieldset">
+        <div class="my-works__contacts-form-popup">Ваше сообщение отправлено</div>
+        <div class="my-works__contacts-form-title">
+          <h2 class="my-works__contacts-form-title-item">Связаться со мной</h2>
+        </div>
+        <input class="hidden-input" type="hidden" name="project_name" value="albru.ru"/>
+        <input class="hidden-input" type="hidden" name="admin_email" value="admin@albru.ru"/>
+        <input class="hidden-input" type="hidden" name="form_subject" value="Message from albru.ru"/>
+        <input class="my-works__contacts-form-login" id="name" type="text" name="name" placeholder="Имя" required="required"/>
+        <input class="my-works__contacts-form-email" id="email" type="email" name="email" placeholder="Email" required="required"/>
+        <textarea class="my-works__contacts-form-text" id="message" name="message" placeholder="Ваше сообщение" required="required"></textarea>
+        <div class="my-works__contacts-buttons">
+          <div class="my-works__contacts-buttons--left">
+            <button class="my-works__contacts-submit" id="btn-submit-form" type="submit">Отправить</button>
+          </div>
+          <div class="my-works__contacts-buttons--right">
+            <input class="my-works__contacts-clear" type="reset" value="Очистить"/>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
   <div class="my-works__about-svg-arrow"><a class="my-works__about-up-link" href="#my-works-up">
       <svg class="my-works__about-svg-arrow-up">
         <use xlink:href="../../img/sprites/sprite-svg.svg#portf_arrow_up"></use>

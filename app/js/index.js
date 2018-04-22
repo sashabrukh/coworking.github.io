@@ -1,5 +1,5 @@
-import preloader from './preloader/preloader'
 import parallax from './parallax/parallax'
+import preloader from './preloader/preloader'
 import test from './test'
 import mobMenu from './mobile-menu/mobile-menu'
 import welcomeForm from './welcome-form/welcome-form'

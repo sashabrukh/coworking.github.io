@@ -6,18 +6,23 @@ const preloader = (function() {
   const preloadText = document.querySelector('.preloader-text');
   const regImgUrl = /background-image: url\(['"]?(.*?)['"]?\)/i;
   const body = document.body;
+  const innerWidth = window.innerWidth;
+  const parallaxImages = document.querySelectorAll('.parallax__image');
   const imgArr = [];
   let progress = 0;
   let img;
   let allImg;
   let shadowImg;
+  
+
+  // `../../img/parallax/${i}.png`
 
   return {
+
     shadowImgAdd: function() {
       shadowImg = document.createElement('img');
       shadowImg.setAttribute('src', img);
       imgArr.push(shadowImg);
-
     },
 
     show: function() {
@@ -25,11 +30,13 @@ const preloader = (function() {
 
       return new Promise((resolve, reject) => {
         for (let i = 0; i < preloadImg.length; i++) {
-          if (preloadImg[i].matches('img')) {
+          if (preloadImg[i].matches('img') && preloadImg[i].getAttribute('src') != '') {
+            console.log(preloadImg[i])
             img = preloadImg[i].getAttribute('src');
             this.shadowImgAdd();
           } else if (preloadImg[i].hasAttribute('style') && regImgUrl.test(preloadImg[i].getAttribute('style'))) {
-            img = (preloadImg[i].getAttribute('style').slice(22, -2));
+            img = (preloadImg[i].getAttribute('style').slice(22, -1));
+            console.log(preloadImg[i])
             this.shadowImgAdd();
           }
 

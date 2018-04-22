@@ -80,7 +80,7 @@ const src = {
 gulp.task('html', function () {
   return gulp.src(src.htmlTake)
     // .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(src.baseDist));
+    .pipe(gulp.dest(src.baseDist + 'html/pages'));
 });
 
 // PUG

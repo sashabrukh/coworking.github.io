@@ -58,8 +58,8 @@ const mobMenu = (function mobileMenu() {
 })();
 
 if (mobileMenuCont) {
-  window.onload = mobMenu.init();
-  window.onload = mobMenu.animate();
+  mobMenu.init();
+  mobMenu.animate();
 }
 
 
