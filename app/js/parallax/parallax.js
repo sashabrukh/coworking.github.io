@@ -13,7 +13,6 @@ const parallax = (function () {
           img.setAttribute('alt', 'parallax-img');
           img.classList.add('parallax__image');
           img.id = `parallax__image${i}`;
-          console.log(img);
           parallaxLayer[i].appendChild(img)
         }
       }
