@@ -19,5 +19,5 @@ const arrowsScroll = (function () {
 const elemDown = $('.my-works__header-down-link');
 const elemUp = $('.my-works__about-up-link');
 
-arrowsScroll.init(elemDown);
-arrowsScroll.init(elemUp);
+window.onload = arrowsScroll.init(elemDown);
+window.onload = arrowsScroll.init(elemUp);

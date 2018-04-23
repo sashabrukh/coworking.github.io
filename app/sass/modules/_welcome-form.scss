@@ -20,13 +20,10 @@
     color: $gray;
     margin:0;
     @include phones {
-      margin-bottom:rem(10px);
-    }
-    @include tablets {
       margin-bottom:rem(20px);
     }
     @include laptop {
-      margin-bottom:rem(10px);
+      margin-bottom: 0;
     }
   }
   &__social {

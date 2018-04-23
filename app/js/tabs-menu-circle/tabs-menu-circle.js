@@ -1,4 +1,4 @@
-;'use strict';
+; 'use strict';
 const windowWidth = $(window).width();
 
 const tabsMenu = (function () {
@@ -44,12 +44,16 @@ const tabsMenu = (function () {
       $(circleMenuLinks).click(function (e) {
         const destination = $(this).attr('href');
         const offsetTop = $(destination).offset().top;
+        if(windowWidth < 1200) {
+          changeMenuWidth(0);
+          isMenuShow = false;
+        }
         e.preventDefault();
-        $(window).bind('mousewheel', function(e) {
-          
+        $(window).bind('mousewheel', function (e) {
+
         })
         $('html, body').animate({
-          scrollTop: offsetTop 
+          scrollTop: offsetTop
         }, 500);
       })
     },
@@ -59,7 +63,7 @@ const tabsMenu = (function () {
       circle.click(function () {
         switch (isMenuShow) {
           case false:
-            changeMenuWidth(350);
+            changeMenuWidth(300);
             isMenuShow = true;
             break;
           case true:
@@ -102,7 +106,7 @@ const tabsMenu = (function () {
 
 tabsMenu.animateCircleMenu();
 tabsMenu.scrollMenu();
-if(windowWidth > 1200) {
+if (windowWidth > 1200) {
   tabsMenu.wayp();
 }
 tabsMenu.fixedMenu();

@@ -1,16 +1,18 @@
 .my-works__contacts-form-wrapper
-  .blur
-  form.my-works__contacts-form(action='../../server.php', method='post', id='submit-form')
+  .blur(style="background-image: url(../../img/back/sea.png)")
+  form#submit-form.my-works__contacts-form(action='server.php', method='post')
     fieldset.my-works__contacts-form-fieldset
+      .my-works__contacts-form-popup Ваше сообщение отправлено
       .my-works__contacts-form-title
         h2.my-works__contacts-form-title-item Связаться со мной
-      input.my-works__contacts-form-login(type='text', name='login', id='name', placeholder="Имя", required)
-      input.my-works__contacts-form-email(type='email', id='email', name='email', placeholder="Email", required)
-      textarea.my-works__contacts-form-text(id='message', name="message", placeholder='Ваше сообщение', required)
+      input.hidden-input(type='hidden', name='project_name', value='albru.ru')
+      input.hidden-input(type='hidden', name='admin_email', value='admin@albru.ru')
+      input.hidden-input(type='hidden', name='form_subject', value='Message from albru.ru')
+      input#name.my-works__contacts-form-login(type='text', name='name', placeholder='Имя', required='required')
+      input#email.my-works__contacts-form-email(type='email', name='email', placeholder='Email', required='required')
+      textarea#message.my-works__contacts-form-text(name='message', placeholder='Ваше сообщение', required='required')
       .my-works__contacts-buttons
         .my-works__contacts-buttons--left
-          button.my-works__contacts-submit(type="submit") Отправить
+          button#btn-submit-form.my-works__contacts-submit(type='submit') Отправить
         .my-works__contacts-buttons--right
-          input(type='reset', value="Очистить").my-works__contacts-clear
-
-
+          input.my-works__contacts-clear(type='reset', value='Очистить')

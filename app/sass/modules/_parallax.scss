@@ -66,9 +66,13 @@ transform: translate(-47%, -5%);
   right: 0;
   }
   &__image {
+  display: none;
   position: absolute; 
   left: 50%;
   transform: translateX(-50%);
+  @include laptop {
+    display: initial;
+  }
   }
 }
 

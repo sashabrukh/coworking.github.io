@@ -11,7 +11,34 @@
     color: $green!important;
     border-right: 2px solid $green;
   }
+}
 
+.blog__title-image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blog__title-image-item {
+  object-fit: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: rem(20px);
+}
+
+.blog__title-item-link {
+  color: $green;
+  margin-bottom: rem(10px);
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.blog__title-image-item-small {
+  object-fit: cover;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: rem(20px);
 }
 
 .js-fixed-menu {
@@ -39,6 +66,12 @@
       height: 3px;
       background-color: $grayOp;
     }
+  }
+  &__title-item-h3 {
+    font-weight: bold;
+  }
+  &__title-item-h4 {
+    font-weight: bold;
   }
   &__content {
     min-height: 100%;

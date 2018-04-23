@@ -1,8 +1,9 @@
 ; 'use strict';
 
 const sectionWorks = document.querySelector('.my-works__works');
+const innerWidth = window.innerWidth;
 
-if (sectionWorks) {
+if (sectionWorks && innerWidth > 800) {
   const parallaxForSectionWorks = (function () {
     const worksUser = document.querySelector('.my-works__header-img');
     const worksTitle = document.querySelector('.my-works__header-my-name');

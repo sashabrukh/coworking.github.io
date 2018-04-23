@@ -22,10 +22,10 @@ if (wrapperMain) {
     }
   })();
 
-  blur.set();
-
-  window.onresize = function () {
+  setTimeout(() => {
     blur.set();
-  };
+  }, 1);
+  window.onresize = blur.set;
+
 }
 
