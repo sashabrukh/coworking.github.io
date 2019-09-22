@@ -17,7 +17,4 @@
 * Flexbox / CSS Grid
 * Yarn
 * BEM
-* Vue.js 
-* Node.js
 * PHP
-* AJAX 
